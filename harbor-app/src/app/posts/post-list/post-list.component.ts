@@ -14,11 +14,17 @@ export class PostListComponent implements OnInit {
   constructor(private postsService: PostsService, private router: Router) {}
   ngOnInit() {
     this.postsService.getPosts().subscribe(
-      (posts: Post[]) => this.posts = posts,
+      (posts: Post[]) => {
+        this.posts = posts;
+        console.info('this.posts : ');
+        console.info(this.posts);
+      },
       (err: HttpErrorResponse) => err.error instanceof Error ? console.log('An error occurred:', err.error.message) : console.log(`Backend returned code ${err.status}, body was: ${err.error}`));
   }
   selectPost(slug) {
+    console.info('slug : ');
+    console.info(slug);
     console.info('clicke!');
-    this.router.navigate(['posts/' + slug]);
+    this.router.navigateByUrl('posts/' + slug);
   }
 }
