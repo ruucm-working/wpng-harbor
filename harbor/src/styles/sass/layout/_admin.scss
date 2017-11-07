@@ -1,0 +1,41 @@
+/* Admin */
+
+	#admin {
+		nav {
+			li {
+				list-style-type: none;
+			}
+		}
+		table {
+			td {
+				div {
+					overflow: hidden;
+					white-space: nowrap;
+				}
+			}
+			th {
+				div {
+					width: 100px;
+				}
+			}
+		}
+		.build-submission {
+			overflow-x: scroll;
+		}
+	}
+
+	.admin_bar {
+		display: block;
+		position: fixed;
+		bottom: 50px;
+		right: 30px;
+		background: white;
+		padding: 0 3rem;
+		border-radius: 100px;
+		-webkit-box-shadow: 0px 10px 43px 7px rgba(0,0,0,0.29);
+		-moz-box-shadow: 0px 10px 43px 7px rgba(0,0,0,0.29);
+		box-shadow: 0px 10px 43px 7px rgba(0,0,0,0.29);
+		span, button {
+			color: _palette(base-black);
+		}
+	}

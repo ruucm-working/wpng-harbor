@@ -1,0 +1,14 @@
+/* Button Circle */
+
+	.button-circle {
+		background: white;
+		border-radius: 2em;
+		&.small {
+			width: 80px;
+			height: 26px;
+		}
+		&.big {
+			height: 2.6em;
+			width: 6.5em;
+		}
+	}

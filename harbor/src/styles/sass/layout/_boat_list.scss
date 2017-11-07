@@ -1,0 +1,296 @@
+/* Boat List */
+	.boat-submit-button-container {
+		text-align: center;
+		.button-circle, p {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		p {
+			margin: 0 0 0 1.3em;
+			font-weight: 700;
+			font-size: 2.5em;
+		}
+	}
+	.boat-filter {
+		text-align: center;
+		font-weight: 700;
+		word-spacing: 0.2em;
+		a {
+			letter-spacing: 1.4px;
+		}
+	}
+	.wrapper.boat-list-svg {
+		position: absolute;
+		top: 1420px;
+		width: 100%;
+	}
+	.wrapper.boat-list-data {
+		position: absolute;
+		top: 1670px;;
+		background-color: transparent;
+		width: 100%;
+		.boat-list-data-details, h2 {
+			color: _palette(primary);
+		}
+	}
+	.boat_member_types {
+		span {
+			&:after {
+				content:", ";
+			}
+			&:last-child:after {
+				content:"";
+			}
+		}
+	}
+	.boat_member_skills {
+		margin: 1em 0;
+		span {
+			border: _palette(primary) 1px solid;
+			border-radius: 0.4em;
+			padding: 0.2em 0.5em;
+			margin: 0.7em 0.7em 0.7em 0;
+		}
+	}
+	@include breakpoint(small) {
+		.boat-submit-button-container p {
+			font-size: 1.7em;
+			display: block;
+			margin-left: 0;
+			margin-top: 1em;
+		}
+		.wrapper.boat-list-svg {
+			top: 900px;
+		}
+		.wrapper.boat-list-data {
+			top: 1140px;
+			background: beige;
+		}
+	}
+
+/**
+ *	Each Boat's Layout
+ */
+	.boat-list-data-details {
+		width: 600px;
+		&:before {
+			content: " ";
+			display: inline-block;
+			height: 100%;
+			width: 1%;
+			vertical-align: middle;
+		}
+		.boat-owner-wants {
+			margin-left: 2em;
+		}
+		&:nth-of-type(2),
+		&:nth-of-type(3) {
+			margin-left: -190px;
+		}
+		@include breakpoint(small) {
+			width: 100%;
+			&:nth-of-type(2),
+			&:nth-of-type(3) {
+				margin-left: 0;
+			}
+			.boat-owner-wants {
+				margin-left: 0;
+			}
+		}
+		.boat_for {
+			width: 300px;
+			p {
+				font-size: 1em;
+			}
+		}
+	}
+	.boat-owner-profile, .boat-owner-wants {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.boat-owner-profile {
+		text-align: center;
+		img {
+			width: 90px;
+			height: 90px;
+			border-radius: 3em;
+		}
+		div {
+			display: block;
+		}
+	}
+
+/* Search Memeber by Skill Tags */
+	.member-skill {
+		text-align: center;
+		margin: 3em 0;
+		a {
+			border: white 1px solid;
+			border-radius: 0.4em;
+			padding: 0.2em 0.5em;
+			margin: 0.7em;
+		}
+	}
+	.tag-on {
+		background-color: blue;
+	}
+
+/* Coloring Empty Boats */
+	.boat-color-grey {
+		> g:nth-of-type(1) g {
+			> g:nth-of-type(1) {
+				fill: #202020;
+			}
+			> g:nth-of-type(2) {
+				fill: #313131;
+			}
+			> g:nth-of-type(3) {
+				fill: #343434;
+			}
+			> g:nth-of-type(4) {
+				fill: #2E2E2E;
+			}
+		}
+		> g:nth-of-type(2) g {
+			> g:nth-of-type(1) {
+				fill: #202020;
+			}
+			> g:nth-of-type(2) {
+				fill: #313131;
+			}
+			> g:nth-of-type(3) {
+				fill: #2E2E2E;
+			}
+		}
+	}
+	.flag-color-grey {
+		path {
+			fill: #3F3F3F;
+		}
+		polygon {
+			fill: #3F3F3F;
+		}
+	}
+	.boat-color-red, .boat-color-blue, .boat-color-green, .boat-color-purple, .boat-color-pink {
+		> g:nth-of-type(2) g {
+			> g:nth-of-type(1) {
+				fill: #808080;
+			}
+			> g:nth-of-type(2) {
+				fill: #C8C8C8;
+			}
+			> g:nth-of-type(3) {
+				fill: #B8B8B8;
+			}
+		}
+	}
+	.flag-color-red, .flag-color-blue, .flag-color-green, .flag-color-purple, .flag-color-pink {
+		path {
+			fill: #E5E5E5;
+		}
+	}
+	.boat-color-red {
+		> g:nth-of-type(1) g {
+			> g:nth-of-type(1) {
+				fill: #71201D;
+			}
+			> g:nth-of-type(2) {
+				fill: #B0322D;
+			}
+			> g:nth-of-type(3) {
+				fill: #BB352F;
+			}
+			> g:nth-of-type(4) {
+				fill: #A22E29;
+			}
+		}
+	}
+	.flag-color-red {
+		polygon {
+			fill: #E14039;
+		}
+	}
+	.boat-color-blue {
+		> g:nth-of-type(1) g {
+			> g:nth-of-type(1) {
+				fill: #0D2371;
+			}
+			> g:nth-of-type(2) {
+				fill: #1536B0;
+			}
+			> g:nth-of-type(3) {
+				fill: #1639BC;
+			}
+			> g:nth-of-type(4) {
+				fill: #1331A3;
+			}
+		}
+	}
+	.flag-color-blue {
+		polygon {
+			fill: #1B45E1;
+		}
+	}
+	.boat-color-green {
+		> g:nth-of-type(1) g {
+			> g:nth-of-type(1) {
+				fill: #093443;
+			}
+			> g:nth-of-type(2) {
+				fill: #0F5169;
+			}
+			> g:nth-of-type(3) {
+				fill: #115670;
+			}
+			> g:nth-of-type(4) {
+				fill: #0E4A61;
+			}
+		}
+	}
+	.flag-color-green {
+		polygon {
+			fill: #156786;
+		}
+	}
+	.boat-color-purple {
+		> g:nth-of-type(1) g {
+			> g:nth-of-type(1) {
+				fill: #2D2372;
+			}
+			> g:nth-of-type(2) {
+				fill: #4638B2;
+			}
+			> g:nth-of-type(3) {
+				fill: #4B3BBD;
+			}
+			> g:nth-of-type(4) {
+				fill: #4133A4;
+			}
+		}
+	}
+	.flag-color-purple {
+		polygon {
+			fill: #5B48E3;
+		}
+	}
+	.boat-color-pink {
+		> g:nth-of-type(1) g {
+			> g:nth-of-type(1) {
+				fill: #7E656A;
+			}
+			> g:nth-of-type(2) {
+				fill: #C69EA6;
+			}
+			> g:nth-of-type(3) {
+				fill: #D3A8B1;
+			}
+			> g:nth-of-type(4) {
+				fill: #B79299;
+			}
+		}
+	}
+	.flag-color-pink {
+		polygon {
+			fill: #FDCAD4;
+		}
+	}

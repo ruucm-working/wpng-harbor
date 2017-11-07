@@ -1,0 +1,149 @@
+/* Header */
+
+	#header {
+		@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+		background: _palette(primary);
+		height: 5.5em;
+		left: 0;
+		line-height: 5.5em;
+		padding: 0 1.25em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: _misc(z-index-base);
+
+		h1 {
+			border-bottom: 0;
+			font-size: 0.8em;
+			margin-bottom: 0;
+			a {
+				border: 0;
+				font-size: 32px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: 700;
+				letter-spacing: 1px;
+				text-transform: none;
+				margin-top: -25px;
+			}
+		}
+
+		nav {
+			font-family: _font(family-heading);
+			font-size: 0.8em;
+			font-weight: _font(weight-heading-bold);
+			height: 3em;
+			letter-spacing: _font(kern-heading);
+			line-height: 3em;
+			text-transform: uppercase;
+			top: 0.7em;
+			a {
+				border: 0;
+			}
+			li {
+				list-style-type: none;
+			}
+		}
+		#logo-black {
+			height: 3.3em;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		#menu-contact {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 1em;
+			font-size: 1em;
+		}
+
+		.change_lang {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 7em;
+			font-size: 1.5em;
+			font-weight: 100;
+			text-transform: none;
+			a {
+				padding: 0.3em;
+			}
+		}
+
+		@include breakpoint(small) {
+			height: 2.75em;
+			line-height: 2.75em;
+
+			nav {
+				top: 0;
+				right: 0;
+				height: inherit;
+				line-height: inherit;
+
+				position: absolute;
+				right: 0.7em;
+
+				a {
+					height: inherit;
+					line-height: inherit;
+
+					&[href="#menu"] {
+						box-shadow: none;
+						padding: 0 1em;
+						border-radius: 0;
+
+						&:hover, &:active {
+							background-color: inherit;
+						}
+					}
+				}
+
+			}
+
+			#XMLID_802_ {
+				display: none;
+			}
+			#menu-contact {
+				width: 2.6em;
+			}
+			.change_lang {
+				display: none;
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			nav {
+				a {
+					&[href="#menu"] {
+						width: 4em;
+						white-space: nowrap;
+						text-indent: 4em;
+						position: relative;
+
+						&:before {
+							width: inherit;
+							position: absolute;
+							top: 0;
+							left: 0;
+							text-indent: 0;
+							text-align: right;
+							margin-left: 0;
+							padding-right: 1.25em;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.white_theme {
+		#header {
+			@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+			background: white;
+			h1 {
+				color: _palette(base-black);
+			}
+		}
+	}

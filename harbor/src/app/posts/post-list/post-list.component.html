@@ -1,0 +1,5 @@
+<ul style="margin-top: 240px;">
+	<li *ngFor="let post of posts">
+		<a (click)="selectPost(post.slug)">{{ post.title.rendered }}</a>
+	</li>
+</ul>

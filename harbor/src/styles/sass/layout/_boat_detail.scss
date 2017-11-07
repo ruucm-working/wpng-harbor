@@ -1,0 +1,62 @@
+/* MailChimp Subscription */
+.boat_details {
+	.big-title, .boat-owner-profile {
+		display: inline-block;
+		margin-bottom: 3em;
+	}
+	.boat-owner-profile {
+		margin-top: 5em;
+		float: right;
+		margin-right: 77px;
+	}
+}
+.boat-owner-sign {
+	font-size: 2.4em;
+	font-weight: 900;
+	float: right;
+	color: _palette(primary);
+	margin-top: 3em;
+	@include icon(false, after);
+	&:after {
+		@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+		border-radius: 100%;
+		content: '\f099';
+		display: inline-block;
+		font-size: 0.95em;
+		height: 2em;
+		line-height: 2em;
+		margin-left: -0.4em;
+		text-align: center;
+		text-indent: 0.15em;
+		width: 2em;
+	}
+}
+
+/* Right Upper Img Banner */
+.first_letter_circle {
+	width: 90px;
+	height: 90px;
+	background: _palette(base-black);
+	color: white;
+	border-radius: 5em;
+	position: absolute;
+	margin-left: 1.7em;
+	line-height: 90px;
+	font-size: 2.8em;
+}
+.boat-title {
+	position: absolute;
+	width: 160px;
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+
+@include breakpoint(small) {
+	.boat_details {
+		.boat-owner-profile {
+			margin-top: -8em;
+		}
+	}
+
+}
+

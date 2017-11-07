@@ -1,0 +1,31 @@
+/* MailChimp Subscription */
+	.main-label {
+		font-size: 3.6em;
+		text-transform: none;
+		line-height: 1.1em;
+		letter-spacing: 2px;
+		margin-top: 3em;
+	}
+	#mc-signup {
+		input {
+			width: 225px;
+			display: inline-block;
+			border-radius: 2em;
+			margin: 0.8em 0;
+		}
+		input[type="text"] {
+			border: solid 2px _palette(base-black);
+			color: _palette(base-black);
+			&:focus {
+				border-color: desaturate(lighten(white, 6), 3);
+			}
+		}
+		input[type="submit"] {
+			background: _palette(base-black);
+			color: white;
+			margin-left: 3em;
+		}
+		label {
+			color: _palette(base-black);
+		}
+	}
