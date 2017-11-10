@@ -1,0 +1,155 @@
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.lead {
+    font-size: 1.2em;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    display: block;
+    font-weight: bold;
+}
+
+.h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+.h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+.h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+.h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+.h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+.h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/* Transformations */
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+/* Colors */
+
+.text-muted {
+    color: #6781b8;
+}
+
+.text-primary {
+    color: #fc7753;
+}
+
+a.text-primary:hover {
+    color: #fb4f21;
+}
+
+.text-success {
+    color: #39d27a;
+}
+
+a.text-success:hover {
+    color: #28b062;
+}
+
+.text-info {
+    color: #b07cc6;
+}
+
+a.text-info:hover {
+    color: #9b58b7;
+}
+
+.text-warning {
+    color: #f7c134;
+}
+
+a.text-warning:hover {
+    color: #efaf09;
+}
+
+.text-danger {
+    color: #ff486e;
+}
+
+a.text-danger:hover {
+    color: #ff1546;
+}
+
+/* Lists */
+
+.list-inline,
+.list-left-shifted,
+.list-unstyled {
+    padding-left: 0;
+}
+
+.list-inline,
+.list-unstyled {
+    list-style: outside none none;
+}
+
+.list-inline {
+    margin-left: -5px;
+}
+
+.list-inline > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* Wells */
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+
+    background-color: #eee;
+}
+
+.well-lg {
+    padding: 24px;
+}
+
+.well-sm {
+    padding: 9px;
+}

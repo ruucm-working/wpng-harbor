@@ -10,19 +10,20 @@ import { CoreModule } from './core/core.module';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostSingleComponent } from './posts/post-single/post-single.component';
 const routes: Routes = [
-	{ path: '', component: HomePageComponent },
-	{ path: 'login', component: UserLoginComponent, },
-	{ path: 'items', component: ItemsListComponent, canActivate: [AuthGuard] },
-	{ path: 'notes', component: NotesListComponent, canActivate: [AuthGuard] },
+	{ path: '', redirectTo: 'app', pathMatch: 'full' },
+	{ path: 'app', component: HomePageComponent },
+	{ path: 'app/login', component: UserLoginComponent, },
+	{ path: 'app/items', component: ItemsListComponent, canActivate: [AuthGuard] },
+	{ path: 'app/notes', component: NotesListComponent },
 	// uploads are lazy loaded
-	{ path: 'uploads', loadChildren: './uploads/shared/upload.module#UploadModule', canActivate: [AuthGuard] },
+	{ path: 'app/uploads', loadChildren: './uploads/shared/upload.module#UploadModule', canActivate: [AuthGuard] },
 	{
-		path: 'posts',
+		path: 'app/posts',
 		component: PostListComponent,
 		pathMatch: 'full'
 	},
 	{
-		path: 'posts/:slug',
+		path: 'app/posts/:slug',
 		component: PostSingleComponent
 	}
 ];

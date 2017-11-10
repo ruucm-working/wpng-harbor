@@ -1,0 +1,112 @@
+/**
+ *  Default Fonts
+ */
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-weight: 100;
+	src: local('NanumSquareRegular'),
+	url('../fonts/NanumSquareLight.woff2') format('woff2'),
+	url('../fonts/NanumSquareLight.woff') format('woff'),
+	url('../fonts/NanumSquareLight.ttf') format('truetype'),
+	url('../fonts/NanumSquareLight.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-weight: 400;
+	src: local('NanumSquareRegular'),
+	url('../fonts/NanumSquareRegular.woff2') format('woff2'),
+	url('../fonts/NanumSquareRegular.woff') format('woff'),
+	url('../fonts/NanumSquareRegular.ttf') format('truetype'),
+	url('../fonts/NanumSquareRegular.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-weight: 700;
+	src: local('NanumSquareRegular'),
+	url('../fonts/NanumSquareBold.woff2') format('woff2'),
+	url('../fonts/NanumSquareBold.woff') format('woff'),
+	url('../fonts/NanumSquareBold.ttf') format('truetype'),
+	url('../fonts/NanumSquareBold.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// *:not(.logo) { font-family: 'NanumSquare', 'Sans-serif'; }
+
+/**
+ *  Override Default Orange Colors
+ */
+
+::-moz-selection {
+	background: white;
+	color: #fff;
+}
+
+::selection {
+	background: white;
+	color: #fff;
+}
+
+.navmenu-header.background-dark .navmenu-brand>.light:focus,
+.navmenu-header.background-dark .navmenu-brand>.light:hover {
+	color: #2C245F;
+}
+
+.navmenu-nav .dropdown-menu.background-dark>.active>a,
+.navmenu-nav .dropdown-menu.background-dark>li>a:focus,
+.navmenu-nav .dropdown-menu.background-dark>li>a:hover,
+.navmenu-nav.background-dark .nav>.active>a,
+.navmenu-nav.background-dark .nav>li>a:focus,
+.navmenu-nav.background-dark .nav>li>a:hover {
+	color: #2C245F;
+}
+
+.home {
+	&.background-dark .btn-link:hover {
+		color: #2C245F;
+	}
+	::-moz-selection {
+		background: rgba(64, 50, 125, 0.99);
+		color: #40327D;
+	}
+	::selection {
+		background: rgba(64, 50, 125, 0.99);
+		color: #40327D;
+	}
+	nav {
+		::-moz-selection {
+			background: rgba(44, 34, 97, 0.99);
+			color: #2C2261;
+		}
+		::selection {
+			background: rgba(44, 34, 97, 0.99);
+			color: #2C2261;
+		}
+	}
+}
+
+
+/**
+ *	Overriding nav font
+ */
+
+body .navmenu-nav .nav>li>a {
+	font-family: 'NanumSquare', 'Sans-serif';
+	font-weight: 700;
+}
+
+
+/**
+ *	Overriding default line height of p
+ */
+
+p {
+	line-height: 2em;
+}

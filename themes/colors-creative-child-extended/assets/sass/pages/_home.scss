@@ -1,0 +1,53 @@
+/**
+ *	Home
+ */
+.home-title-text {
+	.wpb_wrapper {
+		position: absolute;
+		width: 100%;
+		top: 14%;
+		font-size: 41px;
+		font-weight: 100;
+		opacity: 1;
+	}
+	p {
+		font-size: 0.8em;
+		word-spacing: -3px;
+		font-weight: 700;
+	}
+}
+
+/**
+ *	Home - Responsive
+ */
+@include breakpoint(large) {
+	.home-title-text-mobile {
+		visibility: hidden;
+	}
+}
+@include breakpoint(medium) {
+	.home-title-text {
+		display: none;
+	}
+	.home-title-text-mobile .wpb_wrapper {
+		font-size: 1em;
+		top: 94%;
+	}
+}
+@include breakpoint(small) {
+	.home-title-text {
+		display: none;
+	}
+	.home-title-text-mobile {
+		visibility: visible;
+	}
+	.home-title-text-mobile .wpb_wrapper {
+		font-size: 1em;
+		opacity: 1;
+	}
+	.splash {
+		#harbor-splash-icon {
+			display: none;
+		}
+	}
+}

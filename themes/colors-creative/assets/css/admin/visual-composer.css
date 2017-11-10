@@ -1,0 +1,52 @@
+#om_carousel > .vc_element-icon,
+.wpb_om_carousel > .wpb_element_wrapper > .wpb_element_title > .vc_element-icon {
+    background-image: url('../../img/visual-composer/images.svg');
+    background-size: contain;
+}
+
+#om_container > .vc_element-icon,
+.wpb_om_container > .wpb_element_wrapper > .wpb_element_title > .vc_element-icon {
+    background-image: url('../../img/visual-composer/ios-more.svg');
+    background-size: contain;
+}
+
+#om_device > .vc_element-icon,
+.wpb_om_device > .wpb_element_wrapper > .wpb_element_title > .vc_element-icon {
+    background-image: url('../../img/visual-composer/ipad.svg');
+    background-size: contain;
+}
+
+#om_gallery > .vc_element-icon,
+.wpb_om_gallery > .wpb_element_wrapper > .wpb_element_title > .vc_element-icon {
+    background-image: url('../../img/visual-composer/aperture.svg');
+    background-size: contain;
+}
+
+#om_simple_gallery > .vc_element-icon,
+.wpb_om_simple_gallery > .wpb_element_wrapper > .wpb_element_title > .vc_element-icon {
+    background-image: url('../../img/visual-composer/simple_aperture.svg');
+    background-size: contain;
+}
+
+#om_gallery_image > .vc_element-icon,
+.wpb_om_gallery_image > .wpb_element_wrapper > .wpb_element_title > .vc_element-icon {
+    background-image: url('../../img/visual-composer/image.svg');
+    background-position: 0 0;
+    background-size: contain;
+}
+
+#om_google_maps > .vc_element-icon,
+.wpb_om_google_maps > .wpb_element_wrapper > .wpb_element_title > .vc_element-icon {
+    background-image: url('../../img/visual-composer/location.svg');
+    background-size: contain;
+}
+
+#om_portfolio > .vc_element-icon,
+.wpb_om_portfolio > .wpb_element_wrapper > .wpb_element_title > .vc_element-icon {
+    background-image: url('../../img/visual-composer/grid.svg');
+    background-size: contain;
+}
+
+.vc_properties-list input.number {
+    height: auto;
+}

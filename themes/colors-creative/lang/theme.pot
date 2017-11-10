@@ -1,0 +1,1421 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: colors-creative 1.6.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-30 16:05+0000\n"
+"PO-Revision-Date: 2016-11-30 16:05+0000\n"
+"Last-Translator: Openmarco\n"
+"Language: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"MIME-Version: 1.0\n"
+
+#: 404.php:5
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr ""
+
+#: search.php:10
+msgid "Search Results for:"
+msgstr ""
+
+#: search.php:30
+msgid "Sorry, no results were found."
+msgstr ""
+
+#: search.php:57
+msgid "Previous"
+msgstr ""
+
+#: search.php:58
+msgid "Next"
+msgstr ""
+
+#: lib\comments.php:25
+msgid "Log out of this account"
+msgstr ""
+
+#: lib\comments.php:27
+msgid "Name"
+msgstr ""
+
+#: lib\comments.php:28
+#: lib\widgets\om-social-icons-widget.php:148
+msgid "Email"
+msgstr ""
+
+#: lib\comments.php:29
+msgid "Website"
+msgstr ""
+
+#: lib\contact-form.php:59
+msgid "Your Name"
+msgstr ""
+
+#: lib\contact-form.php:60
+msgid "Your Email"
+msgstr ""
+
+#: lib\contact-form.php:61
+msgid "Subject"
+msgstr ""
+
+#: lib\contact-form.php:63
+msgid "Send"
+msgstr ""
+
+#: lib\contact-form.php:76
+#: lib\shortcodes\om_carousel\om_carousel.php:8
+#: lib\shortcodes\om_container\om_container.php:10
+#: lib\shortcodes\om_device\om_device.php:10
+#: lib\shortcodes\om_gallery\om_gallery.php:17
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:8
+#: lib\shortcodes\om_google_maps\om_google_maps.php:18
+#: lib\shortcodes\om_portfolio\om_portfolio.php:10
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:17
+msgid "Colors Creative"
+msgstr ""
+
+#: lib\contact-form.php:105
+msgid " Show first 3 fields in one row"
+msgstr ""
+
+#: lib\contact-form.php:119
+msgid "Theme specific contact form options"
+msgstr ""
+
+#: lib\fallback.php:22
+msgid "Primary Footer 1"
+msgstr ""
+
+#: lib\fallback.php:23
+msgid "Primary Footer 2"
+msgstr ""
+
+#: lib\fallback.php:24
+msgid "Primary Footer 3"
+msgstr ""
+
+#: lib\fallback.php:25
+msgid "Secondary Footer 1"
+msgstr ""
+
+#: lib\plugin-activation.php:34
+msgid "Install Required Plugins"
+msgstr ""
+
+#: lib\plugin-activation.php:35
+msgid "Install Plugins"
+msgstr ""
+
+#: lib\plugin-activation.php:36
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: lib\plugin-activation.php:37
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: lib\plugin-activation.php:48
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: lib\plugin-activation.php:49
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: lib\plugin-activation.php:50
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: lib\term-meta.php:122
+msgid "Select Image"
+msgstr ""
+
+#: lib\term-meta.php:125
+msgid "Use image"
+msgstr ""
+
+#: lib\theme.php:96
+msgid "Download image"
+msgstr ""
+
+#: lib\theme.php:99
+msgid "Share on Facebook"
+msgstr ""
+
+#: lib\theme.php:102
+msgid "Tweet"
+msgstr ""
+
+#: lib\theme.php:105
+msgid "Pin it"
+msgstr ""
+
+#: lib\theme.php:108
+msgid "Share on Tumblr"
+msgstr ""
+
+#: lib\theme.php:111
+msgid "Share on Google+"
+msgstr ""
+
+#: lib\theme.php:114
+msgid "Share on VK"
+msgstr ""
+
+#: lib\theme.php:117
+msgid "Reddit this"
+msgstr ""
+
+#: lib\tiny-mce.php:27
+msgid "Small"
+msgstr ""
+
+#: lib\tiny-mce.php:31
+msgid "Marked"
+msgstr ""
+
+#: lib\tiny-mce.php:35
+msgid "Uppercase"
+msgstr ""
+
+#: lib\tiny-mce.php:40
+msgid "Lowercase"
+msgstr ""
+
+#: lib\tiny-mce.php:45
+msgid "Capitalize"
+msgstr ""
+
+#: lib\tiny-mce.php:55
+msgid "Left-shifted"
+msgstr ""
+
+#: lib\tiny-mce.php:60
+msgid "Unstyled"
+msgstr ""
+
+#: lib\tiny-mce.php:65
+msgid "Inline"
+msgstr ""
+
+#: lib\tiny-mce.php:75
+msgid "Lead"
+msgstr ""
+
+#: lib\tiny-mce.php:80
+msgid "Heading 1 view"
+msgstr ""
+
+#: lib\tiny-mce.php:85
+msgid "Heading 2 view"
+msgstr ""
+
+#: lib\tiny-mce.php:90
+msgid "Heading 3 view"
+msgstr ""
+
+#: lib\tiny-mce.php:95
+msgid "Heading 4 view"
+msgstr ""
+
+#: lib\tiny-mce.php:100
+msgid "Heading 5 view"
+msgstr ""
+
+#: lib\tiny-mce.php:105
+msgid "Heading 6 view"
+msgstr ""
+
+#: lib\tiny-mce.php:110
+msgid "Well"
+msgstr ""
+
+#: lib\tiny-mce.php:115
+msgid "Large well"
+msgstr ""
+
+#: lib\tiny-mce.php:120
+msgid "Small well"
+msgstr ""
+
+#: lib\tiny-mce.php:130
+msgid "Muted"
+msgstr ""
+
+#: lib\tiny-mce.php:135
+msgid "Primary"
+msgstr ""
+
+#: lib\tiny-mce.php:140
+msgid "Success"
+msgstr ""
+
+#: lib\tiny-mce.php:145
+msgid "Info"
+msgstr ""
+
+#: lib\tiny-mce.php:150
+msgid "Warning"
+msgstr ""
+
+#: lib\tiny-mce.php:155
+msgid "Danger"
+msgstr ""
+
+#: lib\utils.php:671
+msgid "Latest Posts"
+msgstr ""
+
+#: lib\utils.php:678
+msgid "Not Found"
+msgstr ""
+
+#: lib\woocommerce.php:51
+msgid "Not for sale"
+msgstr ""
+
+#: lib\woocommerce.php:53
+msgid "Out of stock"
+msgstr ""
+
+#: lib\woocommerce.php:55
+msgid "Featured"
+msgstr ""
+
+#: lib\woocommerce.php:385
+msgid "Rate&hellip;"
+msgstr ""
+
+#: lib\woocommerce.php:386
+msgid "Perfect"
+msgstr ""
+
+#: lib\woocommerce.php:387
+msgid "Good"
+msgstr ""
+
+#: lib\woocommerce.php:388
+msgid "Average"
+msgstr ""
+
+#: lib\woocommerce.php:389
+msgid "Not that bad"
+msgstr ""
+
+#: lib\woocommerce.php:390
+msgid "Very Poor"
+msgstr ""
+
+#: parts\comments.php:11
+msgid "One response"
+msgstr ""
+
+#: parts\comments.php:21
+msgid "Older comments"
+msgstr ""
+
+#: parts\comments.php:24
+msgid "Newer comments"
+msgstr ""
+
+#: parts\comments.php:33
+msgid "Comments are closed."
+msgstr ""
+
+#: parts\entry-meta.php:4
+#: parts\post-meta.php:31
+msgid "in"
+msgstr ""
+
+#: parts\loop-pager.php:16
+msgid "Older projects"
+msgstr ""
+
+#: parts\loop-pager.php:17
+msgid "Newer projects"
+msgstr ""
+
+#: parts\loop-pager.php:19
+msgid "Older posts"
+msgstr ""
+
+#: parts\loop-pager.php:20
+msgid "Newer posts"
+msgstr ""
+
+#: parts\post-meta.php:23
+msgid "By"
+msgstr ""
+
+#: parts\search-form.php:2
+msgid "Search for:"
+msgstr ""
+
+#: parts\search-form.php:6
+msgid "Type here"
+msgstr ""
+
+#: parts\search-form.php:8
+msgid "Search"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:11
+msgid "Follow us"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:98
+msgid "Title:"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:138
+msgid "Open links in a new window/tab"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:154
+msgid "Skype"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:160
+msgid "RSS"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:166
+msgid "Behance"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:172
+msgid "Dribbble"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:178
+msgid "Facebook"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:184
+msgid "Flickr"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:190
+msgid "GitHub"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:196
+msgid "Google+"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:202
+msgid "Instagram"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:208
+msgid "Pinterest"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:214
+msgid "Tumblr"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:220
+msgid "Twitter"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:226
+msgid "LinkedIN"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:232
+msgid "Vimeo"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:238
+msgid "YouTube"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:244
+msgid "Yelp"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:250
+msgid "SoundCloud"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:256
+msgid "VK"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:262
+msgid "Odnoklassniki"
+msgstr ""
+
+#: lib\widgets\om-social-icons-widget.php:268
+msgid "Any Photo Website"
+msgstr ""
+
+#: parts\loop-grid\caption.php:25
+msgid "More"
+msgstr ""
+
+#: parts\loop-grid\caption.php:25
+msgid "Read"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:82
+msgid "ID"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:91
+msgid "Columns count"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:106
+msgid "Layout"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:108
+msgid "Large first"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:109
+msgid "Masonry"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:110
+#: lib\visual-composer\extends\vc_row.php:18
+msgid "Equal"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:111
+msgid "Auto adjust size"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:112
+msgid "Devices"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:113
+msgid "Devices masonry"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:121
+msgid "Base cell aspect"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:123
+msgid "Horizontal low"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:124
+msgid "Horizontal medium"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:125
+msgid "Square"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:126
+msgid "Vertical medium"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:127
+msgid "Vertical high"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:139
+#: lib\shortcodes\om_portfolio\om_portfolio.php:280
+msgid "Space between items"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:149
+msgid "Item background color"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:155
+msgid "Scroll effects"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:157
+#: lib\shortcodes\om_gallery\om_gallery.php:47
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:32
+#: lib\shortcodes\om_portfolio\om_portfolio.php:32
+#: lib\shortcodes\om_portfolio\om_portfolio.php:182
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:52
+msgid "None"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:158
+msgid "Fast Parallax"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:159
+msgid "Slow Parallax"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:160
+msgid "Super Slow Parallax"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:161
+msgid "Type 2"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:162
+msgid "Type 3"
+msgstr ""
+
+#: lib\shortcodes\om_base_gallery\om_base_gallery.php:163
+msgid "Type 4"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:9
+msgid "Image carousel Lite"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:10
+msgid "Animated carousel with images"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:16
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:29
+msgid "Images"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:22
+msgid "Type"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:24
+msgid "Standard"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:25
+msgid "Creative"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:33
+msgid "Image size"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:41
+#: lib\shortcodes\om_gallery\om_gallery.php:30
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:35
+msgid "On click"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:43
+#: lib\shortcodes\om_gallery\om_gallery.php:32
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:37
+#: lib\visual-composer\extends\vc_single_image.php:50
+msgid "Open lightbox"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:44
+#: lib\shortcodes\om_gallery\om_gallery.php:33
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:38
+msgid "Do nothing"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:45
+msgid "Open custom link"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:47
+msgid "What to do when slide is clicked?"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:54
+msgid "Custom links"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:55
+msgid "Enter links for each slide here. Divide links with linebreaks (Enter)"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:65
+msgid "Show bullet navigation"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:72
+msgid "Show arrows navigation"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:79
+msgid "Enable autoplay mode"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:85
+msgid "Enable rewind navigation"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:92
+msgid "Speed"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:93
+msgid "Duration of animation between slide in milliseconds (200 by default)"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:99
+msgid "Rewind speed"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:100
+msgid "Duration of rewind animation in milliseconds (500 by default)"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:106
+#: lib\shortcodes\om_container\om_container.php:20
+msgid "Height"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:108
+#: lib\visual-composer\extends\vc_column.php:10
+msgid "Default"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:109
+msgid "Auto"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:110
+#: lib\shortcodes\om_carousel\om_carousel.php:123
+msgid "Ratio"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:111
+msgid "Fixed"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:124
+msgid "Set numeric ratio or like \"width/height\""
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:134
+msgid "Heights"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:137
+msgid "If not set, then using left-hand value"
+msgstr ""
+
+#: lib\shortcodes\om_carousel\om_carousel.php:147
+msgid "Stop autoplay on mouse hover"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:11
+#: lib\shortcodes\om_container\om_container.php:12
+#: lib\shortcodes\om_device\om_device.php:12
+msgid "Container"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:23
+#: lib\visual-composer\extends\vc_row.php:85
+msgid "Initial"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:24
+#, php-format
+msgid "100% of container"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:25
+msgid "Percent of viewport"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:33
+msgid "Height percent"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:45
+msgid "Content position"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:48
+#: lib\visual-composer\extends\vc_row.php:15
+msgid "Top"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:49
+#: lib\visual-composer\extends\vc_row.php:16
+msgid "Center"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:50
+#: lib\visual-composer\extends\vc_row.php:17
+msgid "Bottom"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:51
+msgid "Full height"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:58
+msgid "Additional classes"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:60
+msgid "List of classes separated by spaces"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:65
+#: lib\shortcodes\om_device\om_device.php:44
+msgid "Css"
+msgstr ""
+
+#: lib\shortcodes\om_container\om_container.php:72
+msgid "Background overlay color"
+msgstr ""
+
+#: lib\shortcodes\om_device\om_device.php:11
+msgid "Device Lite"
+msgstr ""
+
+#: lib\shortcodes\om_device\om_device.php:21
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:29
+msgid "Device type"
+msgstr ""
+
+#: lib\shortcodes\om_device\om_device.php:23
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:33
+#: lib\shortcodes\om_portfolio\om_portfolio.php:219
+#: lib\shortcodes\om_portfolio\om_portfolio.php:282
+#: lib\shortcodes\om_portfolio\om_portfolio.php:328
+#: lib\shortcodes\om_portfolio\om_portfolio.php:365
+msgid "Phone"
+msgstr ""
+
+#: lib\shortcodes\om_device\om_device.php:24
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:34
+#: lib\shortcodes\om_portfolio\om_portfolio.php:220
+#: lib\shortcodes\om_portfolio\om_portfolio.php:283
+#: lib\shortcodes\om_portfolio\om_portfolio.php:329
+#: lib\shortcodes\om_portfolio\om_portfolio.php:366
+msgid "Tablet"
+msgstr ""
+
+#: lib\shortcodes\om_device\om_device.php:25
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:35
+msgid "Landscape tablet"
+msgstr ""
+
+#: lib\shortcodes\om_device\om_device.php:26
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:36
+msgid "Desktop browser"
+msgstr ""
+
+#: lib\shortcodes\om_device\om_device.php:27
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:37
+#: lib\shortcodes\om_portfolio\om_portfolio.php:218
+msgid "Watch"
+msgstr ""
+
+#: lib\shortcodes\om_device\om_device.php:35
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:45
+msgid "Device color"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:18
+msgid "Gallery Lite"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:19
+msgid "Gallery"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:35
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:40
+msgid "What to do when item is clicked?"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:45
+#: lib\shortcodes\om_portfolio\om_portfolio.php:112
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:50
+msgid "Style"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:48
+#: lib\shortcodes\om_portfolio\om_portfolio.php:114
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:53
+msgid "Fade"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:56
+#: lib\shortcodes\om_portfolio\om_portfolio.php:130
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:61
+msgid "Caption margin"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:62
+#: lib\shortcodes\om_portfolio\om_portfolio.php:136
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:67
+msgid "Caption background color"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:69
+#: lib\shortcodes\om_portfolio\om_portfolio.php:142
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:74
+msgid "Caption background image"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:76
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:81
+msgid "Image width"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:85
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:90
+msgid "Image width unit"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:98
+#: lib\shortcodes\om_portfolio\om_portfolio.php:290
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:103
+msgid "Caption visibility"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:100
+#: lib\shortcodes\om_portfolio\om_portfolio.php:292
+#: lib\shortcodes\om_portfolio\om_portfolio.php:315
+#: lib\shortcodes\om_portfolio\om_portfolio.php:352
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:105
+msgid "Visible on tablet and phones"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:101
+#: lib\shortcodes\om_portfolio\om_portfolio.php:293
+#: lib\shortcodes\om_portfolio\om_portfolio.php:316
+#: lib\shortcodes\om_portfolio\om_portfolio.php:353
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:106
+msgid "Hidden on phones"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:102
+#: lib\shortcodes\om_portfolio\om_portfolio.php:294
+#: lib\shortcodes\om_portfolio\om_portfolio.php:317
+#: lib\shortcodes\om_portfolio\om_portfolio.php:354
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:107
+msgid "Hidden on tablets"
+msgstr ""
+
+#: lib\shortcodes\om_gallery\om_gallery.php:103
+#: lib\shortcodes\om_portfolio\om_portfolio.php:295
+#: lib\shortcodes\om_portfolio\om_portfolio.php:318
+#: lib\shortcodes\om_portfolio\om_portfolio.php:355
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:108
+msgid "Hidden on tablets and phones"
+msgstr ""
+
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:9
+msgid "Gallery image Lite"
+msgstr ""
+
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:17
+msgid "Image"
+msgstr ""
+
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:23
+#: lib\visual-composer\extends\vc_btn.php:12
+msgid "Link"
+msgstr ""
+
+#: lib\shortcodes\om_gallery_image\om_gallery_image.php:30
+msgid "Only works with Devices gallery layouts"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:19
+msgid "Google Maps Lite"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:20
+msgid "Display Google maps"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:27
+msgid "Marker position"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:28
+msgid "The name of a place, town, city, or even a country. Can be an exact address too."
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:34
+msgid "Zoom level"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:35
+msgid "A value from 0 (the world) to 21 (street level)."
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:44
+msgid "Custom marker icon"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:45
+msgid "Replaces the default map marker with your own image."
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:52
+msgid "Background color"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:58
+msgid "Allow scrolling over the map to zoom in or out"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:64
+msgid "Allow dragging the map to move it around"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:70
+msgid "Raw JSON styles"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:71
+#, php-format
+msgid "Copy a predefined JavaScript Style Array (JSON) from %s and paste it here."
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:78
+msgid "Zoom control"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:84
+msgid "Pan control"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:90
+msgid "Map Type control"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:96
+msgid "Scale control"
+msgstr ""
+
+#: lib\shortcodes\om_google_maps\om_google_maps.php:102
+msgid "Street View control"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:11
+msgid "Portfolio Lite"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:12
+msgid "Display portfolio"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:20
+msgid "Number"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:30
+msgid "Data filtering"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:33
+msgid "By categories and tags"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:34
+msgid "By projects"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:42
+#: lib\shortcodes\om_portfolio\om_portfolio.php:183
+msgid "Categories"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:43
+msgid "Select categories"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:54
+msgid "Tags"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:55
+msgid "Select tags"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:66
+msgid "Projects"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:67
+msgid "Select projects"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:78
+msgid "Order by"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:80
+msgid "Date"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:81
+msgid "Modification date"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:82
+msgid "Order attribute"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:83
+msgid "Title"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:84
+msgid "Random"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:92
+msgid "Order"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:94
+msgid "Ascending"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:95
+msgid "Descending"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:103
+msgid "Show filter by categories"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:115
+msgid "Fade 2"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:116
+msgid "Fade 3"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:117
+msgid "Slide from right"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:118
+msgid "Static"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:148
+#: lib\shortcodes\om_portfolio\om_portfolio.php:269
+msgid "Yes, please"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:149
+msgid "Show title"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:156
+#: lib\shortcodes\om_portfolio\om_portfolio.php:326
+msgid "Title font size"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:158
+#: lib\shortcodes\om_portfolio\om_portfolio.php:194
+#: lib\shortcodes\om_portfolio\om_portfolio.php:221
+msgid "Desktop"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:159
+#: lib\shortcodes\om_portfolio\om_portfolio.php:195
+msgid "Large desktop"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:166
+#: lib\shortcodes\om_portfolio\om_portfolio.php:336
+msgid "Title color"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:173
+#: lib\shortcodes\om_portfolio\om_portfolio.php:343
+msgid "Title hover color"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:180
+msgid "Additional info"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:184
+msgid "Description"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:192
+#: lib\shortcodes\om_portfolio\om_portfolio.php:363
+msgid "Additional font size"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:202
+#: lib\shortcodes\om_portfolio\om_portfolio.php:373
+msgid "Additional color"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:209
+#: lib\shortcodes\om_portfolio\om_portfolio.php:380
+msgid "Additional hover color"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:216
+msgid "Smallest device"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:233
+msgid "Use colorful border"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:235
+msgid "No"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:236
+msgid "Define one color for all items"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:237
+msgid "Use item background color"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:246
+msgid "Width, px"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:259
+msgid "Border color"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:270
+msgid "Hide tooltip"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:303
+msgid "Caption background opacity"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:313
+msgid "Title visibility"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:350
+msgid "Additional info visibility"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:389
+msgid "Masonry text on top"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\om_portfolio.php:390
+msgid "Masonry text on bottom"
+msgstr ""
+
+#: lib\shortcodes\om_portfolio\template.php:20
+msgid "All"
+msgstr ""
+
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:18
+msgid "Simple Gallery Lite"
+msgstr ""
+
+#: lib\shortcodes\om_simple_gallery\om_simple_gallery.php:19
+msgid "Simple Gallery"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_btn.php:18
+msgid "Extra large"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_column.php:7
+msgid "Texts colors"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_column.php:11
+msgid "Light"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_column.php:12
+msgid "Dark"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_icon.php:7
+#: lib\visual-composer\extends\vc_icon.php:24
+msgid "Icon"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_icon.php:19
+#: lib\visual-composer\extends\vc_icon.php:36
+msgid "Select icon from library."
+msgstr ""
+
+#: lib\visual-composer\extends\vc_icon.php:42
+msgid "Custom background color"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_icon.php:47
+msgid "Select custom background color."
+msgstr ""
+
+#: lib\visual-composer\extends\vc_icon.php:55
+msgid "Ionicons"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_icon.php:56
+msgid "Elegant Themes 100 Line Icons"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_icon.php:65
+msgid "Custom"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:11
+msgid "Columns mode"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:12
+msgid "Note: This feature is only available once 'Custom Section' mode has been enabled."
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:27
+msgid "Custom section"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:29
+msgid "Please select 'Disabled' when using incompatible 3rd party plugins or addons."
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:31
+msgid "Enabled"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:32
+msgid "Disabled"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:40
+msgid "Theme defined section content margin"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:43
+msgid "Zero"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:44
+msgid "Half"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:45
+msgid "Single"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:46
+msgid "Double"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:58
+msgid "Section background color"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:69
+msgid "Section background image"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:80
+msgid "Section background image size"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:83
+msgid "Cover"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:84
+msgid "Contain"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:97
+msgid "Section background overlay color"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:108
+msgid "Floating content when parallax is turned on"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:120
+msgid "Hide overflow"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_row.php:132
+msgid "Navigation bar transparency"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_separator.php:5
+msgid "Theme default"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:11
+msgid "Hover image"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:12
+msgid "Image shown on mouseover"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:17
+msgid "Lightbox group"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:20
+msgid "Group 1"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:21
+msgid "Group 2"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:22
+msgid "Group 3"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:23
+msgid "Group 4"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:24
+msgid "Group 5"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:25
+msgid "Group 6"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:26
+msgid "Group 7"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:27
+msgid "Group 8"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:28
+msgid "Group 9"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:29
+msgid "Group 10"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:30
+msgid "Group 11"
+msgstr ""
+
+#: lib\visual-composer\extends\vc_single_image.php:31
+msgid "Group 12"
+msgstr ""
+
+#: lib\visual-composer\templates\vc_btn.php:37
+msgid "Text on the button"
+msgstr ""

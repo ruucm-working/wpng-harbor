@@ -5,12 +5,11 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
         "pwa": "ng build --prod && sw-precache --root=dist --config=precache-config.js",
-        "deploy": "ng build --prod --deploy-url='/wp-content/themes/wpng-harbor/dist/'"
+        "build": "ng build --prod --deploy-url='/wp-content/themes/colors-creative/dist/' && rm -rf ../themes/colors-creative/dist && cp -rf dist ../themes/colors-creative/dist"
     },
     "private": true,
     "dependencies": {

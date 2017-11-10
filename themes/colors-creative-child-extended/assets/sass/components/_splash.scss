@@ -1,0 +1,64 @@
+/**
+ *	Splash (Loading Anim)
+ */
+
+.splash #harbor-splash-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -45px;
+}
+
+body .splash {
+	background-color: transparent;
+	z-index: 9999;
+}
+
+header,
+nav {
+	display: none;
+}
+
+.load {
+	header,
+	nav {
+		display: inherit;
+	}
+}
+
+.navmenu-header-overlay {
+	// background-color: white;
+}
+
+.pageload-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	&.show {
+		visibility: visible;
+	}
+	svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		pointer-events: none;
+		path {
+			fill: #40327D;
+		}
+	}
+}
+
+#mm-top-left {
+	transform-origin: 100% 50% !important;
+}
+
+#mm-top-right {
+	transform-origin: 0% 50% !important;
+}
+
+#mm-top-string {
+	transform-origin: 50% 0% !important;
+}
