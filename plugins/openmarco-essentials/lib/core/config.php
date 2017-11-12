@@ -58,6 +58,9 @@ class Config {
 				$this->$section = json_decode(file_get_contents($file));
 			} else if ($file = locate_template("config/$name.php")) {
 				$this->$section = require $file;
+				if (!is_array($this->$section)) {
+					$this->$section = array();
+				}
 			}
 		}
 		

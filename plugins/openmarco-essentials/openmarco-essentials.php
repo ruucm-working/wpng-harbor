@@ -4,7 +4,7 @@
 Plugin Name: Colors Creative (Openmarco) Essentials
 Plugin URI: http://openmarco.com/
 Description: Colors Creative necessary tools.
-Version: 1.1.0
+Version: 1.1.3
 Author: Openmarco
 Author URI: http://openmarco.com/
 License: General Public License
@@ -14,7 +14,7 @@ use Essentials\Core\Config;
 use Essentials\Core\Context;
 use Essentials\Core\Framework;
 
-define('OM_COLORS_CREATIVE_ESSENTIALS', '1.1.0');
+define('OM_COLORS_CREATIVE_ESSENTIALS', '1.1.3');
 
 require_once __DIR__ . '/inc/autoload.php';
 

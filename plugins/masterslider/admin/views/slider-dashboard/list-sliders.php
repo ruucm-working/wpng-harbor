@@ -1,5 +1,6 @@
 <?php
-    msp_get_panel_header();
+
+    do_action( 'masterslider_panel_header' );
 
     // Display sliders list
 	$slider_table_list = new MSP_List_Table();
@@ -60,11 +61,22 @@
 	    	$starter_fields   = msp_get_slider_starter_fields();
 
 	    	foreach ( $starter_sections as $starter_section ) {
+
+                ob_start();
 		    	?>
-		    	<div class="msp-dialog-inner-title ui-helper-clearfix">
-		    		<span><?php echo $starter_section['title']; ?></span>
-		    	</div>
-		    	<?php
+		    	<div class="msp-dialog-inner-title ui-helper-clearfix msp-type-<?php echo esc_attr( $starter_section['id'] ); ?>">
+
+                <?php
+                if( ! empty( $starter_section['title'] ) ) {
+                    echo '<span>' . $starter_section['title'] . '</span>';
+                } elseif( ! empty( $starter_section['content'] ) ) {
+                    echo '<div>' . $starter_section['content'] . '</div>';
+                }
+
+                echo "</div>";
+
+                // make the section titles filterable
+                echo apply_filters( 'masterslider_sample_sliders_section_markup_' . esc_attr( $starter_section['id'] ) , ob_get_clean() );
 
 		    	$section_id = $starter_section['id'];
 	    		$section_fields = isset( $starter_fields[ $section_id ] ) ? $starter_fields[ $starter_section['id'] ] : array();
@@ -86,7 +98,7 @@
 					        	<a href="<?php echo esc_url( $starter_data['test_drive_url'] ); ?>" target="_blank"><img src="<?php echo esc_url( MSWP_AVERTA_ADMIN_URL ); ?>/assets/images/thirdparty/test-drive.png" alt="Test Drive"><?php _e( 'Test Drive', MSWP_TEXT_DOMAIN ); ?></a>
 					        </div>
 				        <?php endif ?>
-				        <div class="msp-template-caption"><?php echo $starter_data['label']; ?><span></span></div>
+				        <div class="msp-template-caption" title="<?php echo esc_attr( $starter_data['label'] ); ?>"><?php echo $starter_data['label']; ?><span></span></div>
 			        </div>
 	    			<?php
 

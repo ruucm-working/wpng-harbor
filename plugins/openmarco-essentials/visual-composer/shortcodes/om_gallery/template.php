@@ -15,7 +15,7 @@ $this->init_gallery();
         <?php if(is_array($items) && count($items)) foreach ($items as $index => $gallery_item) : ?>
             <?php $item = $this->init_gallery_item($index, $gallery_item); ?>
 
-            <article class="grid-item<?php $this->the_item_classes() ?>">
+            <article class="<?php $this->the_item_classes($item) ?>">
                 <div
                     class="grid-cell<?php $this->the_item_cell_classes() ?>"<?php $this->the_scroll_effect_attributes($index) ?>>
                     <?php $this->the_device_begin() ?>

@@ -259,7 +259,20 @@ class OM_Base_Gallery extends \Essentials\Html\Base_Shortcode {
 		$this->render_classes('col', $this->cols);
 	}
 	
-	public function the_item_classes() {
+	/**
+	 * @param WP_Post $post
+	 */
+	public function the_item_classes($post) {
+		echo 'grid-item';
+		
+		if ($post->ID) {
+			echo ' grid-item-id-' . $post->ID;
+		}
+		
+		if ($post->post_name) {
+			echo ' grid-item-name-' . $post->post_name;
+		}
+		
 		$this->render_classes('col', $this->item['cols']);
 		$this->render_classes('row', $this->item['rows']);
 	}

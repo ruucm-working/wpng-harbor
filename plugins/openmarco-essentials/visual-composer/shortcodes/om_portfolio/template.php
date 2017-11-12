@@ -50,7 +50,7 @@ $this->init_gallery();
         <?php foreach ($projects as $index => $project) : ?>
             <?php $item = $this->init_portfolio_item($index, $project); ?>
 
-            <article class="grid-item<?php $this->the_item_classes() ?>" data-filter="<?php echo esc_attr($item['filter']) ?>">
+            <article class="<?php $this->the_item_classes($project) ?>" data-filter="<?php echo esc_attr($item['filter']) ?>">
                 <div class="grid-cell<?php $this->the_item_cell_classes() ?>"<?php $this->the_scroll_effect_attributes($index) ?>>
                     <?php $this->the_device_begin() ?>
 
