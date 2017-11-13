@@ -9,7 +9,7 @@
         "lint": "ng lint",
         "e2e": "ng e2e",
         "pwa": "ng build --prod && sw-precache --root=dist --config=precache-config.js",
-        "build": "ng build --prod --deploy-url='/wp-content/themes/colors-creative/dist/' && rm -rf ../themes/colors-creative/dist && cp -rf dist ../themes/colors-creative/dist"
+        "build": "ng build --prod --deploy-url='/wp-content/themes/harbor/dist/' && rm -rf ../themes/harbor/dist && cp -rf dist ../themes/harbor/dist"
     },
     "private": true,
     "dependencies": {
