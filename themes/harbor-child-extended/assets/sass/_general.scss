@@ -93,14 +93,22 @@
 }
 
 
+
+
 /**
- *	Overriding nav font
+ *	Overriding Nav
  */
 
 body .navmenu-nav .nav>li>a {
 	font-family: 'NanumSquare', 'Sans-serif';
 	font-weight: 700;
 }
+
+body .navmenu-header-overlay {
+	background-color: white;
+}
+
+
 
 
 /**

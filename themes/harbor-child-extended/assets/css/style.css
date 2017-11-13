@@ -1305,11 +1305,14 @@ body {
   color: #2C2261; }
 
 /**
- *	Overriding nav font
+ *	Overriding Nav
  */
 body .navmenu-nav .nav > li > a {
   font-family: 'NanumSquare', 'Sans-serif';
   font-weight: 700; }
+
+body .navmenu-header-overlay {
+  background-color: white; }
 
 /**
  *	Overriding default line height of p
@@ -1359,6 +1362,12 @@ p {
   .splash #harbor-splash-icon {
     display: none; } }
 /**
+ *	Override
+ */
+.home .section-content {
+  margin-top: 40px; }
+
+/**
  *	Splash (Loading Anim)
  */
 .splash #harbor-splash-icon {
@@ -1404,5 +1413,27 @@ nav {
 
 #mm-top-string {
   transform-origin: 50% 0% !important; }
+
+.special-button-01 {
+  border: 0;
+  font-size: 50px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  background-image: linear-gradient(to left, #fc5fa6, #fc2a19);
+  margin-bottom: 20px;
+  height: 200px; }
+
+.harbor-iframe-wrapper {
+  text-align: center; }
+  .harbor-iframe-wrapper iframe {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; }
 
 /*# sourceMappingURL=style.css.map */
