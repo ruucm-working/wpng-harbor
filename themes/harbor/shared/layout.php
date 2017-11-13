@@ -13,6 +13,16 @@
 </head>
 <body <?php body_class(om_get_body_class()); ?> data-spy="scroll" data-target=".navmenu-nav" data-offset="80">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109584198-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109584198-1');
+</script>
+
 <?php Layout::render('splash') ?>
 
 <?php if (!Options::get('hide_navigation_bar')) : ?>
