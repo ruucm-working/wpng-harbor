@@ -56,6 +56,8 @@ body {
 }
 
 
+
+
 /**
  *	Overriding Nav
  */
@@ -70,13 +72,6 @@ body .navmenu-header-overlay {
 }
 
 
-/**
- *	Overriding default line height of p
- */
-
-p {
-	line-height: 2em;
-}
 
 
 /**
@@ -87,4 +82,17 @@ p {
 	-webkit-animation-delay: 1.5s;
 	/* Safari 4.0 - 8.0 */
 	animation-delay: 1.5s;
+}
+
+
+
+/**
+ *	Hide loading anim on mobile
+ */
+
+@include breakpoint(small) {
+	.splash {
+		display: none;
+		;
+	}
 }

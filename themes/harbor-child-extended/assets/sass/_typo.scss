@@ -75,7 +75,12 @@ body {
 		font-size: 0.7rem;
 	}
 	p {
+		line-height: 2em;
 		font-family: _font(family);
+		margin: 0 0 _size(element-margin) 0 !important;
+		@include breakpoint(small) {
+			margin: 1rem 0 1rem 0 !important;
+		}
 	}
 }
 

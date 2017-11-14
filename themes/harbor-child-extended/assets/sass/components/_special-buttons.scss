@@ -13,6 +13,12 @@
   background-image: linear-gradient(to left, #fc5fa6, #fc2a19);
   margin-bottom: 20px;
   height: 200px;
+  @include breakpoint(small) {
+    height: 280px;
+  }
+  @include breakpoint(xxsmall) {
+    height: 250px;
+  }
 }
 
 .special-button-02 {
@@ -29,4 +35,10 @@
   background-image: linear-gradient(to left, #fc5fa6, #fc2a19);
   margin-bottom: 20px;
   height: 200px;
+  @include breakpoint(small) {
+    height: 280px;
+  }
+  @include breakpoint(xxsmall) {
+    height: 250px;
+  }
 }

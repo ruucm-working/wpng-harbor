@@ -1298,12 +1298,6 @@ body .navmenu-header-overlay {
   background-color: white; }
 
 /**
- *	Overriding default line height of p
- */
-p {
-  line-height: 2em; }
-
-/**
  *	Overriding default animation time
  */
 .animated {
@@ -1311,6 +1305,12 @@ p {
   /* Safari 4.0 - 8.0 */
   animation-delay: 1.5s; }
 
+/**
+ *	Hide loading anim on mobile
+ */
+@media screen and (max-width: 736px) {
+  .splash {
+    display: none; } }
 /**
  *  Default Fonts
  */
@@ -1371,7 +1371,12 @@ body h5 {
 body h6 {
   font-size: 0.7rem; }
 body p {
-  font-family: Montserrat, NanumSquare, sans-serif; }
+  line-height: 2em;
+  font-family: Montserrat, NanumSquare, sans-serif;
+  margin: 0 0 2rem 0 !important; }
+  @media screen and (max-width: 736px) {
+    body p {
+      margin: 1rem 0 1rem 0 !important; } }
 
 .ht-text {
   color: #0560FE; }
@@ -1492,6 +1497,12 @@ nav {
   background-image: linear-gradient(to left, #fc5fa6, #fc2a19);
   margin-bottom: 20px;
   height: 200px; }
+  @media screen and (max-width: 736px) {
+    .special-button-01 {
+      height: 280px; } }
+  @media screen and (max-width: 360px) {
+    .special-button-01 {
+      height: 250px; } }
 
 .special-button-02 {
   border: 0;
@@ -1507,6 +1518,12 @@ nav {
   background-image: linear-gradient(to left, #fc5fa6, #fc2a19);
   margin-bottom: 20px;
   height: 200px; }
+  @media screen and (max-width: 736px) {
+    .special-button-02 {
+      height: 280px; } }
+  @media screen and (max-width: 360px) {
+    .special-button-02 {
+      height: 250px; } }
 
 .harbor-iframe-wrapper {
   text-align: center; }
