@@ -14,3 +14,19 @@
   margin-bottom: 20px;
   height: 200px;
 }
+
+.special-button-02 {
+  border: 0;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  background-image: linear-gradient(to left, #fc5fa6, #fc2a19);
+  margin-bottom: 20px;
+  height: 200px;
+}

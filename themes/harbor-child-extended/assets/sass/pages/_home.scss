@@ -11,10 +11,10 @@
 		font-weight: 100;
 		opacity: 1;
 	}
-	p {
-		font-size: 0.8em;
+	h1 {
 		word-spacing: -3px;
 		font-weight: 700;
+		text-align: center;
 	}
 }
 
@@ -23,10 +23,8 @@
  *	Home - Responsive
  */
 
-@include breakpoint(large) {
-	.home-title-text-mobile {
-		visibility: hidden;
-	}
+.home-title-text-mobile {
+	visibility: hidden;
 }
 
 @include breakpoint(medium) {
@@ -36,6 +34,9 @@
 	.home-title-text-mobile .wpb_wrapper {
 		font-size: 1em;
 		top: 94%;
+		h1 {
+			text-align: center;
+		}
 	}
 }
 

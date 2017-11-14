@@ -56,9 +56,6 @@ body {
 }
 
 
-
-
-
 /**
  *	Overriding Nav
  */
@@ -73,10 +70,6 @@ body .navmenu-header-overlay {
 }
 
 
-
-
-
-
 /**
  *	Overriding default line height of p
  */
@@ -86,16 +79,12 @@ p {
 }
 
 
-
-
-
-
 /**
  *	Overriding default animation time
  */
 
 .animated {
-	-webkit-animation-delay: 2s;
+	-webkit-animation-delay: 1.5s;
 	/* Safari 4.0 - 8.0 */
-	animation-delay: 2s;
+	animation-delay: 1.5s;
 }
