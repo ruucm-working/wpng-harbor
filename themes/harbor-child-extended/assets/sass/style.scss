@@ -20,6 +20,7 @@ grid: ( gutters: 1.75em),
 breakpoints: ( small: ( grid: ( gutters: 1.25em)))));
 
 @import 'general';
+@import 'typo';
 @import 'pages/home';
 @import 'components/splash';
 @import 'components/special-buttons';

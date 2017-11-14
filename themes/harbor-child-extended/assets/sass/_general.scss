@@ -1,46 +1,4 @@
 /**
- *  Default Fonts
- */
-
-@font-face {
-	font-family: 'NanumSquare';
-	font-weight: 100;
-	src: local('NanumSquareRegular'),
-	url('../fonts/NanumSquareLight.woff2') format('woff2'),
-	url('../fonts/NanumSquareLight.woff') format('woff'),
-	url('../fonts/NanumSquareLight.ttf') format('truetype'),
-	url('../fonts/NanumSquareLight.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'NanumSquare';
-	font-weight: 400;
-	src: local('NanumSquareRegular'),
-	url('../fonts/NanumSquareRegular.woff2') format('woff2'),
-	url('../fonts/NanumSquareRegular.woff') format('woff'),
-	url('../fonts/NanumSquareRegular.ttf') format('truetype'),
-	url('../fonts/NanumSquareRegular.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'NanumSquare';
-	font-weight: 700;
-	src: local('NanumSquareRegular'),
-	url('../fonts/NanumSquareBold.woff2') format('woff2'),
-	url('../fonts/NanumSquareBold.woff') format('woff'),
-	url('../fonts/NanumSquareBold.ttf') format('truetype'),
-	url('../fonts/NanumSquareBold.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-// *:not(.logo) { font-family: 'NanumSquare', 'Sans-serif'; }
-
-/**
  *  Override Default Orange Colors
  */
 
@@ -68,17 +26,17 @@
 	color: #2C245F;
 }
 
-.home {
+body {
 	&.background-dark .btn-link:hover {
 		color: #2C245F;
 	}
 	::-moz-selection {
 		background: rgba(64, 50, 125, 0.99);
-		color: #40327D;
+		color: _palette(fg);
 	}
 	::selection {
 		background: rgba(64, 50, 125, 0.99);
-		color: #40327D;
+		color: _palette(fg);
 	}
 	nav {
 		::-moz-selection {
@@ -91,6 +49,12 @@
 		}
 	}
 }
+
+.slider-creative .owl-item .toggle-fullscreen {
+	color: _palette(bg-light);
+	border-color: _palette(bg-light);
+}
+
 
 
 
@@ -111,10 +75,27 @@ body .navmenu-header-overlay {
 
 
 
+
+
 /**
  *	Overriding default line height of p
  */
 
 p {
 	line-height: 2em;
+}
+
+
+
+
+
+
+/**
+ *	Overriding default animation time
+ */
+
+.animated {
+	-webkit-animation-delay: 2s;
+	/* Safari 4.0 - 8.0 */
+	animation-delay: 2s;
 }

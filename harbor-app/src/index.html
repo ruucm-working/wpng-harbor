@@ -23,21 +23,8 @@
   <app-root></app-root>
 
   <div class="loading">
-    <h1>bootstrapping...</h1>
+    <h1>loading...</h1>
   </div>
-
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then((registration) => {
-        console.log('SW registered');
-      })
-      .catch((err) => {
-        console.log('SW error', err);
-      });
-  }
-
-  </script>
 
 </body>
 </body>

@@ -20,6 +20,8 @@ export const firebaseConfig = environment.firebaseConfig;
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { FormsModule } from '@angular/forms';
 import { PostsModule } from './posts/posts.module';
+import { Build003Component } from './programs/build003.component';
+import { ProgramsModule } from './programs/programs.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,7 @@ import { PostsModule } from './posts/posts.module';
     UiModule,
     NotesModule,
     PostsModule,
+    ProgramsModule,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   bootstrap: [

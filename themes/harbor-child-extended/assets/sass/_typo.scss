@@ -1,0 +1,100 @@
+/**
+ *  Default Fonts
+ */
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-weight: 100;
+	src: local('NanumSquareRegular'),
+	url('../fonts/NanumSquareLight.woff2') format('woff2'),
+	url('../fonts/NanumSquareLight.woff') format('woff'),
+	url('../fonts/NanumSquareLight.ttf') format('truetype'),
+	url('../fonts/NanumSquareLight.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-weight: 400;
+	src: local('NanumSquareRegular'),
+	url('../fonts/NanumSquareRegular.woff2') format('woff2'),
+	url('../fonts/NanumSquareRegular.woff') format('woff'),
+	url('../fonts/NanumSquareRegular.ttf') format('truetype'),
+	url('../fonts/NanumSquareRegular.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-weight: 700;
+	src: local('NanumSquareRegular'),
+	url('../fonts/NanumSquareBold.woff2') format('woff2'),
+	url('../fonts/NanumSquareBold.woff') format('woff'),
+	url('../fonts/NanumSquareBold.ttf') format('truetype'),
+	url('../fonts/NanumSquareBold.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+html {
+	font-size: 18pt;
+
+	@include breakpoint(xlarge) {
+		font-size: 14pt;
+	}
+
+	@include breakpoint(large) {
+		font-size: 12pt;
+	}
+
+	@include breakpoint(small) {
+		font-size: 11pt;
+	}
+
+	@include breakpoint(xxsmall) {
+		font-size: 10pt;
+	}
+}
+
+
+body {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: Montserrat, NanumSquare, sans-serif;
+	}
+	h1 {
+		font-size: 3.5rem;
+		line-height: 1.2;
+	}
+
+	h2 {
+		font-size: 2.25rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	h4 {
+		font-size: 1.1rem;
+	}
+
+	h5 {
+		font-size: 0.9rem;
+	}
+
+	h6 {
+		font-size: 0.7rem;
+	}
+}
+
+.ht-text {
+	color: _palette(accent);
+}

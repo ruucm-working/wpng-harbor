@@ -1246,27 +1246,6 @@ body {
   .\-1u\28xxsmall\29 {
     margin-left: 8.3333333333%; } }
 /**
- *  Default Fonts
- */
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 100;
-  src: local("NanumSquareRegular"), url("../fonts/NanumSquareLight.woff2") format("woff2"), url("../fonts/NanumSquareLight.woff") format("woff"), url("../fonts/NanumSquareLight.ttf") format("truetype"), url("../fonts/NanumSquareLight.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 400;
-  src: local("NanumSquareRegular"), url("../fonts/NanumSquareRegular.woff2") format("woff2"), url("../fonts/NanumSquareRegular.woff") format("woff"), url("../fonts/NanumSquareRegular.ttf") format("truetype"), url("../fonts/NanumSquareRegular.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 700;
-  src: local("NanumSquareRegular"), url("../fonts/NanumSquareBold.woff2") format("woff2"), url("../fonts/NanumSquareBold.woff") format("woff"), url("../fonts/NanumSquareBold.ttf") format("truetype"), url("../fonts/NanumSquareBold.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-/**
  *  Override Default Orange Colors
  */
 ::-moz-selection {
@@ -1289,20 +1268,24 @@ body {
 .navmenu-nav.background-dark .nav > li > a:hover {
   color: #2C245F; }
 
-.home.background-dark .btn-link:hover {
+body.background-dark .btn-link:hover {
   color: #2C245F; }
-.home ::-moz-selection {
+body ::-moz-selection {
   background: rgba(64, 50, 125, 0.99);
   color: #40327D; }
-.home ::selection {
+body ::selection {
   background: rgba(64, 50, 125, 0.99);
   color: #40327D; }
-.home nav ::-moz-selection {
+body nav ::-moz-selection {
   background: rgba(44, 34, 97, 0.99);
   color: #2C2261; }
-.home nav ::selection {
+body nav ::selection {
   background: rgba(44, 34, 97, 0.99);
   color: #2C2261; }
+
+.slider-creative .owl-item .toggle-fullscreen {
+  color: #fff;
+  border-color: #fff; }
 
 /**
  *	Overriding Nav
@@ -1319,6 +1302,73 @@ body .navmenu-header-overlay {
  */
 p {
   line-height: 2em; }
+
+/**
+ *	Overriding default animation time
+ */
+.animated {
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 2s; }
+
+/**
+ *  Default Fonts
+ */
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 100;
+  src: local("NanumSquareRegular"), url("../fonts/NanumSquareLight.woff2") format("woff2"), url("../fonts/NanumSquareLight.woff") format("woff"), url("../fonts/NanumSquareLight.ttf") format("truetype"), url("../fonts/NanumSquareLight.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 400;
+  src: local("NanumSquareRegular"), url("../fonts/NanumSquareRegular.woff2") format("woff2"), url("../fonts/NanumSquareRegular.woff") format("woff"), url("../fonts/NanumSquareRegular.ttf") format("truetype"), url("../fonts/NanumSquareRegular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 700;
+  src: local("NanumSquareRegular"), url("../fonts/NanumSquareBold.woff2") format("woff2"), url("../fonts/NanumSquareBold.woff") format("woff"), url("../fonts/NanumSquareBold.ttf") format("truetype"), url("../fonts/NanumSquareBold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+html {
+  font-size: 18pt; }
+  @media screen and (max-width: 1680px) {
+    html {
+      font-size: 14pt; } }
+  @media screen and (max-width: 1280px) {
+    html {
+      font-size: 12pt; } }
+  @media screen and (max-width: 736px) {
+    html {
+      font-size: 11pt; } }
+  @media screen and (max-width: 360px) {
+    html {
+      font-size: 10pt; } }
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+  font-family: Montserrat, NanumSquare, sans-serif; }
+body h1 {
+  font-size: 3.5rem;
+  line-height: 1.2; }
+body h2 {
+  font-size: 2.25rem; }
+body h3 {
+  font-size: 1.5rem; }
+body h4 {
+  font-size: 1.1rem; }
+body h5 {
+  font-size: 0.9rem; }
+body h6 {
+  font-size: 0.7rem; }
+
+.ht-text {
+  color: #26CD7A; }
 
 /**
  *	Home
