@@ -108,6 +108,18 @@
 </section>
  -->
 
+<div>
+	<h2 class="major">build 003 지원하기</h2>
+	<p>참가비 : 8만원
+		<br>아래 계좌로 입금해주셔야 지원확인됩니다. 언어와 총 지원 인원이 많아짐을 고려하여,
+		<br>참가 확정된분에게만 확정 연락이 가게됩니다.
+		<br>(지용민 신한 110 316 292 114)
+	</p>
+</div>
+<div style="margin-bottom: 100px;">
+	<img src="assets/images/build003/build003-poster.jpeg">
+	<a href="https://www.instagram.com/closetyi/">poster by closet yi</a>
+</div>
 <form method="post" action="#" #submitForm="ngForm" (ngSubmit)="addSubmit(submit_name, submit_email, submit_dev_or_design, submit_av_lang, submit_career, submit_age, submit_phone, submit_message)">
 	<div class="field half" [hidden]="submitForm.submitted">
 		<input required minlength="2" maxlength="24" class="form-control" [(ngModel)]="submit_name" name="name" #name="ngModel" type="text" placeholder="성함" />
@@ -183,7 +195,7 @@
 			</div>
 		</div>
 	</div>
-	<ul class="actions" [hidden]="submitForm.submitted || submitForm.invalid">
+	<ul class="actions" [hidden]="submitForm.submitted">
 		<li>
 			<input type="submit" value="지&nbsp;&nbsp;원" class="button special" [disabled]="submitForm.invalid" />
 		</li>
