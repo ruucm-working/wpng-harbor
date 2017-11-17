@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1<?php if (Options::get('disable_user_scaling')) : ?>, maximum-scale=1.0, user-scalable=no<?php endif ?>">
+    <meta name="google-site-verification" content="q8rdR3iQuma3uk_31HajO_TePBkttfactzKrYudZ2oQ" />
     <?php wp_head() ?>
     <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/g/html5shiv,respond"></script>
