@@ -5,7 +5,7 @@
  */
 AOS.init({
 	startEvent: 'load'
-);}
+});
 
 /**
  *	Mojs Animation
