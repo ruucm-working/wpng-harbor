@@ -2,10 +2,14 @@
  * 	Scroll Reveal
  */
 window.sr = ScrollReveal();
-sr.reveal('.sr-fadeR', {
+sr.reveal('.sr-fadeR-1', {
 	origin: 'right',
 	distance: '10rem',
 }, 300);
+sr.reveal('.sr-fadeR-2', {
+	origin: 'right',
+	distance: '10rem',
+}, 1000);
 
 /**
  *	Mojs Animation
