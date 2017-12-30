@@ -3595,20 +3595,19 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 		}
 
 		function hideSplash() {
-				$body.addClass('load'); 
 				// clearTimeout(hideTimer);
 
 				// var mm_anim = $("#harbor-splash-icon");
 				// mm_anim.attr("style", "display:block");
 
-				// $splash
-				// 	.delay(2000)
-				// 	.delayed(function () { $body.addClass('load'); })
-				// 	.delayed(function () { loader.hide(); })
-				// 	.delay(2000)
-				// 	.delayed('addClass', 'loaded')
-				// 	.delay($splash.data('omSplash') || 3000)
-				// 	.delayed('addClass', 'hidden');
+				$splash
+					// .delay(2000)
+					.delayed(function () { $body.addClass('load'); })
+					.delayed(function () { loader.hide(); })
+					// .delay(2000)
+					.delayed('addClass', 'loaded')
+					// .delay($splash.data('omSplash') || 3000)
+					.delayed('addClass', 'hidden');
 		}
 
 		function showSplash(e) {
