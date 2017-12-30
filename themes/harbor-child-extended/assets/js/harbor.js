@@ -87,9 +87,7 @@ const curve_building_y2 = 'M0, 100 C0, 100 25, 100 25, 100 C25, 100 39.966591908
  */
 jQuery(function($){
 	// Main Ship Anim
-	const main_timeline = new mojs.Timeline({
-		onProgress (p, isForward, isYoyo) {}
-	});
+	const main_timeline = new mojs.Timeline({});
 	if ($("body").hasClass("home")) {
 		var p_x = findLeft("XMLID_295_");
 		var p_y = findBottom("XMLID_295_");
