@@ -14,6 +14,7 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#ffffff">
     <meta property="fb:app_id" content="435773580170443" />
+    <meta property="fb:pages" content="185855711951679" />
     <?php wp_head() ?>
     <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/g/html5shiv,respond"></script>
