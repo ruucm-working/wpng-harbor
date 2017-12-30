@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'CandlescriptDemoVersion';
+  src: url('CandlescriptDemoVersion.woff2') format('woff2'),
+       url('CandlescriptDemoVersion.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

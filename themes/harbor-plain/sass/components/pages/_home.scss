@@ -1,0 +1,107 @@
+#post-1064 {
+	// Section 01
+	.section-01 {
+		height: 38.58rem;
+		text-align: center;
+		padding-top: 12.91rem;
+		padding-bottom: 7.717rem;
+		h1 {
+			font-size: 2.143rem;
+			line-height: 3rem;
+			text-align: center;
+		}
+		p {
+			font-size: 1.071rem;
+		}
+		.beus-icon {
+			&:before {
+				color: white;
+			}
+		}
+		button {
+			width: 152px;
+			height: 56px;
+			border-radius: 2px;
+			background-color: rgba(255, 255, 255, 0.25);
+			border: solid 1px white;
+			font-size: 0.964rem;
+			color: white;
+		}
+		@include breakpoint(large) {
+			height: 40.58rem;
+		}
+		@include breakpoint(small) {
+			height: 44.58rem;
+		}
+		@include breakpoint(xsmall) {
+			padding-top: 8.91rem;
+		}
+	} // Section 02
+	.section-02 {
+		text-align: center;
+		margin-top: 5.41rem;
+		max-width: 57.87rem;
+		margin-right: auto;
+		margin-left: auto;
+		.special-text-candle {
+			font-size: 1.875rem;
+			color: _palette(color1);
+			opacity: 0.59;
+		}
+		h2 {
+			font-size: 1.071rem;
+		}
+		p {
+			font-size: 0.857rem;
+		}
+	} // Section 03
+	.section-03 {
+		height: 40.19rem;
+		text-align: left;
+		padding-top: 9.36rem;
+		.vc_column_container {
+			max-width: 46.3rem;
+			position: absolute;
+			right: 50%;
+			transform: translateX(50%);
+		}
+
+		h1 {
+			font-size: 2.357rem;
+			font-weight: 900;
+		}
+		p {
+			font-size: 1.178rem;
+		}
+		button {
+			width: 152px;
+			height: 56px;
+			border-radius: 2px;
+			background-color: rgba(94, 42, 99, 0.75);
+			border: solid 1px #5f2a63;
+			color: white;
+			font-size: 0.964rem;
+		}
+	} // Section 04
+	.section-04 {
+		text-align: center;
+		padding: 0 9.48rem;
+		.beus-icon {
+			font-size: 0.535rem;
+		}
+		.vc_grid-btn-load_more a {
+			width: 128px;
+			height: 52px;
+			line-height: 52px;
+			border-radius: 2px;
+			background-color: rgba(138, 117, 160, 0.1) !important;
+			border: solid 1px #8a75a0;
+			color: _palette(fg-bold) !important;
+			font-size: 0.964rem;
+			padding: 0 !important;
+		}
+		.vc_btn3-container.vc_btn3-inline {
+			margin-bottom: 6.913rem;
+		}
+	}
+}

@@ -1,0 +1,124 @@
+#site-navigation {
+	text-align: center;
+	.menu-main-left-container,
+	.menu-main-right-container {
+		display: inline-block;
+		height: 96px;
+		line-height: 96px;
+	}
+	height: 96px;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: _misc(z-index-base);
+	opacity: 0.8;
+	background-color: _palette(color1);
+	.container {
+		max-width: 54.74rem;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #333;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 0 1.071rem;
+		text-decoration: none;
+		padding-bottom: 0.428rem;
+		&:after {
+			content: '';
+			height: 2px;
+			width: 100%;
+			display: block;
+			margin-top: -40px;
+			background: #c0cbe6;
+			opacity: 0;
+			@include vendor('transition', ( 'opacity #{_duration(transition)} ease-in-out',
+			'transform #{_duration(transition)} ease-in-out'));
+		}
+		@include vendor('transition', ( 'opacity #{_duration(transition)} ease-in-out',
+
+		'color #{_duration(transition)} ease-in-out'));
+		@include breakpoint(medium) {
+			color: _palette(fg-bold);
+		}
+	}
+
+	li a:hover {
+		color: #c0cbe6;
+		&:after {
+			opacity: 0.9;
+			@include vendor('transform', 'translateY(0.7rem)');
+		}
+	}
+	.custom-logo-link {
+		img {
+			padding: 0.9rem 0;
+			width: initial;
+			height: initial;
+		}
+		@include breakpoint(medium) {
+			display: none;
+		}
+	}
+	.beus-iconlogo-wrapper {
+		padding: 0.9rem 0;
+	}
+	.beus-iconlogo {
+		font-size: 3.32rem;
+		&:before {
+			color: white;
+		}
+	}
+}
+
+.menu-toggle {
+	display: none;
+	@include breakpoint(small) {
+		display: initial;
+	}
+}
+
+// Show & Hide Admin Menus
+#menu-item-1446 {
+	display: none;
+}
+
+.beus-admin {
+	#menu-item-1317 {
+		display: none;
+	}
+	#menu-item-1446 {
+		display: initial;
+	}
+}
+
+// Hide '로그인' menu item to logged in user
+#menu-item-1318 {
+	display: none;
+}
+#menu-item-1482 {
+	display: none;
+}
+
+.logged-in {
+	#menu-item-1319 {
+		display: none;
+	}
+	#menu-item-1482 {
+		display: initial;
+	}
+	#menu-item-1318 {
+		display: initial;
+	}
+}
