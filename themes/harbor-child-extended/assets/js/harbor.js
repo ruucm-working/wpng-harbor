@@ -4,11 +4,13 @@
  *	Aos Init
  */
 AOS.init({
-	startEvent: 'load'
+	startEvent: 'load',
+	once: true,
 });
 jQuery(function($){
 	AOS.refresh();
 });
+window.addEventListener('load', AOS.refresh);
 /**
  *	Mojs Animation
  */
