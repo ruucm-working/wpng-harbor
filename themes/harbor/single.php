@@ -76,7 +76,6 @@ if (!om_is_essentials()) {
                 <?php om_next_post_link(); ?>
             </ul>
         </nav>
-        <div class="fb-comments" data-href="http://harbor.cz/projects/<?php echo $post->post_name; 
-        logw_a($post); ?>" data-colorscheme="light" data-num-posts="4" data-width="706"></div>
+        <div class="fb-comments" data-href="http://harbor.cz/projects/<?php echo $post->post_name; ?>" data-colorscheme="light" data-num-posts="4" data-width="706"></div>
     </article>
 <?php endwhile;
