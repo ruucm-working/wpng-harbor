@@ -6,7 +6,9 @@
 AOS.init({
 	startEvent: 'load'
 });
-
+jQuery(function($){
+	AOS.refresh();
+});
 /**
  *	Mojs Animation
  */
