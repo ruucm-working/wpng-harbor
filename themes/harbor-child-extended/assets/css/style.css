@@ -1316,22 +1316,19 @@ body .navmenu-header-overlay {
  */
 @font-face {
   font-family: 'NanumSquare';
+  font-style: normal;
   font-weight: 100;
-  src: local("NanumSquareRegular"), url("../fonts/NanumSquareLight.woff2") format("woff2"), url("../fonts/NanumSquareLight.woff") format("woff"), url("../fonts/NanumSquareLight.ttf") format("truetype"), url("../fonts/NanumSquareLight.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
+  src: local("NanumSquare"), url("../fonts/NanumSquareLight.woff2") format("woff2"), url("../fonts/NanumSquareLight.woff") format("woff"), url("../fonts/NanumSquareLight.ttf") format("truetype"), url("../fonts/NanumSquareLight.eot?#iefix") format("embedded-opentype"); }
 @font-face {
   font-family: 'NanumSquare';
+  font-style: normal;
   font-weight: 400;
-  src: local("NanumSquareRegular"), url("../fonts/NanumSquareRegular.woff2") format("woff2"), url("../fonts/NanumSquareRegular.woff") format("woff"), url("../fonts/NanumSquareRegular.ttf") format("truetype"), url("../fonts/NanumSquareRegular.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
+  src: local("NanumSquare"), url("../fonts/NanumSquareRegular.woff2") format("woff2"), url("../fonts/NanumSquareRegular.woff") format("woff"), url("../fonts/NanumSquareRegular.ttf") format("truetype"), url("../fonts/NanumSquareRegular.eot?#iefix") format("embedded-opentype"); }
 @font-face {
   font-family: 'NanumSquare';
+  font-style: normal;
   font-weight: 700;
-  src: local("NanumSquareRegular"), url("../fonts/NanumSquareBold.woff2") format("woff2"), url("../fonts/NanumSquareBold.woff") format("woff"), url("../fonts/NanumSquareBold.ttf") format("truetype"), url("../fonts/NanumSquareBold.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
+  src: local("NanumSquare"), url("../fonts/NanumSquareBold.woff2") format("woff2"), url("../fonts/NanumSquareBold.woff") format("woff"), url("../fonts/NanumSquareBold.ttf") format("truetype"), url("../fonts/NanumSquareBold.eot?#iefix") format("embedded-opentype"); }
 html {
   font-size: 18pt; }
   @media screen and (max-width: 1680px) {
@@ -1357,6 +1354,13 @@ body h6 {
   line-height: 1.375;
   letter-spacing: -0.05em;
   margin: 0 0 1rem 0; }
+  body h1 span,
+  body h2 span,
+  body h3 span,
+  body h4 span,
+  body h5 span,
+  body h6 span {
+    font-weight: 400; }
 body h1 {
   font-size: 3.5rem;
   line-height: 1.2; }
@@ -1380,6 +1384,16 @@ body p {
 
 .ht-text {
   color: #0560FE; }
+
+.special-title {
+  font-size: 3.5rem; }
+  .special-title p, .special-title h1 {
+    display: inline-block; }
+  .special-title p {
+    font-weight: 100; }
+
+.white {
+  color: white; }
 
 /**
  *	Home

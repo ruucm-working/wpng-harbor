@@ -10,6 +10,13 @@ sr.reveal('.sr-fadeR-2', {
 	origin: 'right',
 	distance: '10rem',
 }, 1000);
+sr.reveal('.sr-01', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
 
 /**
  *	Mojs Animation

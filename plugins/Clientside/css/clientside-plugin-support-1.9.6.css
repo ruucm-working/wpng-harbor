@@ -1,0 +1,1048 @@
+/*!
+ * This file is part of: Clientside
+ * Author: Berend de Jong
+ * Author URI: https://frique.me/
+ * Version: 1.9.6 (2017-09-06 16:25)
+ */
+
+#frm_form_editor_container > .postbox {
+  background: none;
+}
+
+#frm_form_editor_container > .postbox {
+  border: 1px solid #e8e8e8 ;
+}
+
+#frm_form_editor_container > .postbox .hndle {
+  line-height: 1.2;
+  padding: 22.5px 26.25px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 1279px) {
+  #frm_form_editor_container > .postbox .hndle {
+    padding: 18.75px 22.5px;
+    padding-bottom: 0;
+  }
+}
+
+#frm_form_editor_container > .closed.postbox .hndle {
+  border-bottom: 0;
+  padding-bottom: 22.5px;
+}
+
+@media (max-width: 1279px) {
+  #frm_form_editor_container > .closed.postbox .hndle {
+    padding-bottom: 18.75px;
+  }
+}
+
+#frm_form_editor_container > .postbox .clientside-widget-close, #frm_form_editor_container > .postbox .handlediv {
+  margin-top: 22.5px;
+}
+
+@media (max-width: 1279px) {
+  #frm_form_editor_container > .postbox .clientside-widget-close, #frm_form_editor_container > .postbox .handlediv {
+    margin-top: 18.75px;
+  }
+}
+
+#frm_form_editor_container > .postbox .clientside-widget-close, #frm_form_editor_container > .postbox .clientside-widget-close span, #frm_form_editor_container > .postbox .clientside-widget-close span:before, #frm_form_editor_container > .postbox .handlediv, #frm_form_editor_container > .postbox .handlediv span, #frm_form_editor_container > .postbox .handlediv span:before {
+  height: 20.4px;
+  line-height: 20.4px;
+}
+
+#frm_form_editor_container > .postbox .clientside-widget-close:first-child, #frm_form_editor_container > .postbox .handlediv:first-child {
+  margin-right: 26.25px;
+}
+
+.rtl #frm_form_editor_container > .postbox .clientside-widget-close:first-child, .rtl #frm_form_editor_container > .postbox .handlediv:first-child {
+  margin-right: 0;
+  margin-left: 26.25px;
+}
+
+@media (max-width: 1279px) {
+  #frm_form_editor_container > .postbox .clientside-widget-close:first-child, #frm_form_editor_container > .postbox .handlediv:first-child {
+    margin-right: 22.5px;
+  }
+  .rtl #frm_form_editor_container > .postbox .clientside-widget-close:first-child, .rtl #frm_form_editor_container > .postbox .handlediv:first-child {
+    margin-right: 0;
+    margin-left: 22.5px;
+  }
+}
+
+#frm_form_editor_container > .postbox .handlediv:before, #frm_form_editor_container > .postbox .clientside-widget-close .dashicons:before {
+  line-height: 20.4px;
+}
+
+#frm_form_editor_container > .postbox > .inside,
+#poststuff #frm_form_editor_container > .postbox > .inside {
+  margin: 22.5px 26.25px;
+}
+
+@media (max-width: 1279px) {
+  #frm_form_editor_container > .postbox > .inside,
+  #poststuff #frm_form_editor_container > .postbox > .inside {
+    margin: 18.75px 22.5px;
+  }
+}
+
+#frm_form_editor_container > .postbox .hndle + .inside {
+  margin-top: 22.5px;
+}
+
+#bbp-dashboard-right-now .versions, #bp_activity_type .inside > p,
+#bp_activity_itemids .inside > p,
+#bp_activity_link .inside > p,
+#bp_activity_userid .inside > p {
+  font-size: inherit !important;
+  transition: color 0.15s;
+  cursor: default;
+  font-style: italic;
+  -webkit-font-smoothing: antialiased;
+}
+
+#bbp-dashboard-right-now .versions, #bp_activity_type .inside > p,
+#bp_activity_itemids .inside > p,
+#bp_activity_link .inside > p,
+#bp_activity_userid .inside > p {
+  color: #aaa !important;
+}
+
+#frm_submit_side_top, .wpseo-admin-page .submit .button, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings, .clientside-theme .vc_settings .wpb_settings_accordion a, #ws_show_more_icons, #edge-mode.updated .button:last-child, a.frm_insert_form, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button, .wp-editor-tabs #content-panels, #w3tc-options-menu a, .wpseo-admin-page table tbody td.col_row_action a, .clientside-theme .fl-builder-admin-tabs a, #w3tc.wrap .button,
+#w3tc.wrap .button-primary,
+#w3tc.wrap .button-secondary,
+#w3tc.wrap .button-buy-plugin,
+#w3tc.wrap #w3tc_dashboard .button, #adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .button-primary, #frm_form_editor_container .button {
+  display: inline-block;
+  border-radius: 3px !important;
+  font-size: 15px !important;
+  line-height: 1.4 !important;
+  padding: 10px 22.5px !important;
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+  text-align: center;
+  box-shadow: none !important;
+  width: auto;
+  height: auto !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+
+#frm_submit_side_top:hover, .wpseo-admin-page .submit .button:hover, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form:hover,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings:hover, .clientside-theme .vc_settings .wpb_settings_accordion a:hover, #ws_show_more_icons:hover, #edge-mode.updated .button:hover:last-child, a.frm_insert_form:hover, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button:hover, .wp-editor-tabs #content-panels:hover, #w3tc-options-menu a:hover, .wpseo-admin-page table tbody td.col_row_action a:hover, .clientside-theme .fl-builder-admin-tabs a:hover, #w3tc.wrap .button:hover,
+#w3tc.wrap .button-primary:hover,
+#w3tc.wrap .button-secondary:hover,
+#w3tc.wrap .button-buy-plugin:hover,
+#w3tc.wrap #w3tc_dashboard .button:hover, #adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .button-primary:hover, #frm_form_editor_container .button:hover, #frm_submit_side_top:focus, .wpseo-admin-page .submit .button:focus, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form:focus,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings:focus, .clientside-theme .vc_settings .wpb_settings_accordion a:focus, #ws_show_more_icons:focus, #edge-mode.updated .button:focus:last-child, a.frm_insert_form:focus, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button:focus, .wp-editor-tabs #content-panels:focus, #w3tc-options-menu a:focus, .wpseo-admin-page table tbody td.col_row_action a:focus, .clientside-theme .fl-builder-admin-tabs a:focus, #w3tc.wrap .button:focus,
+#w3tc.wrap .button-primary:focus,
+#w3tc.wrap .button-secondary:focus,
+#w3tc.wrap .button-buy-plugin:focus,
+#w3tc.wrap #w3tc_dashboard .button:focus, #adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .button-primary:focus, #frm_form_editor_container .button:focus {
+  font-weight: normal;
+  text-decoration: none !important;
+}
+
+#frm_submit_side_top, .wpseo-admin-page .submit .button, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings {
+  padding: 10px 22.5px !important;
+}
+
+#frm_submit_side_top, .wpseo-admin-page .submit .button, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings {
+  color: white !important;
+}
+
+#frm_submit_side_top, .wpseo-admin-page .submit .button, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings {
+  background: #75c377 !important;
+}
+
+#frm_submit_side_top, .wpseo-admin-page .submit .button, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings {
+  border: 0 !important;
+}
+
+.wp-core-ui [disabled]#frm_submit_side_top, .wp-core-ui .wpseo-admin-page .submit [disabled].button, .wpseo-admin-page .submit .wp-core-ui [disabled].button, .wp-core-ui .clientside-theme.toplevel_page_gf_edit_forms [disabled].button-primary.update-form, .clientside-theme.toplevel_page_gf_edit_forms .wp-core-ui [disabled].button-primary.update-form, .wp-core-ui
+.clientside-theme.toplevel_page_gf_edit_forms [disabled]#gform_save_settings,
+.clientside-theme.toplevel_page_gf_edit_forms .wp-core-ui [disabled]#gform_save_settings,
+.wp-core-ui .disabled#frm_submit_side_top,
+.wp-core-ui .wpseo-admin-page .submit .disabled.button, .wpseo-admin-page .submit
+.wp-core-ui .disabled.button,
+.wp-core-ui .clientside-theme.toplevel_page_gf_edit_forms .disabled.button-primary.update-form, .clientside-theme.toplevel_page_gf_edit_forms
+.wp-core-ui .disabled.button-primary.update-form,
+.wp-core-ui
+.clientside-theme.toplevel_page_gf_edit_forms .disabled#gform_save_settings,
+.clientside-theme.toplevel_page_gf_edit_forms
+.wp-core-ui .disabled#gform_save_settings {
+  opacity: 0.5;
+  text-shadow: none !important;
+}
+
+.wp-core-ui [disabled]#frm_submit_side_top, .wp-core-ui .wpseo-admin-page .submit [disabled].button, .wpseo-admin-page .submit .wp-core-ui [disabled].button, .wp-core-ui .clientside-theme.toplevel_page_gf_edit_forms [disabled].button-primary.update-form, .clientside-theme.toplevel_page_gf_edit_forms .wp-core-ui [disabled].button-primary.update-form, .wp-core-ui
+.clientside-theme.toplevel_page_gf_edit_forms [disabled]#gform_save_settings,
+.clientside-theme.toplevel_page_gf_edit_forms .wp-core-ui [disabled]#gform_save_settings,
+.wp-core-ui .disabled#frm_submit_side_top,
+.wp-core-ui .wpseo-admin-page .submit .disabled.button, .wpseo-admin-page .submit
+.wp-core-ui .disabled.button,
+.wp-core-ui .clientside-theme.toplevel_page_gf_edit_forms .disabled.button-primary.update-form, .clientside-theme.toplevel_page_gf_edit_forms
+.wp-core-ui .disabled.button-primary.update-form,
+.wp-core-ui
+.clientside-theme.toplevel_page_gf_edit_forms .disabled#gform_save_settings,
+.clientside-theme.toplevel_page_gf_edit_forms
+.wp-core-ui .disabled#gform_save_settings {
+  color: white !important;
+}
+
+.wp-core-ui [disabled]#frm_submit_side_top, .wp-core-ui .wpseo-admin-page .submit [disabled].button, .wpseo-admin-page .submit .wp-core-ui [disabled].button, .wp-core-ui .clientside-theme.toplevel_page_gf_edit_forms [disabled].button-primary.update-form, .clientside-theme.toplevel_page_gf_edit_forms .wp-core-ui [disabled].button-primary.update-form, .wp-core-ui
+.clientside-theme.toplevel_page_gf_edit_forms [disabled]#gform_save_settings,
+.clientside-theme.toplevel_page_gf_edit_forms .wp-core-ui [disabled]#gform_save_settings,
+.wp-core-ui .disabled#frm_submit_side_top,
+.wp-core-ui .wpseo-admin-page .submit .disabled.button, .wpseo-admin-page .submit
+.wp-core-ui .disabled.button,
+.wp-core-ui .clientside-theme.toplevel_page_gf_edit_forms .disabled.button-primary.update-form, .clientside-theme.toplevel_page_gf_edit_forms
+.wp-core-ui .disabled.button-primary.update-form,
+.wp-core-ui
+.clientside-theme.toplevel_page_gf_edit_forms .disabled#gform_save_settings,
+.clientside-theme.toplevel_page_gf_edit_forms
+.wp-core-ui .disabled#gform_save_settings {
+  background: #75c377 !important;
+}
+
+#frm_submit_side_top:hover, .wpseo-admin-page .submit .button:hover, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form:hover,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings:hover, #frm_submit_side_top:focus, .wpseo-admin-page .submit .button:focus, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form:focus,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings:focus {
+  color: white !important;
+}
+
+#frm_submit_side_top:hover, .wpseo-admin-page .submit .button:hover, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form:hover,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings:hover, #frm_submit_side_top:focus, .wpseo-admin-page .submit .button:focus, .clientside-theme.toplevel_page_gf_edit_forms .button-primary.update-form:focus,
+.clientside-theme.toplevel_page_gf_edit_forms #gform_save_settings:focus {
+  background: #51be54 !important;
+}
+
+.clientside-theme .vc_settings .wpb_settings_accordion a, #ws_show_more_icons, #edge-mode.updated .button:last-child, a.frm_insert_form, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button, .wp-editor-tabs #content-panels {
+  padding: 9px 22.5px !important;
+}
+
+.clientside-theme .vc_settings .wpb_settings_accordion a, #ws_show_more_icons, #edge-mode.updated .button:last-child, a.frm_insert_form, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button, .wp-editor-tabs #content-panels {
+  color: #5d6365 !important;
+}
+
+.clientside-theme .vc_settings .wpb_settings_accordion a, #ws_show_more_icons, #edge-mode.updated .button:last-child, a.frm_insert_form, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button, .wp-editor-tabs #content-panels {
+  background: none !important;
+}
+
+.clientside-theme .vc_settings .wpb_settings_accordion a, #ws_show_more_icons, #edge-mode.updated .button:last-child, a.frm_insert_form, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button, .wp-editor-tabs #content-panels {
+  border: 1px solid #d2d7da !important;
+}
+
+.clientside-theme .vc_settings .wpb_settings_accordion a.clientside-button-large, .clientside-button-large#ws_show_more_icons, #edge-mode.updated .clientside-button-large.button:last-child, a.clientside-button-large.frm_insert_form, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .clientside-button-large.button, .wp-editor-tabs .clientside-button-large#content-panels {
+  line-height: 22px !important;
+  padding: 13px 22.5px !important;
+}
+
+.clientside-theme .vc_settings .wpb_settings_accordion a:hover, #ws_show_more_icons:hover, #edge-mode.updated .button:hover:last-child, a.frm_insert_form:hover, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button:hover, .wp-editor-tabs #content-panels:hover, .clientside-theme .vc_settings .wpb_settings_accordion a:focus, #ws_show_more_icons:focus, #edge-mode.updated .button:focus:last-child, a.frm_insert_form:focus, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button:focus, .wp-editor-tabs #content-panels:focus {
+  color: #333 !important;
+}
+
+.clientside-theme .vc_settings .wpb_settings_accordion a:hover, #ws_show_more_icons:hover, #edge-mode.updated .button:hover:last-child, a.frm_insert_form:hover, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button:hover, .wp-editor-tabs #content-panels:hover, .clientside-theme .vc_settings .wpb_settings_accordion a:focus, #ws_show_more_icons:focus, #edge-mode.updated .button:focus:last-child, a.frm_insert_form:focus, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button:focus, .wp-editor-tabs #content-panels:focus {
+  background: none !important;
+}
+
+.clientside-theme .vc_settings .wpb_settings_accordion a:hover, #ws_show_more_icons:hover, #edge-mode.updated .button:hover:last-child, a.frm_insert_form:hover, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button:hover, .wp-editor-tabs #content-panels:hover, .clientside-theme .vc_settings .wpb_settings_accordion a:focus, #ws_show_more_icons:focus, #edge-mode.updated .button:focus:last-child, a.frm_insert_form:focus, .clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button:focus, .wp-editor-tabs #content-panels:focus {
+  border: 1px solid #b3bbbe !important;
+}
+
+#w3tc-options-menu a, .wpseo-admin-page table tbody td.col_row_action a, .clientside-theme .fl-builder-admin-tabs a {
+  margin: 0 4px 4px 0 !important;
+  padding: 9px 22.5px !important;
+}
+
+#w3tc-options-menu a, .wpseo-admin-page table tbody td.col_row_action a, .clientside-theme .fl-builder-admin-tabs a {
+  color: #5d6365 !important;
+}
+
+#w3tc-options-menu a, .wpseo-admin-page table tbody td.col_row_action a, .clientside-theme .fl-builder-admin-tabs a {
+  border: 1px solid #d2d7da !important;
+}
+
+#w3tc-options-menu a, .wpseo-admin-page table tbody td.col_row_action a, .clientside-theme .fl-builder-admin-tabs a {
+  background: none !important;
+}
+
+.rtl #w3tc-options-menu a, #w3tc-options-menu .rtl a, .rtl .wpseo-admin-page table tbody td.col_row_action a, .wpseo-admin-page table tbody td.col_row_action .rtl a, .rtl .clientside-theme .fl-builder-admin-tabs a, .clientside-theme .fl-builder-admin-tabs .rtl a {
+  margin: 0 0 4px 4px !important;
+}
+
+#w3tc-options-menu a:hover, .wpseo-admin-page table tbody td.col_row_action a:hover, .clientside-theme .fl-builder-admin-tabs a:hover, #w3tc-options-menu a:focus, .wpseo-admin-page table tbody td.col_row_action a:focus, .clientside-theme .fl-builder-admin-tabs a:focus {
+  color: #333 !important;
+}
+
+#w3tc-options-menu a:hover, .wpseo-admin-page table tbody td.col_row_action a:hover, .clientside-theme .fl-builder-admin-tabs a:hover, #w3tc-options-menu a:focus, .wpseo-admin-page table tbody td.col_row_action a:focus, .clientside-theme .fl-builder-admin-tabs a:focus {
+  border-color: #b3bbbe !important;
+}
+
+#w3tc-options-menu a:hover, .wpseo-admin-page table tbody td.col_row_action a:hover, .clientside-theme .fl-builder-admin-tabs a:hover, #w3tc-options-menu a:focus, .wpseo-admin-page table tbody td.col_row_action a:focus, .clientside-theme .fl-builder-admin-tabs a:focus {
+  background: none !important;
+}
+
+.clientside-theme .fl-builder-admin-tabs a.fl-active, .clientside-theme .fl-builder-admin-tabs a.fl-active:hover, .clientside-theme .fl-builder-admin-tabs a.fl-active:focus {
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+
+.clientside-theme .fl-builder-admin-tabs a.fl-active, .clientside-theme .fl-builder-admin-tabs a.fl-active:hover, .clientside-theme .fl-builder-admin-tabs a.fl-active:focus {
+  color: white !important;
+}
+
+.clientside-theme .fl-builder-admin-tabs a.fl-active, .clientside-theme .fl-builder-admin-tabs a.fl-active:hover, .clientside-theme .fl-builder-admin-tabs a.fl-active:focus {
+  border: 1px solid #8b8b97 !important;
+}
+
+.clientside-theme .fl-builder-admin-tabs a.fl-active, .clientside-theme .fl-builder-admin-tabs a.fl-active:hover, .clientside-theme .fl-builder-admin-tabs a.fl-active:focus {
+  background: #8b8b97 !important;
+}
+
+/* 1. Visual Composer */
+.clientside-theme .composer-switch {
+  clear: both;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.clientside-theme.rtl .composer-switch {
+  float: right;
+  margin-right: 30px;
+}
+
+.clientside-theme .vc_subnav-fixed {
+  top: 0;
+  padding-left: 0;
+}
+
+.clientside-theme.rtl .vc_subnav-fixed {
+  padding-right: 0;
+}
+
+.clientside-theme .vc_welcome {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.clientside-theme #visual_composer_content {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.clientside-theme.post-type-vc_grid_item #submitdiv .inside {
+  padding-top: 57px !important;
+}
+
+.clientside-theme.post-type-vc_grid_item #titlediv {
+  margin-bottom: 36px;
+}
+
+.clientside-theme .vc_layout-onion input {
+  font-size: 11px !important;
+  padding: 5px 2px !important;
+  height: auto !important;
+}
+
+.clientside-theme select.color {
+  color: inherit;
+  text-shadow: none;
+  border-width: 1px !important;
+}
+
+.clientside-theme select.color {
+  border-color: #e8e8e8 ;
+}
+
+.clientside-theme .vc_settings .tab_intro {
+  padding: 0;
+}
+
+.clientside-theme .vc_settings .wpb_settings_accordion a {
+  width: 100%;
+}
+
+/* 2. bbPress */
+#bbp-dashboard-right-now p.sub,
+#bbp-dashboard-right-now .table,
+#bbp-dashboard-right-now .versions {
+  margin: 0;
+}
+
+#bbp-dashboard-right-now p.sub,
+#bbp-dashboard-right-now td.b,
+#bbp-dashboard-right-now td.b a,
+#bbp-dashboard-right-now .t {
+  font-family: "Lato", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Interface", "Helvetica Neue", "Roboto", "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+#bbp-dashboard-right-now table td {
+  padding: 0;
+}
+
+#bbp-dashboard-right-now table td.first {
+  padding-right: 4px;
+}
+
+.rtl #bbp-dashboard-right-now table td.first {
+  padding-right: 0;
+  padding-left: 4px;
+}
+
+#bbp-dashboard-right-now table td.last {
+  padding-left: 4px;
+}
+
+.rtl #bbp-dashboard-right-now table td.last {
+  padding-right: 4px;
+  padding-left: 0;
+}
+
+#bbp-dashboard-right-now td.b a:hover {
+  color: #42abdf ;
+}
+
+#bbp-dashboard-right-now p.sub {
+  position: static;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#bbp-dashboard-right-now .table_content,
+#bbp-dashboard-right-now .table_discussion {
+  border-top: 0;
+}
+
+#bbp-dashboard-right-now .inside {
+  padding-top: 0;
+}
+
+#bbp-dashboard-right-now .versions {
+  padding: 0;
+  padding-top: 15px !important;
+}
+
+#bbp-dashboard-right-now .versions span {
+  font-size: 15px;
+}
+
+#bbp-dashboard-right-now .versions + br {
+  display: none;
+}
+
+/* 3. Admin Menu Editor Pro */
+/* This ensures styling compatibility. Menu editing functionalality does not go together between the Clientside Admin Menu Editor tool and Menu Editor Pro (Menu Editor Pro will overwrite Clientside menu customizations) */
+#ws_menu_editor .ws_dropdown_button,
+#ws_menu_editor .ws_select_icon {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.rtl #ws_menu_editor .ws_dropdown_button, .rtl
+#ws_menu_editor .ws_select_icon {
+  right: auto;
+  left: 0;
+}
+
+#ws_menu_editor .ws_edit_field {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+#ws_menu_editor .ws_editbox input[type="text"],
+#ws_menu_editor .ws_editbox select {
+  width: 100%;
+}
+
+#ws_menu_editor .ws_dropdown_button {
+  height: 41px !important;
+  width: auto;
+}
+
+#ws_menu_editor #ws_cap_selector {
+  height: auto !important;
+}
+
+#ws_menu_editor .ws_reset_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.rtl #ws_menu_editor .ws_reset_button {
+  right: auto;
+  left: 0;
+}
+
+#ws_menu_editor .ws_main_button {
+  min-width: 200px;
+}
+
+#ws_menu_editor .ws_select_icon .icon16,
+#ws_menu_editor .ws_select_icon img {
+  top: -1px;
+  padding: 0;
+}
+
+#ws_show_more_icons {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+  padding: 6px 12px !important;
+}
+
+/* 5. W3 Total Cache */
+#edge-mode.updated .button:last-child {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+  padding: 6px 12px !important;
+}
+
+#w3tc.wrap .button,
+#w3tc.wrap .button-primary,
+#w3tc.wrap .button-secondary,
+#w3tc.wrap .button-buy-plugin,
+#w3tc.wrap #w3tc_dashboard .button {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+}
+
+#w3tc.wrap h4 {
+  font-size: 15px;
+}
+
+#w3tc.wrap ul {
+  margin-left: 0;
+}
+
+.rtl #w3tc.wrap ul {
+  margin-right: 0;
+}
+
+#w3tc.wrap #w3tc-dashboard-widgets #postbox-container-left {
+  padding: 30px;
+}
+
+#w3tc.wrap .clientside-widget-close {
+  display: none !important;
+}
+
+#w3tc.wrap .postbox .inside {
+  padding: 0;
+}
+
+#w3tc.wrap #w3tc-dashboard-widgets .postbox .inside {
+  margin: 15px 0 0 0;
+  padding: 0 15px;
+}
+
+#w3tc.wrap #w3tc-dashboard-widgets #postbox-container-3 .postbox .inside,
+#w3tc.wrap #w3tc-dashboard-widgets #postbox-container-3 .postbox {
+  min-width: 0;
+  padding: 0 5px;
+}
+
+#toplevel_page_w3tc_dashboard li a span {
+  float: none;
+}
+
+#w3tc-options-menu {
+  margin-top: 15px;
+  font-size: 0;
+}
+
+#w3tc-options-menu a {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+  padding: 6px 12px !important;
+}
+
+/* 6. Admin Menu Tree Page View */
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree {
+  margin-right: 24px;
+  margin-left: 63px;
+}
+
+.rtl #adminmenu li .wp-submenu ul.admin-menu-tree-page-tree {
+  margin-right: 63px;
+  margin-left: 24px;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-filter {
+  padding-left: 0 !important;
+}
+
+.rtl #adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-filter {
+  padding-right: 0 !important;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree .admin-menu-tree-page-tree_headline {
+  display: none !important;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-filter > label {
+  display: none;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-filter > label + input {
+  width: 100%;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-filter .admin-menu-tree-page-filter-reset {
+  top: 15px;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-filter .admin-menu-tree-page-filter-nohits {
+  font-size: 13px;
+  text-transform: none;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-filter .admin-menu-tree-page-filter-nohits {
+  color: #aaa ;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .amtpv-linkwrap {
+  border: 0;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .amtpv-linkwrap.amtpv-linkwrap-hover {
+  background: none;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .amtpv-linkwrap > a {
+  background: none !important;
+  cursor: drag;
+  margin: 0;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .amtpv-linkwrap .amtpv-editpopup {
+  position: static;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  padding: 15px;
+  font-size: 13px;
+  border: 0;
+  opacity: 1;
+  margin: 4px 0;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .amtpv-linkwrap .amtpv-editpopup .amtpv-editpopup-postid {
+  position: static;
+  margin-top: 10px;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-view-has-childs .admin-menu-tree-page-expand {
+  display: block;
+  position: absolute;
+  left: -15px;
+  font-size: 1.2em;
+  width: 22.5px;
+  height: 22.5px;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-view-has-childs .admin-menu-tree-page-expand {
+  color: #555 ;
+}
+
+.rtl #adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-view-has-childs .admin-menu-tree-page-expand {
+  right: -15px;
+  left: 0;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-view-has-childs .admin-menu-tree-page-expand:before {
+  content: "+";
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-view-has-childs .admin-menu-tree-page-expand:hover {
+  color: #333 ;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-view-has-childs .admin-menu-tree-page-tree_childs li {
+  padding-left: 1em;
+}
+
+.rtl #adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.admin-menu-tree-page-view-has-childs .admin-menu-tree-page-tree_childs li {
+  padding-right: 1em;
+  padding-left: 0;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.current > div .amtpv-linkwrap:first-of-type {
+  background: none;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.current > div .amtpv-linkwrap:first-of-type a {
+  font-weight: normal;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li.current > div .amtpv-linkwrap:first-of-type a {
+  color: #333 !important;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .amtpv-editpopup-addpages-names-ul .ui-sortable-handle {
+  display: none;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .amtpv-editpopup-addpages-cancel {
+  padding-left: 0 !important;
+}
+
+.rtl #adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .amtpv-editpopup-addpages-cancel {
+  padding-right: 0 !important;
+}
+
+#adminmenu li .wp-submenu ul.admin-menu-tree-page-tree li .button-primary {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+}
+
+/* 7. BuddyPress */
+#bp_activity_type .inside select,
+#bp_activity_type .inside input,
+#bp_activity_itemids .inside select,
+#bp_activity_itemids .inside input,
+#bp_activity_link .inside select,
+#bp_activity_link .inside input,
+#bp_activity_userid .inside select,
+#bp_activity_userid .inside input {
+  width: 100%;
+}
+
+#bp_activity_action > h3,
+#bp_activity_content > h3 {
+  font-family: "Lato", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Interface", "Helvetica Neue", "Roboto", "Open Sans", sans-serif !important;
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+  font-weight: normal !important;
+  float: left;
+}
+
+#bp_activity_action > h3,
+#bp_activity_content > h3 {
+  color: #333 ;
+}
+
+.rtl #bp_activity_action > h3, .rtl
+#bp_activity_content > h3 {
+  float: right;
+}
+
+/* 8. Formidable forms */
+#frm_form_editor_container #edit-slug-box {
+  float: none;
+}
+
+#frm_form_editor_container .button {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+}
+
+#frm_submit_side_top {
+  padding: 14px 22.5px !important;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  width: 100%;
+}
+
+#frm_adv_info {
+  position: static;
+  width: auto;
+}
+
+#frm_adv_info .clientside-widget-close {
+  display: none;
+}
+
+#frm_shortcodediv .frm_select_box {
+  display: block;
+}
+
+a.frm_insert_form {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+  padding: 6px 12px !important;
+  margin-right: 0;
+  margin-left: 4px;
+}
+
+.rtl a.frm_insert_form {
+  margin-right: 4px;
+  margin-left: 0;
+}
+
+#adminmenu li a span.frm_inactive_menu {
+  float: none;
+}
+
+.toplevel_page_formidable p.search-box {
+  margin-right: 15px;
+}
+
+.rtl .toplevel_page_formidable p.search-box {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+ul.frm_form_nav li > a {
+  font-size: 13px;
+}
+
+.postbox .frm-help-tabs.inside,
+#poststuff .frm-help-tabs.inside {
+  padding: 30px;
+}
+
+#poststuff .frm_settings_form h3 {
+  font-family: "Lato", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Interface", "Helvetica Neue", "Roboto", "Open Sans", sans-serif !important;
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+  font-weight: normal !important;
+  padding-bottom: 7.5px;
+  margin-bottom: 30px;
+}
+
+#poststuff .frm_settings_form h3 {
+  color: #333 ;
+}
+
+#poststuff .frm_settings_form h3 {
+  border-bottom: 1px solid #e8e8e8 ;
+}
+
+.frm-help-tabs form > .submit,
+#contextual-help-columns > .submit {
+  margin-left: 0;
+}
+
+.rtl .frm-help-tabs form > .submit, .rtl
+#contextual-help-columns > .submit {
+  margin-right: 0;
+}
+
+/* 11. Yoast SEO */
+.toplevel_page_wpseo_dashboard .wp-submenu span {
+  float: none !important;
+}
+
+.wpseo-admin-page .nav-tab-wrapper {
+  padding-top: 0;
+  padding-left: 0;
+  font-size: 0;
+}
+
+.rtl .wpseo-admin-page .nav-tab-wrapper {
+  padding-right: 0;
+}
+
+.wpseo-admin-page .wpseotab > p > strong {
+  font-family: "Lato", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Interface", "Helvetica Neue", "Roboto", "Open Sans", sans-serif !important;
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+  font-weight: normal !important;
+  display: block;
+}
+
+.wpseo-admin-page .wpseotab > p > strong {
+  color: #333 ;
+}
+
+.wpseo-admin-page #wpseo_content_top {
+  min-width: 0;
+}
+
+.wpseo-admin-page #wpseo-debug-info h3 span:last-child {
+  padding-left: 0;
+}
+
+.rtl .wpseo-admin-page #wpseo-debug-info h3 span:last-child {
+  padding-right: 0;
+}
+
+.wpseo-admin-page #wpseo-debug-info .wpseo-debug {
+  padding-left: 0;
+}
+
+.rtl .wpseo-admin-page #wpseo-debug-info .wpseo-debug {
+  padding-right: 0;
+}
+
+.wpseo-admin-page #wpseo-debug-info.closed {
+  padding-bottom: 30px;
+}
+
+.wpseo-admin-page table .col_page_title strong {
+  color: #333 ;
+}
+
+.wpseo-admin-page table tbody td.col_row_action {
+  font-size: 0;
+}
+
+.wpseo-admin-page table tbody td.col_row_action a {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+  padding: 6px 12px !important;
+}
+
+/* 12. Hero Menu */
+.clientside-theme .hero_main {
+  z-index: 1;
+}
+
+.clientside-theme h2.size_12 {
+  font-size: 12px;
+  line-height: inherit;
+  padding: 0;
+}
+
+/* 15. Gravity Forms */
+.clientside-theme.toplevel_page_gf_edit_forms #sidebarmenu1 .button {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+  padding: 6px 12px !important;
+}
+
+.gform_media_icon.gform_media_icon {
+  padding: 2px;
+}
+
+/* 16. Master Slider */
+.clientside-theme #msp-main-wrapper .msp-container input[type="text"] {
+  box-sizing: border-box !important;
+}
+
+.clientside-theme .mps-style-editor.ui-dialog-content {
+  min-height: 700px !important;
+}
+
+/* 17. Slider WD */
+.clientside-theme.toplevel_page_sliders_wds #sliders_form {
+  width: auto !important;
+}
+
+.clientside-theme.toplevel_page_sliders_wds .wbs_subtab a {
+  height: 100px;
+}
+
+/* 18. Mailchimp Pro */
+#mc4wp-checkbox input[type=checkbox]:checked:before {
+  content: none;
+}
+
+/* 20. SiteOrigin Pagebuilder */
+#so-panels-panels {
+  clear: both;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.wp-editor-tabs #content-panels {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+  padding: 6px 12px !important;
+  margin-top: 0;
+}
+
+.siteorigin-panels-builder .so-widget {
+  max-height: none !important;
+}
+
+.siteorigin-panels-builder .so-widget .description {
+  padding-top: 0;
+}
+
+.siteorigin-panels-builder .so-rows-container {
+  overflow: hidden;
+}
+
+/* 21. P3 - Plugin Performance Profiler */
+.clientside-theme #p3-quick-report div.p3-callout-data {
+  top: auto;
+}
+
+.clientside-theme div#p3-reminder {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* 22. Page builder Sandwich */
+#pbs-meta-box {
+  padding: 0 !important;
+  margin-bottom: 7.5px;
+}
+
+#pbs-meta-box .clientside-widget-close,
+#pbs-meta-box .handlediv,
+#pbs-meta-box h2,
+#pbs-meta-box p {
+  display: none;
+}
+
+#pbs-meta-box .inside {
+  margin: 0 !important;
+}
+
+#pbs-admin-edit-with-pbs {
+  width: 100%;
+  padding: 14px 22.5px !important;
+  margin: 0 !important;
+}
+
+/* 25. Beaver Builder */
+.fl-builder-admin {
+  float: right;
+  z-index: 2;
+}
+
+.row-actions .fl-builder span {
+  display: none;
+}
+
+.clientside-theme .fl-builder-admin-tabs {
+  border: 0;
+  margin: 15px 0 11px;
+  font-size: 0;
+}
+
+.clientside-theme .fl-builder-admin-tabs a {
+  padding: 7px 13px !important;
+  font-size: 13px !important;
+  padding: 6px 12px !important;
+  margin: 0 0 4px 4px !important;
+}
+
+.usof-container {
+  padding-top: 0;
+}
+
+.usof-header {
+  position: static;
+}
+
+.usof-nav {
+  top: auto;
+  left: auto;
+}
+
+.usof-nav-bg {
+  display: none;
+}

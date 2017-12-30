@@ -4,27 +4,28 @@
 
 @font-face {
 	font-family: 'NanumSquare';
+	font-style: normal;
 	font-weight: 100;
-	src: local('NanumSquareRegular'), url('../fonts/NanumSquareLight.woff2') format('woff2'), url('../fonts/NanumSquareLight.woff') format('woff'), url('../fonts/NanumSquareLight.ttf') format('truetype'), url('../fonts/NanumSquareLight.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
+	src: local('NanumSquare'), url('../fonts/NanumSquareLight.woff2') format('woff2'), url('../fonts/NanumSquareLight.woff') format('woff'), url('../fonts/NanumSquareLight.ttf') format('truetype'), url('../fonts/NanumSquareLight.eot?#iefix') format('embedded-opentype');
 }
 
 @font-face {
 	font-family: 'NanumSquare';
+	font-style: normal;
 	font-weight: 400;
-	src: local('NanumSquareRegular'), url('../fonts/NanumSquareRegular.woff2') format('woff2'), url('../fonts/NanumSquareRegular.woff') format('woff'), url('../fonts/NanumSquareRegular.ttf') format('truetype'), url('../fonts/NanumSquareRegular.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
+	src: local('NanumSquare'), url('../fonts/NanumSquareRegular.woff2') format('woff2'), url('../fonts/NanumSquareRegular.woff') format('woff'), url('../fonts/NanumSquareRegular.ttf') format('truetype'), url('../fonts/NanumSquareRegular.eot?#iefix') format('embedded-opentype');
 }
 
 @font-face {
 	font-family: 'NanumSquare';
-	font-weight: 700;
-	src: local('NanumSquareRegular'), url('../fonts/NanumSquareBold.woff2') format('woff2'), url('../fonts/NanumSquareBold.woff') format('woff'), url('../fonts/NanumSquareBold.ttf') format('truetype'), url('../fonts/NanumSquareBold.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
 	font-style: normal;
+	font-weight: 700;
+	src: local('NanumSquare'), url('../fonts/NanumSquareBold.woff2') format('woff2'), url('../fonts/NanumSquareBold.woff') format('woff'), url('../fonts/NanumSquareBold.ttf') format('truetype'), url('../fonts/NanumSquareBold.eot?#iefix') format('embedded-opentype');
 }
+
+
+
+
 
 html {
 	font-size: 18pt;
@@ -54,6 +55,9 @@ body {
 		line-height: 1.375;
 		letter-spacing: _font(kerning);
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		span {
+			font-weight: 400;
+		}
 	}
 	h1 {
 		font-size: 3.5rem;
@@ -86,4 +90,16 @@ body {
 
 .ht-text {
 	color: _palette(accent);
+}
+.special-title {
+	font-size: 3.5rem;
+	p, h1 {
+		display: inline-block;
+	}
+	p {
+		font-weight: 100;
+	}
+}
+.white {
+	color: white;
 }
