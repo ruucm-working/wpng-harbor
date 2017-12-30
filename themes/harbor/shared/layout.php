@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri() . '/assets/favicons/favicon-16x16.png' ?>">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#ffffff">
+    <meta property="fb:app_id" content="435773580170443" />
     <?php wp_head() ?>
     <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/g/html5shiv,respond"></script>
@@ -29,16 +30,6 @@
 
   gtag('config', 'UA-109584198-1');
 </script>
-
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 <?php Layout::render('splash') ?>
 

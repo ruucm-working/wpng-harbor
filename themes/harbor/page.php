@@ -6,7 +6,6 @@ if (!om_is_essentials()) {
     $section_class = Options::get('content_section_size');
 }
 ?>
-
 <?php while (have_posts()) : the_post(); ?>
     <?php $section_atts = om_get_shifting_attributes(''); ?>
     <article <?php post_class(); ?>>

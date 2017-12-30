@@ -1555,4 +1555,10 @@ nav {
   -moz-box-shadow: 0px 0px 30px -4px black;
   box-shadow: 0px 0px 30px -4px black; }
 
+.fb-comments {
+  width: 100%; }
+  .fb-comments > span {
+    left: 50%;
+    transform: translateX(-50%); }
+
 /*# sourceMappingURL=style.css.map */

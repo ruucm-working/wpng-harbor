@@ -1,0 +1,7 @@
+.fb-comments {
+	width: 100%;
+	&> span {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
