@@ -3,7 +3,9 @@
 /**
  *	Aos Init
  */
-AOS.init();
+AOS.init({
+	startEvent: 'load'
+);}
 
 /**
  *	Mojs Animation
