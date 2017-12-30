@@ -60,11 +60,15 @@ function harbor_preload_scripts() {
 add_action( 'init', 'harbor_preload_scripts' );
 
 function harbor_scripts() {
+	// mo js animation
 	wp_enqueue_script( 'harbor-mo.min', get_stylesheet_directory_uri() . '/assets/js/mojs/mo.min.js', false );
 	wp_enqueue_script( 'harbor-mojs-player.min', get_stylesheet_directory_uri() . '/assets/js/mojs/mojs-player.min.js', false );
 	wp_enqueue_script( 'harbor-mojs-curve-editor.min', get_stylesheet_directory_uri() . '/assets/js/mojs/mojs-curve-editor.min.js', false );
+	// AOS (Animation On Scroll)
+	wp_enqueue_script( 'harbor-aos-js', get_stylesheet_directory_uri() . '/assets/libs/aos/aos.js', false );
+	wp_enqueue_style('harbor-aos-css', get_stylesheet_directory_uri() . '/assets/libs/aos/aos.css');
+	// Harbor Scripts
+	wp_enqueue_script('harbor-js', get_stylesheet_directory_uri() . '/assets/js/harbor.js', array('jquery'), false);
 
-
-	wp_enqueue_script('child-custom-js', get_stylesheet_directory_uri() . '/assets/js/mojs-play.js', array('jquery'), false);
 }
 add_action( 'wp_footer', 'harbor_scripts' );

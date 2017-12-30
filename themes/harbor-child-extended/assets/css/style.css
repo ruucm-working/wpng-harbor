@@ -1298,12 +1298,6 @@ body .navmenu-header-overlay {
   background-color: white; }
 
 /**
- *	Overriding default animation time
- */
-.animated {
-  /* Safari 4.0 - 8.0 */ }
-
-/**
  *	Hide loading anim on mobile
  */
 @media screen and (max-width: 736px) {
