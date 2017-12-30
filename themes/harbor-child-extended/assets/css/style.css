@@ -1312,6 +1312,12 @@ body .navmenu-header-overlay {
   .splash {
     display: none; } }
 /**
+ *	Debug iPhone WebKit CSS animations cause flicker.
+ */
+.no-flick, .wpb_animate_when_almost_visible {
+  -webkit-backface-visibility: hidden; }
+
+/**
  *  Default Fonts
  */
 @font-face {

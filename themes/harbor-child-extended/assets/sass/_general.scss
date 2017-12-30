@@ -49,14 +49,10 @@ body {
 		}
 	}
 }
-
 .slider-creative .owl-item .toggle-fullscreen {
 	color: _palette(bg-light);
 	border-color: _palette(bg-light);
 }
-
-
-
 
 /**
  *	Overriding Nav
@@ -71,9 +67,6 @@ body .navmenu-header-overlay {
 	background-color: white;
 }
 
-
-
-
 /**
  *	Overriding default animation time
  */
@@ -84,8 +77,6 @@ body .navmenu-header-overlay {
 	animation-delay: 1.5s;
 }
 
-
-
 /**
  *	Hide loading anim on mobile
  */
@@ -95,4 +86,11 @@ body .navmenu-header-overlay {
 		display: none;
 		;
 	}
+}
+
+/**
+ *	Debug iPhone WebKit CSS animations cause flicker.
+ */
+.no-flick, .wpb_animate_when_almost_visible {
+	-webkit-backface-visibility: hidden;
 }
