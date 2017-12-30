@@ -65,6 +65,6 @@ function harbor_scripts() {
 	wp_enqueue_script( 'harbor-mojs-curve-editor.min', get_stylesheet_directory_uri() . '/assets/js/mojs/mojs-curve-editor.min.js', false );
 
 
-	wp_enqueue_script('child-custom-js', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'), false);
+	wp_enqueue_script('child-custom-js', get_stylesheet_directory_uri() . '/assets/js/mojs-play.js', array('jquery'), false);
 }
 add_action( 'wp_footer', 'harbor_scripts' );

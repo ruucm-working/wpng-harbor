@@ -3586,7 +3586,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 				$splash = $('[data-om-splash]');
 
 		var loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 1200, easingIn : mina.easeinout } );
-		loader.show();
+		// loader.show();
 	
 		function isCurrentPage($link) {
 				var href = $link.prop('href');
@@ -3595,42 +3595,43 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 		}
 
 		function hideSplash() {
-				clearTimeout(hideTimer);
+				$body.addClass('load'); 
+				// clearTimeout(hideTimer);
 
-				var mm_anim = $("#harbor-splash-icon");
-				mm_anim.attr("style", "display:block");
+				// var mm_anim = $("#harbor-splash-icon");
+				// mm_anim.attr("style", "display:block");
 
-				$splash
-					.delay(2000)
-					.delayed(function () { $body.addClass('load'); })
-					.delayed(function () { loader.hide(); })
-					.delay(2000)
-					.delayed('addClass', 'loaded')
-					.delay($splash.data('omSplash') || 3000)
-					.delayed('addClass', 'hidden');
+				// $splash
+				// 	.delay(2000)
+				// 	.delayed(function () { $body.addClass('load'); })
+				// 	.delayed(function () { loader.hide(); })
+				// 	.delay(2000)
+				// 	.delayed('addClass', 'loaded')
+				// 	.delay($splash.data('omSplash') || 3000)
+				// 	.delayed('addClass', 'hidden');
 		}
 
 		function showSplash(e) {
-				clearTimeout(hideTimer);
+				// clearTimeout(hideTimer);
 
 
-				var $target = $(e.currentTarget);
+				// var $target = $(e.currentTarget);
 
-				if (isCurrentPage($target)) {
-						return;
-				}
+				// if (isCurrentPage($target)) {
+				// 		return;
+				// }
 
-				if ($target.parents('.navmenu-nav').length) {
-						$('.navmenu-toggle').trigger('click');
-				}
+				// if ($target.parents('.navmenu-nav').length) {
+				// 		$('.navmenu-toggle').trigger('click');
+				// }
 
-				$body.removeClass('load');
+				// $body.removeClass('load');
 
-				$splash
-						.clearQueue()
-						.removeClass('hidden')
-						.delay(50)
-						.delayed('removeClass', 'loaded');
+				// $splash
+				// 		.clearQueue()
+				// 		.removeClass('hidden')
+				// 		.delay(50)
+				// 		.delayed('removeClass', 'loaded');
 
 		}
 

@@ -10,40 +10,43 @@ const curve_building_scale = 'M0, 0 C0, 0 20, -25 20, -25 C20, -25 90, 5 90, 5 C
 const curve_building_y = 'M0, 100 C0, 100 16.285796922522614, 1.9514094161601787 50, 0 C80.85706022033453, 3.4771620124112546 100, 100 100, 100 ';
 const curve_building_y2 = 'M0, 100 C0, 100 25, 100 25, 100 C25, 100 39.96659190825035, 52.673030112714216 40, 10 C90.31912237746391, 12.184112744428628 100, 100 100, 100 ';
 
-
 /**
  *	Movin Machine Splash Loader Anim
  */
-const mm_loading_timeline = new mojs.Timeline({});
-const curve_fade = 'M0, 100 C0, 100 0, 100 0, 100 C0, 100 10.755617411620758, 17.815811159807826 10, 0 C23.244382588379253, -0.10152544552210256 5.7142857142857135, -5.248486282060085e-15 20, 0 C36.28571428571428, 14.857142857142874 50, 100 50, 100 C50, 100 100, 100 100, 100 '; 
-const curve01 = 'M0, 100 C0, 100 37.8984745544779, 65.10152544552211 50, 25 C97.81581115980785, 21.184188840192114 100, 100 100, 100 ';
-const curve02 = 'M0, 0 C0, 0 50.000082636808294, 61.95140941616019 50, 100 C94.57134593462024, 88.04859058383984 100, 0 100, 0 ';
-const curve_scale_01 = 'M0, 0 C23.815811159807822, -3.8158111598078195 24.75561741162075, 49.815811159807865 50, 50 C75.24438258837925, 50.18418884019218 72.75561741162073, 5.815811159807828 100, 0 ';
-const fade_anim = new mojs.Html({
-	duration: 4000,
-	el: '#harbor-splash-icon',
-	opacity: { 1: 1, curve: curve_fade },
-	isForce3d: true
-});
-const anim01 = new mojs.Html({
-	duration: 2000,
-	el: '#mm-top-left',
-	repeat: 2,
-	angleY: { 60: 60, curve: curve01 },
-	isForce3d: true
-});
-const anim02 = new mojs.Html({
-	duration: 2000,
-	el: '#mm-top-right',
-	repeat: 2,
-	angleY: { 60: 60, curve: curve02 },
-	isForce3d: true
-});
-mm_loading_timeline.add( fade_anim );
-mm_loading_timeline.add( anim01 );
-mm_loading_timeline.add( anim02 );
-mm_loading_timeline.play();
+// const mm_loading_timeline = new mojs.Timeline({});
+// const curve_fade = 'M0, 100 C0, 100 0, 100 0, 100 C0, 100 10.755617411620758, 17.815811159807826 10, 0 C23.244382588379253, -0.10152544552210256 5.7142857142857135, -5.248486282060085e-15 20, 0 C36.28571428571428, 14.857142857142874 50, 100 50, 100 C50, 100 100, 100 100, 100 '; 
+// const curve01 = 'M0, 100 C0, 100 37.8984745544779, 65.10152544552211 50, 25 C97.81581115980785, 21.184188840192114 100, 100 100, 100 ';
+// const curve02 = 'M0, 0 C0, 0 50.000082636808294, 61.95140941616019 50, 100 C94.57134593462024, 88.04859058383984 100, 0 100, 0 ';
+// const curve_scale_01 = 'M0, 0 C23.815811159807822, -3.8158111598078195 24.75561741162075, 49.815811159807865 50, 50 C75.24438258837925, 50.18418884019218 72.75561741162073, 5.815811159807828 100, 0 ';
+// const fade_anim = new mojs.Html({
+// 	duration: 4000,
+// 	el: '#harbor-splash-icon',
+// 	opacity: { 1: 1, curve: curve_fade },
+// 	isForce3d: true
+// });
+// const anim01 = new mojs.Html({
+// 	duration: 2000,
+// 	el: '#mm-top-left',
+// 	repeat: 2,
+// 	angleY: { 60: 60, curve: curve01 },
+// 	isForce3d: true
+// });
+// const anim02 = new mojs.Html({
+// 	duration: 2000,
+// 	el: '#mm-top-right',
+// 	repeat: 2,
+// 	angleY: { 60: 60, curve: curve02 },
+// 	isForce3d: true
+// });
+// mm_loading_timeline.add( fade_anim );
+// mm_loading_timeline.add( anim01 );
+// mm_loading_timeline.add( anim02 );
+// mm_loading_timeline.play();
 
+
+/**
+ *	Ship Animation on Scroll
+ */
 jQuery(function($){
 	// Main Ship Anim
 	const main_timeline = new mojs.Timeline({
