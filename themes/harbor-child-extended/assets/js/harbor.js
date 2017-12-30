@@ -3,7 +3,7 @@
 /**
  *	Aos Init
  */
-AOS.init();
+// AOS.init();
 // jQuery(function($){
 // 	AOS.refresh();
 // });
@@ -20,14 +20,14 @@ AOS.init();
 //    duration: 600,  once: false });            
 // });
 
-// window.addEventListener('resize', AOS.refresh);
-// window.addEventListener('load', AOS.refresh);
-// jQuery(function($){
-//   AOS.init({ 
-//    startEvent: 'load', 
-//    easing: 'ease-in-out-quart', 
-//    duration: 600,  once: false });            
-// });
+window.addEventListener('resize', AOS.refresh);
+window.addEventListener('load', AOS.refresh);
+jQuery(function($){
+  AOS.init({ 
+   startEvent: 'load', 
+   easing: 'ease-in-out-quart', 
+   duration: 600,  once: false });            
+});
 
 /**
  *	Mojs Animation
