@@ -15,7 +15,6 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="fb:app_id" content="435773580170443" />
     <meta property="fb:pages" content="185855711951679" />
-    <meta property="fb:admins" content="100001770685531"/>
     <?php wp_head() ?>
     <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/g/html5shiv,respond"></script>
@@ -32,6 +31,15 @@
 
   gtag('config', 'UA-109584198-1');
 </script>
+    <!-- Facebook Init -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.11&appId=435773580170443';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 <?php Layout::render('splash') ?>
 

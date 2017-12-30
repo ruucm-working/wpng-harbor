@@ -17,17 +17,6 @@ if (!om_is_essentials()) {
     <?php $section_atts = om_get_shifting_attributes(''); ?>
     <article <?php post_class(); ?>>
         <?php get_template_part('parts/header'); ?>
-
-        <!-- Facebook Init -->
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.11&appId=435773580170443';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
         <div class="entry-content">
             <?php if (om_is_vc_page()) : ?>
                 <?php the_content(); ?>
@@ -76,6 +65,6 @@ if (!om_is_essentials()) {
                 <?php om_next_post_link(); ?>
             </ul>
         </nav>
-        <div class="fb-comments" data-href="http://harbor.cz/projects/<?php echo $post->post_name; ?>" data-colorscheme="light" data-num-posts="4" data-width="706"></div>
     </article>
+    <div class="fb-comments" data-href="http://harbor.cz/projects/<?php echo $post->post_name; ?>" data-colorscheme="light" data-num-posts="4" data-width="706"></div>
 <?php endwhile;
