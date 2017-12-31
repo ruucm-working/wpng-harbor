@@ -10,12 +10,170 @@ sr.reveal('.sr-fadeR-2', {
 	origin: 'right',
 	distance: '10rem',
 }, 1000);
-sr.reveal('.sr-01', {
+sr.reveal('.sr-type-01-01', {
 	origin: 'left',
 	duration: 3000,
 	distance: '10rem',
 	scale: 0.3,
 	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-02', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-03', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-04', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-05', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-06', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-07', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-08', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-09', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-10', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-11', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-01-12', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	scale: 0.3,
+	rotate: { x: 180, y: 0, z: 0 },
+}, 1000);
+
+sr.reveal('.sr-type-02-01', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-02-02', {
+	origin: 'left',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+
+sr.reveal('.sr-type-03-01', {
+	origin: 'right',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-03-02', {
+	origin: 'right',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+
+sr.reveal('.sr-type-04-01', {
+	origin: 'bottom',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-04-02', {
+	origin: 'bottom',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-04-03', {
+	origin: 'bottom',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-04-04', {
+	origin: 'bottom',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-04-05', {
+	origin: 'bottom',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-04-06', {
+	origin: 'bottom',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-04-07', {
+	origin: 'bottom',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-04-08', {
+	origin: 'bottom',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
+}, 1000);
+sr.reveal('.sr-type-04-09', {
+	origin: 'bottom',
+	duration: 3000,
+	distance: '10rem',
+	rotate: { x: 0, y: 0, z: 0 },
 }, 1000);
 
 /**

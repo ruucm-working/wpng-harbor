@@ -23,10 +23,6 @@
 	src: local('NanumSquare'), url('../fonts/NanumSquareBold.woff2') format('woff2'), url('../fonts/NanumSquareBold.woff') format('woff'), url('../fonts/NanumSquareBold.ttf') format('truetype'), url('../fonts/NanumSquareBold.eot?#iefix') format('embedded-opentype');
 }
 
-
-
-
-
 html {
 	font-size: 18pt;
 	@include breakpoint(xlarge) {
@@ -85,6 +81,18 @@ body {
 		@include breakpoint(small) {
 			margin: 1rem 0 1rem 0 !important;
 		}
+	}
+	strong {
+		font-weight: 700;
+		font-size: 1.3em;
+	}
+	em {
+		font-style: italic;
+	}
+	a {
+		color: _palette(fg) !important;
+		font-weight: 700;
+		font-size: 1.2em;
 	}
 }
 

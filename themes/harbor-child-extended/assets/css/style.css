@@ -1381,6 +1381,15 @@ body p {
   @media screen and (max-width: 736px) {
     body p {
       margin: 1rem 0 1rem 0 !important; } }
+body strong {
+  font-weight: 700;
+  font-size: 1.3em; }
+body em {
+  font-style: italic; }
+body a {
+  color: #40327D !important;
+  font-weight: 700;
+  font-size: 1.2em; }
 
 .ht-text {
   color: #0560FE; }
@@ -1559,6 +1568,16 @@ nav {
   width: 100%; }
   .fb-comments > span {
     left: 50%;
-    transform: translateX(-50%); }
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-width: 700px; }
+
+.white-box {
+  background: white;
+  padding: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

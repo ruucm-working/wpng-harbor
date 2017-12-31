@@ -1,7 +1,12 @@
 .fb-comments {
 	width: 100%;
 	&> span {
-		left: 50%;
-		transform: translateX(-50%);
+		@include center(x);
+		max-width: 700px;
 	}
+}
+// white text box
+.white-box {
+	background: white;
+	padding: 1rem;
 }
