@@ -14,16 +14,6 @@ if (!om_is_essentials()) {
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
-    <!-- Facebook Init -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.11&appId=435773580170443';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <?php $section_atts = om_get_shifting_attributes(''); ?>
     <article <?php post_class(); ?>>
         <?php get_template_part('parts/header'); ?>
         <div class="entry-content">

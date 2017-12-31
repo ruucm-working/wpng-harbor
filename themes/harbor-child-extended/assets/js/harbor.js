@@ -121,6 +121,7 @@ sr.reveal('.sr-type-03-02', {
 	rotate: { x: 0, y: 0, z: 0 },
 }, 1000);
 
+// from bottom slowly
 sr.reveal('.sr-type-04-01', {
 	origin: 'bottom',
 	duration: 3000,
