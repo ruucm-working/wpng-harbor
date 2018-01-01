@@ -34,6 +34,7 @@ final class OM_Child_Theme
 	public function enqueue_css()
 	{
 		wp_enqueue_style('child-custom-css', get_stylesheet_directory_uri() . '/assets/css/style.css', null, $this->version);
+		wp_enqueue_style('child-editable-css', get_stylesheet_directory_uri() . '/style-edit.css', null, $this->version);
 	}
 
 	/**
