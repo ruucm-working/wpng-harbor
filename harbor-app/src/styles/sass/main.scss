@@ -20,29 +20,33 @@ grid: ( gutters: 1.75em),
 breakpoints: ( small: ( grid: ( gutters: 1.25em)))));
 
 // Component.
-@import 'components/section';
-@import 'components/list';
+// @import 'components/section';
+// @import 'components/list';
 @import 'components/form';
-@import 'components/box';
-@import 'components/icon';
-@import 'components/image';
-@import 'components/table';
-@import 'components/button';
-@import 'components/button_circle';
-@import 'components/features';
-@import 'components/who_are_we';
+// @import 'components/box';
+// @import 'components/icon';
+// @import 'components/image';
+// @import 'components/table';
+// @import 'components/button';
+// @import 'components/button_circle';
+// @import 'components/features';
+// @import 'components/who_are_we';
 
-// Layout.
-@import 'layout/header';
-@import 'layout/banner';
-@import 'layout/wrapper';
-// @import 'layout/boat_submit';
-@import 'layout/boat_list';
-@import 'layout/boat_detail';
-@import 'layout/contact';
-@import 'layout/admin';
+// // Layout.
+// @import 'layout/header';
+// @import 'layout/banner';
+// @import 'layout/wrapper';
+// // @import 'layout/boat_submit';
+// @import 'layout/boat_list';
+// @import 'layout/boat_detail';
+// @import 'layout/contact';
+// @import 'layout/admin';
 
-// Base.
+// // Base.
 @import 'base/page';
-@import 'base/typography';
+// @import 'base/typography';
+@import 'base/typo';
 @import 'images.scss';
+
+// Page
+@import '/pages/build-submit';

@@ -1,0 +1,122 @@
+/**
+ *  Default Fonts
+ */
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-style: normal;
+	font-weight: 100;
+	src: local('NanumSquare'), url('./assets/fonts/NanumSquareLight.woff2') format('woff2'), url('./assets/fonts/NanumSquareLight.woff') format('woff'), url('./assets/fonts/NanumSquareLight.ttf') format('truetype'), url('./assets/fonts/NanumSquareLight.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-style: normal;
+	font-weight: 400;
+	src: local('NanumSquare'), url('./assets/fonts/NanumSquareRegular.woff2') format('woff2'), url('./assets/fonts/NanumSquareRegular.woff') format('woff'), url('./assets/fonts/NanumSquareRegular.ttf') format('truetype'), url('./assets/fonts/NanumSquareRegular.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-style: normal;
+	font-weight: 700;
+	src: local('NanumSquare'), url('./assets/fonts/NanumSquareBold.woff2') format('woff2'), url('./assets/fonts/NanumSquareBold.woff') format('woff'), url('./assets/fonts/NanumSquareBold.ttf') format('truetype'), url('./assets/fonts/NanumSquareBold.eot?#iefix') format('embedded-opentype');
+}
+
+* {
+	font-family: _font(family);
+	color: _palette(fg);
+}
+
+html {
+	font-size: 18pt;
+	@include breakpoint(xlarge) {
+		font-size: 14pt;
+	}
+	@include breakpoint(large) {
+		font-size: 12pt;
+	}
+	@include breakpoint(small) {
+		font-size: 11pt;
+	}
+	@include breakpoint(xxsmall) {
+		font-size: 10pt;
+	}
+}
+
+body {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	{
+		font-family: _font(family);
+		line-height: 1.375;
+		letter-spacing: _font(kerning);
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		span {
+			font-weight: 400;
+		}
+	}
+	h1 {
+		font-size: 3.5rem;
+		line-height: 1.2;
+	}
+	h2 {
+		font-size: 2.25rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
+	h4 {
+		font-size: 1.1rem;
+	}
+	h5 {
+		font-size: 0.9rem;
+	}
+	h6 {
+		font-size: 0.7rem;
+	}
+	p {
+		line-height: 2em;
+		font-family: _font(family);
+		margin: 0 0 _size(element-margin) 0 !important;
+		@include breakpoint(small) {
+			margin: 1rem 0 1rem 0 !important;
+		}
+	}
+	strong {
+		font-weight: 700;
+		font-size: 1.3em;
+	}
+	em {
+		font-style: italic;
+	}
+	a.link {
+		color: _palette(fg) !important;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+}
+a, span {
+	text-decoration: none;
+	font-family: _font(family);
+}
+
+.ht-text {
+	color: _palette(accent);
+}
+.special-title {
+	font-size: 3.5rem;
+	p, h1 {
+		display: inline-block;
+	}
+	p {
+		font-weight: 100;
+	}
+}
+.white {
+	color: white;
+}

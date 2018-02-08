@@ -1,58 +1,59 @@
 // Misc.
-	$misc: (
-		z-index-base:			10000,
-		max-wrapper-styles:		6
-	);
+$misc: ( z-index-base: 10000,
+overlay-opacity: 0.5,
+lightbox-opacity: 0.75,
+gallery-limit: 32,
+items-limit: 16);
 
 // Duration.
-	$duration: (
-		menu:					0.35s,
-		transition:				0.2s
-	);
+$duration: ( menu: 0.5s,
+transition: 0.2s,
+gallery-lightbox: 0.5s,
+gallery-delay: 0.15s,
+items-delay: 0.15s,
+on-load: 0.75s,
+on-scroll: 0.75s);
 
 // Size.
-	$size: (
-		border-radius:			5px,
-		element-height:			2.75em,
-		element-margin:			2em,
-		inner:					69em,
-		section-spacing:		(
-			large:				3em,
-			medium:				2em,
-			small:				1.75em
-		),
-		wrapper-edges:			(
-			large:				6.5em,
-			medium:				4.75em,
-			small:				2.5em
-		)
-	);
+$size: ( border-radius: 3px,
+border-radius-alt: 0.5rem,
+border-width: 1px,
+element-height: 2.75rem,
+element-margin: 2rem,
+gutter: 3.5rem,
+inner: 64rem,
+padding: ( default: 7rem,
+xlarge: 5rem,
+large: 4rem,
+medium: 3rem,
+small: 2rem));
 
 // Font.
-	$font: (
-		family:					('Montserrat', 'NanumSquare', Helvetica, sans-serif),
-		family-kr:					('Montserrat', 'NanumSquare', Helvetica, sans-serif),
-		family-fixed:			('Courier New', monospace),
-		family-heading:			(Montserrat, NanumSquare, Helvetica, sans-serif),
-		weight:					300,
-		weight-bold:			600,
-		weight-heading:			200,
-		weight-heading-bold:	700,
-		kern-heading:			0.1em
-	);
+$font: ( family: (Montserrat, NanumSquare, sans-serif),
+family-fixed: (Montserrat, NanumSquare, sans-serif),
+weight: 300,
+weight-bold: 400,
+kerning: -0.05em,
+kerning-alt: 0.125em);
 
 // Palette.
-	$palette: (
-		base:					#40357B,
-		base-black:				#404040,
-		primary:				#2C265E,
-		bg:						#2C265E,
-		fg:						#ffffff,
-		fg-bold:				#ffffff,
-		fg-light:				rgba(255,255,255,0.35),
-		border:					#40357B,
-		border-bg:				rgba(255,255,255,0.025),
-		border2:				rgba(255,255,255,0.25),
-		border2-bg:				rgba(255,255,255,0.075),
-		accent:					#4c5c96
-	);
+$palette: (
+	bg: #2C255F,
+	fg: #fff,
+	bg-light: #000,
+	fg-light: #000,
+	border: #000,
+	accent: #000,
+
+	invert: (
+		bg: #000,
+		bg-alt: #000,
+		fg: #40357B,
+		fg-bold: #000,
+		fg-light: #000,
+		border: #000,
+		border-alt: #000,
+		border-bg: #000,
+		accent: #000
+	),
+);
