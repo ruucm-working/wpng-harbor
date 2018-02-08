@@ -1,0 +1,196 @@
+@import 'variants';
+@import '../../libraries/bourbon/bourbon';
+@import '../../libraries/ionicons-2.0.1/css/ionicons.min.css';
+@import '../../libraries/font-awesome-4.7.0/css/font-awesome.min.css';
+
+table {
+	&.posts {
+		thead {
+
+		}
+
+		tbody {
+			tr {
+				th,
+				td {
+					@include padding(15px null);
+				}
+
+				th {
+					&.check-column {
+						@include padding(0 null);
+						vertical-align: middle;
+					}
+
+					&#status {
+						@include size(20% null);
+					}
+
+					&#schedules {
+						@include size(30% null);
+					}
+				}
+
+				td {
+					vertical-align: middle;
+
+					p {
+						@include margin(5px null);
+					}
+
+					&.name {
+						.id {
+							color: $color_grey;
+						}
+					}
+
+					&.status {
+						font-size: 16px;
+
+						.ol_status {
+							@include padding(null null null 35px);
+							@include position(relative);
+							font-weight: bold;
+
+							&.ol_status_preparing {
+								&,
+								&::before {
+									color: $color_grey;
+								}
+
+								&::before {
+									@include animation(spin 2s linear infinite);
+									@include keyframes(spin) {
+										from {
+											@include transform(rotate(0deg));
+										}
+
+										to {
+											@include transform(rotate(360deg));
+										}
+									}
+									content: '\f201';
+								}
+							}
+
+							&.ol_status_wait_next {
+								&,
+								&::before {
+									color: $color_amber;
+								}
+
+								&::before {
+									content: '\f210';
+								}
+							}
+
+							&.ol_status_running {
+								&,
+								&::before {
+									color: $color_green;
+								}
+
+								&::before {
+									@include animation(opacity 2s linear infinite);
+									@include keyframes(opacity) {
+										0% {
+											opacity: 1.0;
+										}
+										50% {
+											opacity: 0.5;
+										}
+										100% {
+											opacity: 1.0;
+										}
+									}
+									content: '\f215';
+								}
+							}
+
+							&.ol_status_complete {
+								&,
+								&::before {
+									color: $color_grey;
+								}
+
+								&::before {
+									content: '\f122';
+								}
+							}
+
+							&.ol_status_deactivated {
+								&,
+								&::before {
+									color: $color_red;
+								}
+
+								&::before {
+									content: '\f253';
+								}
+							}
+
+							&::before {
+								@include size(30px);
+								@include position(absolute, -6px null null 0);
+								display: block;
+								font-size: 24px;
+								font-family: 'Ionicons', sans-serif;
+								font-weight: normal;
+								line-height: 30px;
+								text-align: center;
+							}
+						}
+					}
+
+					&.schedules {
+						p {
+							@include margin(2.5px null);
+							font-size: 11px;
+
+							label {
+								@include size(90px null);
+								cursor: default;
+								display: inline-block;
+								font-weight: bold;
+
+								+ span {
+									display: inline-block;
+									min-width: 130px;
+								}
+							}
+						}
+					}
+
+					&.actions {
+						a {
+							&.button {
+								@include margin(5px);
+								@include size(80px null);
+								text-align: center;
+
+								i {
+									@include margin(null 5px null null);
+								}
+
+								&.run {
+									&.ol_status_preparing,
+									&.ol_status_running {
+										display: none;
+									}
+								}
+
+								&.stop {
+									&.ol_status_preparing,
+									&.ol_status_wait_next,
+									&.ol_status_complete {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

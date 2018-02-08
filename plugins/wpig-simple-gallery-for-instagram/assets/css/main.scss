@@ -1,0 +1,686 @@
+@import 'variants';
+@import '../../libraries/bourbon/bourbon';
+@import '../../libraries/ionicons-2.0.1/css/ionicons.min.css';
+@import '../../libraries/font-awesome-4.7.0/css/font-awesome.min.css';
+
+body {
+	&.js {
+		.alert {
+			display: none;
+		}
+	}
+
+	&.no-js {
+		.alert {
+			display: block;
+		}
+	}
+
+	#wpcontent {
+		padding: 0 15px !important;
+	}
+
+	#wpbody-content {
+		@include padding(null null 0 null);
+	}
+
+	#post-body-content {
+		@include margin(null null 0 null);
+	}
+
+	#wpfooter {
+		display: none;
+	}
+
+	.wrap {
+		@include margin(0);
+
+		> h1,
+		> h2,
+		> #icon-edit,
+		.wp-heading-inline,
+		.page-title-action,
+		.wp-header-end,
+		#normal-sortables {
+			display: none;
+		}
+
+		#poststuff {
+			@include padding(0 null null null);
+		}
+	}
+
+	.alert {
+		h3 {
+			color: $color_red;
+		}
+	}
+}
+
+.bootstrap {
+	@import '../../libraries/bootstrap-3.3.7-dist/css/bootstrap.min.scss';
+
+	&[ng-cloak] {
+		display: none !important;
+	}
+
+	.pro {
+		color: $color_red;
+		opacity: 0.5;
+
+		label {
+			> input[type="radio"] {
+				+ span {
+					&::before {
+						color: rgba($color_red, 0.75) !important;
+					}
+				}
+			}
+		}
+
+		button {
+			&,
+			&:hover {
+				color: $color_red;
+			}
+		}
+	}
+
+	.container-fluid {
+		@include margin(null 0);
+		@include padding(30px null null null);
+		max-width: 1090px;
+
+		h3 {
+			@include margin(0 null null null);
+			font-size: 24px;
+		}
+
+		input {
+			&[type="text"] {
+				@include border-top-radius(0);
+				@include border-bottom-radius(0);
+			}
+		}
+
+		.checkbox,
+		.radio {
+			@include padding(5px null null null);
+			background: none !important;
+			font-size: 12px;
+
+			label {
+				@include padding(null null null 25px);
+				@include position(relative);
+
+				input {
+					@include margin(1px null null -25px);
+					@include position(null, 0 null null null);
+				}
+			}
+		}
+
+		.btn {
+			@include border-top-radius(0);
+			@include border-bottom-radius(0);
+
+			&.btn-primary {
+				background: $color_blue;
+			}
+		}
+
+		.jumbotron {
+			@include border-top-radius(0);
+			@include border-bottom-radius(0);
+			@include margin(null null 30px null);
+			@include padding(40px);
+			background: $color_white;
+			box-shadow: 0 1px 1px 0 rgba($color_black, 0.1);
+
+			*:last-child {
+				@include margin(null null 0 null);
+			}
+
+			h1 {
+				@include margin(0 null 5px null);
+				@include padding(0);
+				font-size: 36px;
+			}
+
+			p {
+				@include margin(null null 25px null);
+				font-size: 18px;
+
+				&.help-block {
+					@include margin(null null 10px null);
+					font-size: 13px;
+					font-weight: normal;
+				}
+			}
+
+			.form-group {
+				.row {
+					@include margin(5px null null null);
+
+					[class*='col-'] {
+						@include margin(null null 0 null);
+						text-align: center;
+
+						label {
+							@include position(relative);
+							@include margin(null null 0 null);
+							line-height: 30px;
+
+							> input {
+								@include position(absolute);
+								visibility: hidden;
+
+								+ span {
+									@include padding(null null null 35px);
+									cursor: pointer;
+									font-size: 16px;
+
+									&::before {
+										@include size(auto);
+										@include position(absolute, 0 null null 0);
+										color: darken($color_white, 20%);
+										font-size: 32px;
+										content: '\f401';
+										font-family: 'Ionicons', sans-serif;
+										font-weight: normal;
+										display: block;
+									}
+								}
+
+								&:checked {
+									+ span {
+										&::before {
+											color: $color_blue;
+											content: '\f3ff';
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.panel-group {
+			@include margin(null null 0 null);
+
+			.panel {
+				@include border-top-radius(0);
+				@include border-bottom-radius(0);
+				@include margin(null null 30px null);
+				border: none;
+				box-shadow: 0 1px 1px 0 rgba($color_black, 0.1);
+
+				.panel-heading {
+					@include border-top-radius(0);
+					@include border-bottom-radius(0);
+					@include padding(0);
+
+					h4 {
+						@include margin(0 null);
+						font-size: 18px;
+
+						a {
+							@include padding(null 40px);
+							display: block;
+							line-height: 80px;
+
+							&,
+							&:hover {
+								color: $color_blue;
+							}
+
+							&:hover {
+								text-decoration: none;
+							}
+
+							.icon {
+								@include size(30px null);
+								@include margin(null 3px null null);
+								@include position(relative, 2px null null null);
+								display: inline-block;
+								font-size: 24px;
+								text-align: center;
+							}
+						}
+					}
+				}
+
+				.panel-collapse {
+					.panel-body {
+						@include padding(20px 40px 40px 40px);
+						border: none;
+					}
+				}
+			}
+		}
+
+		.form-group {
+			@include margin(null null 0 null);
+			@include padding(15px null 10px null);
+			border-bottom: 1px solid darken($color_white, 5%);
+
+			&:first-child {
+				@include padding(0 null null null);
+
+				&.ng-hide {
+					+ .form-group {
+						@include padding(0 null null null);
+					}
+				}
+			}
+
+			&:last-child {
+				@include padding(null null 0 null);
+				border-bottom: none;
+			}
+
+			[class*='col-'] {
+				@include margin(null null 5px null);
+			}
+
+			.separator {
+				@include position(relative, 10px null null null);
+				border-top: 1px solid darken($color_white, 5%);
+				clear: both;
+
+				> [class*='col-'] {
+					float: none;
+
+					.form-group {
+						&:first-child {
+							@include padding(15px null null null);
+
+							&.ng-hide {
+								+ .form-group {
+									@include padding(15px null null null);
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.form-group {
+				border-left: 3px solid darken($color_white, 10%);
+
+				.form-group {
+					border-left: none;
+				}
+
+				+ .form-group {
+					.checkbox,
+					.radio {
+						&:first-child {
+							@include padding(0 null null null);
+							min-height: 0;
+						}
+					}
+				}
+			}
+
+			.control-label {
+				font-size: 12px;
+				text-align: left;
+
+				.icon[data-toggle="popover"] {
+					@include size(30px null);
+					display: inline-block;
+					line-height: 20px;
+					text-align: center;
+				}
+			}
+
+			.form-control {
+				@include size(null 38px);
+			}
+
+			.input-group {
+				@include position(relative);
+
+				.input-group-btn,
+				.input-group-addon {
+					@include border-top-radius(0);
+					@include border-bottom-radius(0);
+				}
+
+				.input-group-btn {
+					min-width: 40px;
+
+					.btn {
+						@include size(null 38px);
+					}
+				}
+
+				.input-group-addon {
+					background: darken($color_white, 5%);
+					font-size: 12px;
+					font-weight: bold;
+					text-align: left;
+					min-width: 90px;
+				}
+			}
+
+			.input-tags {
+				@include clearfix();
+				@include margin(5px null null null);
+
+				.btn {
+					@include margin(null 5px 5px null);
+					float: left;
+
+					&:last-of-type {
+						@include margin(null 0 null null);
+					}
+
+					i {
+						@include margin(null 1px null null);
+						font-size: 11px;
+					}
+				}
+			}
+
+			.help-block {
+				&.success {
+					color: $color_green;
+				}
+			}
+		}
+
+		.overflow {
+			max-height: 190px;
+			overflow-y: auto;
+		}
+
+		.sidebar {
+			&.fixed {
+				@include position(fixed);
+			}
+
+			.help {
+				@include border-top-radius(0);
+				@include border-bottom-radius(0);
+				@include margin(null null 20px null);
+				@include padding(20px);
+				background: $color_white;
+				box-shadow: 0 1px 1px 0 rgba($color_black, 0.1);
+
+				h5 {
+					@include margin(0 null 15px null);
+
+					i {
+						@include margin(null 5px null null);
+					}
+				}
+
+				ol {
+					@include margin(null null 0 null);
+				}
+			}
+
+			.action {
+				@include margin(null null 30px null);
+
+				.btn {
+					@include border-top-radius(5px);
+					@include border-bottom-radius(5px);
+					@include size(null 50px);
+					@include padding(0);
+					background: $color_green;
+					border: none;
+				}
+			}
+		}
+	}
+
+	.modal {
+		text-align: center;
+		z-index: 100001;
+
+		&::before {
+			@include size(null 100%);
+			content: '';
+			vertical-align: middle;
+			display: inline-block;
+		}
+
+		.modal-dialog {
+			@include size(auto null);
+			@include margin(0 null);
+			display: inline-block;
+			vertical-align: middle;
+
+			.modal-content {
+				@include border-top-radius(0);
+				@include border-bottom-radius(0);
+				@include position(relative);
+				border: none;
+				text-align: left;
+
+				.modal-header {
+					@include padding(0);
+					@include position(absolute, -35px null null 0);
+					@include size(100% 35px);
+					border-bottom: none;
+					color: $color_white;
+
+					.checkbox {
+						@include margin(0 null);
+						background: none !important;
+
+						label {
+							@include padding(null null null 25px);
+							font-size: 12px;
+							font-weight: bold;
+
+							input {
+								@include margin(1px null null -25px);
+							}
+						}
+					}
+
+					.icon {
+						@include size(24px);
+						@include position(absolute, 0 0 null null);
+						font-size: 24px;
+						text-align: center;
+						cursor: pointer;
+					}
+				}
+
+				.modal-body {
+					@include padding(0);
+
+					iframe {
+						min-width: calc(100vw - 60px);
+						min-height: calc(100vh - 130px);
+						display: none;
+						border: none;
+					}
+				}
+			}
+		}
+
+		&#loading {
+			.rotate {
+				@include animation(spin 2s linear infinite);
+				@include keyframes(spin) {
+					from {
+						@include transform(rotate(0deg));
+					}
+
+					to {
+						@include transform(rotate(360deg));
+					}
+				}
+
+				.icon {
+					@include size(32px);
+					color: $color_white;
+					display: block;
+					font-size: 32px;
+					line-height: 32px;
+					text-align: center;
+				}
+			}
+		}
+
+		&#error {
+			.modal-dialog {
+				.modal-content {
+					.modal-body {
+						@include padding(20px);
+						min-width: 300px;
+						text-align: center;
+
+						.icon {
+							@include margin(null null 5px null);
+							font-size: 32px;
+							display: block;
+						}
+
+						p {
+							@include margin(null null 0 null);
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+
+		&#pro {
+			overflow: auto;
+
+			&::before {
+				display: none;
+			}
+
+			.modal-dialog {
+				@include margin(20px null);
+
+				.modal-content {
+					.modal-body {
+						@include padding(20px);
+
+						table {
+							max-width: 640px;
+
+							tr {
+								th {
+									@include padding(20px 40px);
+									border: none;
+									font-size: 18px;
+									font-weight: bolder;
+									text-align: center;
+								}
+
+								td {
+									font-size: 16px;
+									vertical-align: middle;
+
+									&:nth-of-type(2),
+									&:nth-of-type(3) {
+										font-size: 18px;
+										font-weight: bolder;
+										text-align: center;
+									}
+
+									&:nth-of-type(2) {
+										i {
+											color: $color_red;
+										}
+									}
+
+									&:nth-of-type(3) {
+										color: $color_green;
+									}
+								}
+							}
+						}
+
+						.btn {
+							&.btn-primary {
+								background: $color_green;
+								border: none;
+								font-weight: bolder;
+							}
+
+							&.btn-link {
+								color: lighten($color_black, 50%);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.popover {
+		@include border-bottom-radius(0);
+		@include border-top-radius(0);
+		@include margin(null null null 0);
+
+		.arrow {
+			display: none;
+		}
+	}
+
+	.wp-editor-wrap {
+		.wp-editor-tabs {
+			@include position(relative, 3px null null null);
+		}
+	}
+}
+
+.modal-backdrop {
+	@include position(fixed, 0 0 0 0);
+	background: $color_black;
+	z-index: 100000;
+
+	&.fade {
+		opacity: 0;
+	}
+
+	&.in {
+		opacity: 0.75;
+	}
+}
+
+.ui-autocomplete {
+	@include margin(0);
+	@include padding(0);
+	@include position(absolute);
+	background: $color_white;
+	border: 1px solid darken($color_white, 20%);
+	box-shadow: none;
+	list-style: none;
+	max-height: 250px;
+	overflow-y: auto;
+
+	.ui-menu-item {
+		cursor: pointer;
+
+		&:hover {
+			background: $color_blue;
+			color: $color_white;
+		}
+	}
+}
+
+@media only screen and (max-width : 991px) {
+	.bootstrap {
+		.container-fluid {
+			.sidebar {
+				&.fixed {
+					@include position(static);
+				}
+			}
+		}
+	}
+}

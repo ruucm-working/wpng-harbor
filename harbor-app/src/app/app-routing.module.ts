@@ -9,10 +9,10 @@ import { NotesListComponent } from './notes/notes-list/notes-list.component';
 import { CoreModule } from './core/core.module';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostSingleComponent } from './posts/post-single/post-single.component';
-import { Build003Component } from './programs/build003.component';
+import { BuildSubmitComponent } from './programs/build-submit.component';
 const routes: Routes = [
 	{ path: '', redirectTo: 'app', pathMatch: 'full' },
-	{ path: 'app', component: Build003Component },
+	{ path: 'app', component: BuildSubmitComponent },
 	{ path: 'app/login', component: UserLoginComponent, },
 	{ path: 'app/items', component: ItemsListComponent, canActivate: [AuthGuard] },
 	{ path: 'app/notes', component: NotesListComponent },

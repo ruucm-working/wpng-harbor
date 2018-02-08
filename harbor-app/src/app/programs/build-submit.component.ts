@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { SubmitService } from './submit.service';
 @Component({
-	selector: 'build003',
-	templateUrl: './build003.component.html',
-	styleUrls: ['./build003.component.scss']
+	selector: 'build-submit',
+	templateUrl: './build-submit.component.html',
+	styleUrls: ['./build-submit.component.scss']
 })
-export class Build003Component {
+export class BuildSubmitComponent {
 	submit_name = '';
 	submit_email = '';
 	submit_phone = '';

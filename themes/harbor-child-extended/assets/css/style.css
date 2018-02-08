@@ -1452,6 +1452,9 @@ body a.link {
  */
 .home .section-content {
   margin-top: 40px; }
+.home h3 {
+  word-spacing: 4px;
+  font-weight: 400; }
 
 .page-template-page-ngapp .splash {
   display: none; }

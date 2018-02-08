@@ -13,7 +13,7 @@ export class SubmitService {
   submitsCollection: AngularFirestoreCollection < any > ;
   submitDocument: AngularFirestoreDocument < Node >
     constructor(private afs: AngularFirestore) {
-      this.submitsCollection = this.afs.collection('submits', ref => ref.orderBy('time', 'desc').limit(5))
+      this.submitsCollection = this.afs.collection('build004-submits', ref => ref.orderBy('time', 'desc').limit(5))
       // this.submitDocument = this.afs.doc('submits/mtp1Ll6caN4dVrhg8fWD');
     }
   getData(): Observable < any[] > {
@@ -28,7 +28,7 @@ export class SubmitService {
     })
   }
   getSubmit(id) {
-    return this.afs.doc < any > ('submits/' + id);
+    return this.afs.doc < any > ('build004-submits/' + id);
   }
   create(submit_name, submit_email, submit_dev_or_design, submit_av_lang, submit_career, submit_age, submit_phone, submit_message) {
     const submit: any = {

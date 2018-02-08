@@ -1,0 +1,21 @@
+@import '../../libraries/bourbon/bourbon';
+
+#menu-posts-scrape_lite {
+	> a {
+		.wp-menu-image {
+			background: transparent url('../img/ol_menu.png') 0 0 / 108px 34px no-repeat;
+		}
+
+		&:hover {
+			.wp-menu-image {
+				background-position: -36px 0;
+			}
+		}
+
+		&.wp-menu-open {
+			.wp-menu-image {
+				background-position: -72px 0;
+			}
+		}
+	}
+}
