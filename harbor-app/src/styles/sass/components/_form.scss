@@ -39,10 +39,8 @@
 	input[type="tel"],
 	select,
 	textarea {
-		@include vendor('appearance', 'none');
 		background: _palette(border-bg);
 		border-radius: _size(border-radius);
-		border: none;
 		margin-bottom: 1rem;
 		color: _palette(accent);
 		display: block;
