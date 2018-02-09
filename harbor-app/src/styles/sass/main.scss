@@ -19,6 +19,17 @@ boxModel: 'border',
 grid: ( gutters: 1.75em),
 breakpoints: ( small: ( grid: ( gutters: 1.25em)))));
 
+
+// Bootstrap Grid Only
+$enable-flex:               true;
+$enable-grid-classes:       true;
+
+@import 'libs/bootstrap/scss/functions';
+@import 'libs/bootstrap/scss/variables';
+@import 'libs/bootstrap/scss/mixins';
+@import 'libs/bootstrap/scss/reboot';
+@import 'libs/bootstrap/scss/grid';
+
 // Component.
 // @import 'components/section';
 // @import 'components/list';
@@ -50,3 +61,4 @@ breakpoints: ( small: ( grid: ( gutters: 1.25em)))));
 
 // Page
 @import '/pages/build-submit';
+

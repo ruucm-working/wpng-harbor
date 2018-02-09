@@ -15,7 +15,7 @@ on-load: 0.75s,
 on-scroll: 0.75s);
 
 // Size.
-$size: ( border-radius: 3px,
+$size: ( border-radius: 2px,
 border-radius-alt: 0.5rem,
 border-width: 1px,
 element-height: 2.75rem,
@@ -38,12 +38,12 @@ kerning-alt: 0.125em);
 
 // Palette.
 $palette: (
-	bg: #2C255F,
-	fg: #fff,
+	bg: #fff,
+	fg: #404040,
 	bg-light: #000,
 	fg-light: #000,
 	border: #000,
-	accent: #000,
+	accent: #1565FA,
 
 	invert: (
 		bg: #000,

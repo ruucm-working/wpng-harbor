@@ -44,7 +44,7 @@
 		border-radius: _size(border-radius);
 		border: none;
 		margin-bottom: 1rem;
-		color: _palette(invert, fg);
+		color: _palette(accent);
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -52,6 +52,7 @@
 		width: 100%;
 		font-size: 1rem;
 		font-weight: 700;
+		border: 1px solid;
 		&:invalid {
 			box-shadow: none;
 		}
@@ -118,7 +119,8 @@
 			width: 10rem;
 			height: 3rem;
 			font-size: 1rem;
-			background: _palette(invert, fg);
+			color: _palette(accent);
+			border: 1px solid;
 		}
 	}
 	// input[type="checkbox"],
@@ -194,31 +196,31 @@
 	// }
 
 	::-webkit-input-placeholder {
-		color: _palette(invert, fg) !important;
+		color: _palette(accent) !important;
 		font-weight: 400;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: _palette(invert, fg) !important;
+		color: _palette(accent) !important;
 		font-weight: 400;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: _palette(invert, fg) !important;
+		color: _palette(accent) !important;
 		font-weight: 400;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: _palette(invert, fg) !important;
+		color: _palette(accent) !important;
 		font-weight: 400;
 		opacity: 1.0;
 	}
 
 	.polyfill-placeholder {
-		color: _palette(invert, fg) !important;
+		color: _palette(accent) !important;
 		font-weight: 400;
 		opacity: 1.0;
 	}
