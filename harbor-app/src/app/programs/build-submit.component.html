@@ -130,7 +130,7 @@
 		</ul>
 		<div class="submitted-message" *ngIf="submitForm.submitted">
 			<p>성공적으로 제출 되었습니다, {{ submitForm.value.name }} 님!</p>
-			<button (click)="submitForm.resetForm({})">다른 응답 제출</button>
+			<button class="normal" (click)="submitForm.resetForm({})">다른 응답 제출</button>
 		</div>
 	</form>
 </div>
