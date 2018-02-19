@@ -93,6 +93,12 @@ body {
 		color: _palette(fg) !important;
 		font-weight: 700;
 		font-size: 1.2em;
+		&.white {
+			color: white !important;
+		}
+		&:hover {
+			font-style: italic;
+		}
 	}
 }
 
