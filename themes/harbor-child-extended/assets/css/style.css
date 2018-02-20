@@ -1598,6 +1598,9 @@ nav {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef2554', endColorstr='#403d0f13',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
+  @media screen and (max-width: 736px) {
+    #build-promo-banner .section-content > .vc_row {
+      padding: 7rem 2rem; } }
 #build-promo-banner a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;

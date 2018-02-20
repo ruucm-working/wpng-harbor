@@ -7,6 +7,9 @@
 		background: -webkit-linear-gradient(-45deg,  rgba(239,37,84,1) 0%,rgba(239,37,84,0.89) 15%,rgba(61,15,19,0.25) 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(135deg,  rgba(239,37,84,1) 0%,rgba(239,37,84,0.89) 15%,rgba(61,15,19,0.25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef2554', endColorstr='#403d0f13',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		@include breakpoint(small) {
+			padding: 7rem 2rem;
+		}
 	}
 	a {
 		@include transition (all #{_duration(transition)} ease-in-out);
