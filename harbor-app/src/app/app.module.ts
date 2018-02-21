@@ -21,6 +21,8 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { FormsModule } from '@angular/forms';
 import { PostsModule } from './posts/posts.module';
 import { ProgramsModule } from './programs/programs.module'
+import { AdminModule } from './admin/admin.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +39,7 @@ import { ProgramsModule } from './programs/programs.module'
     NotesModule,
     PostsModule,
     ProgramsModule,
+    AdminModule,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   bootstrap: [

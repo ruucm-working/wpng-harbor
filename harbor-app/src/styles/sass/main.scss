@@ -29,6 +29,10 @@ $enable-grid-classes:       true;
 @import 'libs/bootstrap/scss/mixins';
 @import 'libs/bootstrap/scss/reboot';
 @import 'libs/bootstrap/scss/grid';
+@import 'libs/bootstrap/scss/tables';
+@import 'libs/bootstrap/scss/buttons';
+
+// @import "libs/bulma/sass/elements/button.sass";
 
 // Component.
 // @import 'components/section';

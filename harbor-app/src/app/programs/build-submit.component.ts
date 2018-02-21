@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SubmitService } from './submit.service';
+import { SubmitService } from '../shared/services/submit.service';
 @Component({
 	selector: 'build-submit',
 	templateUrl: './build-submit.component.html',

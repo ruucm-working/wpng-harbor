@@ -1,0 +1,92 @@
+<h1 class="title">설문내역</h1>
+<hr>
+<!-- <div class="box">
+	<label>검색</label>
+	<input class="input" placeholder="신청자" [(ngModel)]="search_keyword" />
+</div> -->
+<table class="table">
+	<thead>
+		<tr>
+			<th>No.</th>
+			<th>등록일</th>
+			<th>신청자</th>
+			<th>개발/디자이너</th>
+			<th>커리어</th>
+			<th>사용툴</th>
+			<th>소개</th>
+			<th>나이</th>
+			<th>연락처</th>
+			<th>이메일</th>
+			<th>지원 확정</th>
+	<!-- 		<th>지역</th>
+			<th>컨셉</th>
+			<th>인원</th>
+			<th>데코</th>
+			<th>진행</th>
+			<th>예복</th>
+			<th>헤어</th>
+			<th>예복-헤어 자세히</th>
+			<th>식사</th>
+			<th>기타</th>
+			<th>기타 자세히</th> -->
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let result of (submit_results | async) let i = index" [attr.data-index]="i">
+			<td>
+				<div>
+					<p class="submit-result-id">#{{ result.fixedId }}</p>
+					<span>{{ i + 1 }}</span>
+				</div>
+			</td>
+			<td>{{ result.time | date }}</td>
+			<td>{{ result.submit_name }}</td>
+			<td>{{ result.submit_dev_or_design }}</td>
+			<td>{{ result.submit_career }}</td>
+			<td>{{ result.submit_av_lang }}</td>
+			<td>{{ result.submit_message }}</td>
+			<td>{{ result.submit_age }}</td>
+			<td>{{ result.submit_phone }}</td>
+			<td>{{ result.submit_email }}</td>
+			<td>
+			<!-- 	<div>
+					<button type="button" class="btn-primary">지원 확정</button>
+					<button type="button" class="btn-warning">지원 대기</button>
+				</div> -->
+
+			<!-- 	<div>
+					<button class="btn-warning" *ngIf="result.complete == null || result.complete == 'uncomplete' ">지원 대기</button>
+					<button class="btn-primary" *ngIf="result.complete == 'complete'">지원 확정</button>
+				</div>
+ -->
+				<div>
+					<button class="btn-warning" (click)="complete_toggle(result)" *ngIf="result.complete == null || result.complete == 'uncomplete'">지원 대기</button>
+					<button class="btn-primary" (click)="complete_toggle(result)" *ngIf="result.complete == 'complete'">지원 확정</button>
+				</div>
+			</td>
+	<!-- 		<td>{{ result.userName }}</td>
+			<td>{{ result.userPhone }}</td>
+			<td>{{ result.region }}</td>
+			<td>{{ result.possible_concepts }}</td>
+			<td>{{ result.peopleNumber }}</td>
+			<td>{{ result['dress-types-deco-onoff'] | onoffToOX }}</td>
+			<td>{{ result['dress-types-process-onoff'] | onoffToOX }}</td> -->
+		<!-- 	<td><div *ngIf="result['dress-types-dress-people']">{{ result['dress-types-dress-people'] | extractTextVal }}</div></td>
+			<td>{{ result['dress-types-hair-makeup'] }}</td>
+			<td>
+				<div *ngIf="result['dress-types-dress-people'] && result['dress-types-hm-people']">
+					예복 : [ {{ this.getDressDetails(result, result['dress-types-dress-people']) | basicArrToString }} ] <br>
+					헤어 : [ {{ result['dress-types-hm-people'] | extractTextVal2 }} ]
+				</div>
+			</td>
+			<td>{{ result['dress-types-dinner-type'] }}</td>
+			<td><div *ngIf="result['dress-types-etc-type']">{{ result['dress-types-etc-type'] | extractTextVal }}</div></td>
+			<td>
+				{{ this.getEtcDetails(result, result['dress-types-etc-type']) | etcDeatailArrayToString }}
+			</td> -->
+		</tr>
+	</tbody>
+	<tfoot>
+	</tfoot>
+</table>
+

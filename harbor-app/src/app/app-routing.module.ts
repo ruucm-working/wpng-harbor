@@ -10,8 +10,13 @@ import { CoreModule } from './core/core.module';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostSingleComponent } from './posts/post-single/post-single.component';
 import { BuildSubmitComponent } from './programs/build-submit.component';
+import { AdminComponent } from './admin/admin.component';
+import { SubmitResultComponent } from './admin/submit-result/submit-result.component';
+
+
 const routes: Routes = [
 	{ path: '', redirectTo: 'app', pathMatch: 'full' },
+	{ path: 'ng-admin', redirectTo: 'app/admin', pathMatch: 'full' },
 	{ path: 'app', component: BuildSubmitComponent },
 	{ path: 'app/login', component: UserLoginComponent, },
 	{ path: 'app/items', component: ItemsListComponent, canActivate: [AuthGuard] },
@@ -26,7 +31,38 @@ const routes: Routes = [
 	{
 		path: 'app/posts/:slug',
 		component: PostSingleComponent
-	}
+	},
+	{
+		path: 'app/admin',
+		component: AdminComponent,
+		// canActivate: [AuthGuard],
+		children: [
+			// { path: '', redirectTo: 'form', pathMatch: 'full' },
+			{ path: 'submit-result', component: SubmitResultComponent },
+			// {
+			// 	path: 'partners',
+			// 	component: PartnersComponent,
+			// 	children: [
+			// 		{ path: 'place-partners', component: PlacePartnerListComponent },
+			// 		{ path: 'deco-partners', component: DecoPartnerListComponent },
+			// 		{ path: 'dress-partners', component: DressPartnerListComponent },
+			// 		{ path: 'snap-partners', component: SnapPartnerListComponent },
+			// 		{ path: 'dinner-partners', component: DinnerPartnerListComponent },
+			// 		{ path: 'etc-partners', component: EtcPartnerListComponent },
+			// 	]
+			// },
+			// {
+			// 	path: 'consults',
+			// 	component: ConsultsComponent,
+			// 	children: [
+			// 		{ path: 'one-to-one', component: OneToOneConsultListComponent },
+			// 		{ path: 'visit', component: VisitConsultListComponent },
+			// 		{ path: 'board', component: BoardConsultListComponent },
+			// 	]
+			// },
+			// { path: 'calendar', component: CalendarComponent },
+		]
+	},
 ];
 @NgModule({
 	imports: [RouterModule.forRoot(routes)],
