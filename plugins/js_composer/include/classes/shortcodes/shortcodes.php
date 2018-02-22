@@ -1250,9 +1250,6 @@ if ( ! class_exists( 'WPBakeryShortCodeFishBones' ) ) {
 		 * @param $settings
 		 */
 		public function __construct( $settings ) {
-			if ( ! $settings ) {
-				throw new Exception( 'Element must be mapped in system' );
-			}
 			$this->settings = $settings;
 			$this->shortcode = $this->settings['base'];
 			$this->addAction( 'admin_init', 'hookAdmin' );
@@ -1314,15 +1311,10 @@ if ( ! class_exists( 'WPBakeryShortCodeFishBones' ) ) {
 		 * @since 4.9
 		 *
 		 * @param $tag
-		 *
 		 * @return \WPBakeryShortCodeFishBones
-		 * @throws \Exception
 		 */
 		public static function getElementClass( $tag ) {
 			$settings = WPBMap::getShortCode( $tag );
-			if ( ! $settings ) {
-				throw new Exception( 'Element must be mapped in system' );
-			}
 			require_once vc_path_dir( 'SHORTCODES_DIR', 'wordpress-widgets.php' );
 
 			$class_name = ! empty( $settings['php_class_name'] ) ? $settings['php_class_name'] : 'WPBakeryShortCode_' . $tag;
@@ -1422,9 +1414,6 @@ final class Vc_Shortcodes_Manager {
 			return $this->shortcode_classes[ $tag ];
 		}
 		$settings = WPBMap::getShortCode( $tag );
-		if ( ! $settings ) {
-			throw new Exception( 'Element must be mapped in system' );
-		}
 		require_once vc_path_dir( 'SHORTCODES_DIR', 'wordpress-widgets.php' );
 
 		$class_name = ! empty( $settings['php_class_name'] ) ? $settings['php_class_name'] : 'WPBakeryShortCode_' . $tag;

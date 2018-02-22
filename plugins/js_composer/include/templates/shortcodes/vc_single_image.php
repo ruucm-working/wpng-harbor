@@ -19,7 +19,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @var $img_link_target
  * @var $alignment
  * @var $el_class
- * @var $el_id
  * @var $css_animation
  * @var $style
  * @var $external_style
@@ -29,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @var $this WPBakeryShortCode_VC_Single_image
  */
 $title = $source = $image = $custom_src = $onclick = $img_size = $external_img_size =
-$caption = $img_link_large = $link = $img_link_target = $alignment = $el_class = $el_id = $css_animation = $style = $external_style = $border_color = $css = '';
+$caption = $img_link_large = $link = $img_link_target = $alignment = $el_class = $css_animation = $style = $external_style = $border_color = $css = '';
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
 
@@ -219,12 +218,9 @@ if ( in_array( $source, array( 'media_library', 'featured_image' ) ) && 'yes' ==
 if ( 'yes' === $add_caption && '' !== $caption ) {
 	$html .= '<figcaption class="vc_figure-caption">' . esc_html( $caption ) . '</figcaption>';
 }
-$wrapper_attributes = array();
-if ( ! empty( $el_id ) ) {
-	$wrapper_attributes[] = 'id="' . esc_attr( $el_id ) . '"';
-}
+
 $output = '
-	<div ' . implode( ' ', $wrapper_attributes ) . ' class="' . esc_attr( trim( $css_class ) ) . '">
+	<div class="' . esc_attr( trim( $css_class ) ) . '">
 		' . wpb_widget_title( array( 'title' => $title, 'extraclass' => 'wpb_singleimage_heading' ) ) . '
 		<figure class="wpb_wrapper vc_figure">
 			' . $html . '

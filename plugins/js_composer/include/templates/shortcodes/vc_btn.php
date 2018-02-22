@@ -15,7 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @var $link
  * @var $title
  * @var $button_block
- * @var $el_id
  * @var $el_class
  * @var $outline_custom_color
  * @var $outline_custom_hover_background
@@ -244,12 +243,9 @@ if ( ! empty( $custom_onclick ) && $custom_onclick_code ) {
 }
 
 $attributes = implode( ' ', $attributes );
-$wrapper_attributes = array();
-if ( ! empty( $el_id ) ) {
-	$wrapper_attributes[] = 'id="' . esc_attr( $el_id ) . '"';
-}
+
 ?>
-<div class="<?php echo trim( esc_attr( $css_class ) ) ?>" <?php echo implode( ' ', $wrapper_attributes ); ?>>
+<div class="<?php echo trim( esc_attr( $css_class ) ) ?>">
 	<?php
 	if ( $use_link ) {
 		echo '<a ' . $attributes . '>' . $button_html . '</a>';

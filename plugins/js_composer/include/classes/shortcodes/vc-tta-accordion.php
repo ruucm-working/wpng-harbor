@@ -145,9 +145,6 @@ class WPBakeryShortCode_VC_Tta_Accordion extends WPBakeryShortCodesContainer {
 							'delay' => intval( $autoplay ) * 1000,
 						) ) ) . '"';
 		}
-		if ( ! empty( $this->atts['el_id'] ) ) {
-			$attributes[] = 'id="' . esc_attr( $this->atts['el_id'] ) . '"';
-		}
 
 		return implode( ' ', $attributes );
 	}
@@ -366,7 +363,8 @@ class WPBakeryShortCode_VC_Tta_Accordion extends WPBakeryShortCodesContainer {
 		if ( ! $isPageEditabe ) {
 			VcShortcodeAutoloader::getInstance()->includeClass( 'WPBakeryShortCode_VC_Tta_Section' );
 			foreach ( WPBakeryShortCode_VC_Tta_Section::$section_info as $nth => $section ) {
-				$active_section = $this->getActiveSection( $atts, false );
+				$strict_bounds = ( 'vc_tta_tabs' === $this->shortcode );
+				$active_section = $this->getActiveSection( $atts, $strict_bounds );
 
 				$classes = array( 'vc_pagination-item' );
 				if ( ( $nth + 1 ) === $active_section ) {
