@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-/*** WPBakery Page Builder Content elements refresh ***/
+/*** Visual Composer Content elements refresh ***/
 class VcSharedLibrary {
 	// Here we will store plugin wise (shared) settings. Colors, Locations, Sizes, etc...
 	/**
@@ -349,7 +349,7 @@ class VcSharedLibrary {
 /**
  * @param string $asset
  *
- * @return array|string
+ * @return array
  */
 function getVcShared( $asset = '' ) {
 	switch ( $asset ) {

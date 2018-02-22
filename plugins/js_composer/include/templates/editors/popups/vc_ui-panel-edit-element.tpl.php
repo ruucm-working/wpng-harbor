@@ -11,8 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			'minimize',
 			'close',
 		);
-
-		if ( vc_user_access()->part( 'presets' )->checkStateAny( true, null )->get() || vc_user_access()->part( 'templates' )->checkStateAny( true, null )->get() ) {
+		// TODO: Check || ! empty( $list_presets ) || ! empty( $list_vendor_presets )
+		if ( vc_user_access()->part( 'presets' )->can()->get() || vc_user_access()->part( 'templates' )->can()->get() ) {
 			$controls = array_merge( array(
 				'settings' => array(
 					'template' => 'editors/partials/vc_ui-settings-dropdown.tpl.php',

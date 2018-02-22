@@ -4,13 +4,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /*
- * Modified by WPBakery Page Builder team
+ * Modified by Visual Composer team
 WordPress Importer
 http://wordpress.org/extend/plugins/wordpress-importer/
 Description: Import posts, pages, comments, custom fields, categories, tags and more from a WordPress export file.
 Author: wordpressdotorg
 Author URI: http://wordpress.org/
-Version: 0.6.3 with fixes and enchancements from WPBakery Page Builder
+Version: 0.6.3 with fixes and enchancements from Visual Composer
 Text Domain: wordpress-importer
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */

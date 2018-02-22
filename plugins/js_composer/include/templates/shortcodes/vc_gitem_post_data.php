@@ -9,8 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Shortcode class
  * @var $this WPBakeryShortCode_VC_Gitem_Post_Data
  */
-$output = $text = $google_fonts = $font_container = $el_class = $css = $font_container_data = $link_html = '';
-$google_fonts_data = array();
+$output = $text = $google_fonts = $font_container = $el_class = $css = $google_fonts_data = $font_container_data = $link_html = '';
 extract( $this->getAttributes( $atts ) );
 
 extract( $this->getStyles( $el_class, $css, $google_fonts_data, $font_container_data, $atts ) );

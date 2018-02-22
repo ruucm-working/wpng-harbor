@@ -4,9 +4,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * WPBakery WPBakery Page Builder filter functions
+ * WPBakery Visual Composer filter functions
  *
- * @package WPBakeryPageBuilder
+ * @package WPBakeryVisualComposer
  *
  * http://kb.wpbakery.com/index.php?title=Visual_Composer_Filters
  */

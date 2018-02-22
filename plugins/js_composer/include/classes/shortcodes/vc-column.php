@@ -4,9 +4,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * WPBakery WPBakery Page Builder shortcodes
+ * WPBakery Visual Composer shortcodes
  *
- * @package WPBakeryPageBuilder
+ * @package WPBakeryVisualComposer
  *
  */
 class WPBakeryShortCode_VC_Column extends WPBakeryShortCode {
@@ -21,19 +21,6 @@ class WPBakeryShortCode_VC_Column extends WPBakeryShortCode {
 	);
 
 	public $nonDraggableClass = 'vc-non-draggable-column';
-
-	/**
-	 * @param $settings
-	 */
-	public function __construct( $settings ) {
-		parent::__construct( $settings );
-		$this->shortcodeScripts();
-	}
-
-	protected function shortcodeScripts() {
-		wp_register_script( 'vc_jquery_skrollr_js', vc_asset_url( 'lib/bower/skrollr/dist/skrollr.min.js' ), array( 'jquery' ), WPB_VC_VERSION, true );
-		wp_register_script( 'vc_youtube_iframe_api_js', '//www.youtube.com/iframe_api', array(), WPB_VC_VERSION, true );
-	}
 
 	/**
 	 * @param $controls

@@ -244,18 +244,13 @@ class Vc_Shared_Templates {
 	 * @return array
 	 */
 	public function addTemplatesTab( $data ) {
-		if ( vc_user_access()->part( 'templates' )->checkStateAny( true, null, 'add' )->get() ) {
-			$templates = $this->getTemplates();
-			if ( ! empty( $templates ) || vc_user_access()->part( 'templates' )->checkStateAny( true, null )->get() ) {
-				$newCategory = array(
-					'category' => 'shared_templates',
-					'category_name' => __( 'Template library', 'js_composer' ),
-					'category_weight' => 10,
-					'templates' => $this->getTemplates(),
-				);
-				$data[] = $newCategory;
-			}
-		}
+		$newCategory = array(
+			'category' => 'shared_templates',
+			'category_name' => __( 'Template library', 'js_composer' ),
+			'category_weight' => 10,
+			'templates' => $this->getTemplates(),
+		);
+		$data[] = $newCategory;
 
 		return $data;
 	}

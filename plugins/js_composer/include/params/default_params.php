@@ -4,9 +4,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * WPBakery WPBakery Page Builder shortcode default attributes functions for rendering.
+ * WPBakery Visual Composer shortcode default attributes functions for rendering.
  *
- * @package WPBakeryPageBuilder
+ * @package WPBakeryVisualComposer
  * @since 4.4
  */
 /**

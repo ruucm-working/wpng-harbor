@@ -4,9 +4,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * WPBakery WPBakery Page Builder Main manager.
+ * WPBakery Visual Composer Main manager.
  *
- * @package WPBakeryPageBuilder
+ * @package WPBakeryVisualComposer
  * @since   4.2
  */
 

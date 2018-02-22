@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: WPBakery Page Builder
+Plugin Name: WPBakery Visual Composer
 Plugin URI: http://vc.wpbakery.com
 Description: Drag and drop page builder for WordPress. Take full control over your WordPress site, build any layout you can imagine – no programming knowledge required.
-Version: 5.4.5
+Version: 5.1.1
 Author: Michael M - WPBakery.com
 Author URI: http://wpbakery.com
 */
@@ -13,13 +13,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 /**
- * Current WPBakery Page Builder version
+ * Current visual composer version
  */
 if ( ! defined( 'WPB_VC_VERSION' ) ) {
 	/**
 	 *
 	 */
-	define( 'WPB_VC_VERSION', '5.4.5' );
+	define( 'WPB_VC_VERSION', '5.1.1' );
 }
 
 /**
@@ -40,7 +40,7 @@ class Vc_Manager {
 	 *  none - current status is unknown, default mode;
 	 *  page - simple wp page;
 	 *  admin_page - wp dashboard;
-	 *  admin_frontend_editor - WPBakery Page Builder front end editor version;
+	 *  admin_frontend_editor - visual composer front end editor version;
 	 *  admin_settings_page - settings page
 	 *  page_editable - inline version for iframe in front end editor;
 	 *
@@ -49,7 +49,7 @@ class Vc_Manager {
 	 */
 	private $mode = 'none';
 	/**
-	 * Enables WPBakery Page Builder to act as the theme plugin.
+	 * Enables Visual Composer to act as the theme plugin.
 	 *
 	 * @since 4.2
 	 * @var bool
@@ -69,7 +69,7 @@ class Vc_Manager {
 	 */
 	private $paths = array();
 	/**
-	 * Default post types where to activate WPBakery Page Builder meta box settings
+	 * Default post types where to activate visual composer meta box settings
 	 * @since 4.2
 	 * @var array
 	 */
@@ -132,7 +132,7 @@ class Vc_Manager {
 	private function __construct() {
 		$dir = dirname( __FILE__ );
 		/**
-		 * Define path settings for WPBakery Page Builder.
+		 * Define path settings for visual composer.
 		 *
 		 * APP_ROOT        - plugin directory.
 		 * WP_ROOT         - WP application root directory.
@@ -175,7 +175,6 @@ class Vc_Manager {
 		require_once $this->path( 'CORE_DIR', 'class-wpb-map.php' );
 		require_once $this->path( 'CORE_DIR', 'class-vc-shared-library.php' );
 		require_once $this->path( 'HELPERS_DIR', 'helpers_api.php' );
-		require_once $this->path( 'HELPERS_DIR', 'helpers_deprecated.php' );
 		require_once $this->path( 'HELPERS_DIR', 'filters.php' );
 		require_once $this->path( 'PARAMS_DIR', 'params.php' );
 		require_once $this->path( 'AUTOLOAD_DIR', 'vc-shortcode-autoloader.php' );
@@ -210,13 +209,19 @@ class Vc_Manager {
 	}
 
 	/**
-	 * prevent the instance from being cloned (which would create a second instance of it)
+	 * Cloning disabled
 	 */
 	private function __clone() {
 	}
 
 	/**
-	 * prevent from being unserialized (which would create a second instance of it)
+	 * Serialization disabled
+	 */
+	private function __sleep() {
+	}
+
+	/**
+	 * De-serialization disabled
 	 */
 	private function __wakeup() {
 	}
@@ -493,7 +498,7 @@ class Vc_Manager {
 	}
 
 	/**
-	 * Returns list of default post types where user can use WPBakery Page Builder editors.
+	 * Returns list of default post types where user can use visual composer editors.
 	 *
 	 * @since  4.2
 	 * @access public
@@ -703,7 +708,7 @@ class Vc_Manager {
 	}
 
 	/**
-	 * WPBakery Page Builder.
+	 * Visual Composer.
 	 *
 	 * @since  4.2
 	 * @access public
@@ -725,10 +730,6 @@ class Vc_Manager {
 			// DI Set edit form
 			require_once $this->path( 'EDITORS_DIR', 'popups/class-vc-shortcode-edit-form.php' );
 			$vc->setEditForm( new Vc_Shortcode_Edit_Form() );
-
-			// DI Set preset new modal editor.
-			require_once $this->path( 'EDITORS_DIR', 'popups/class-vc-preset-panel-editor.php' );
-			$vc->setPresetPanelEditor( new Vc_Preset_Panel_Editor() );
 
 			$this->factory['vc'] = $vc;
 			do_action( 'vc_after_init_vc' );
@@ -885,7 +886,7 @@ class Vc_Manager {
 }
 
 /**
- * Main WPBakery Page Builder manager.
+ * Main Visual composer manager.
  * @var Vc_Manager $vc_manager - instance of composer management.
  * @since 4.2
  */

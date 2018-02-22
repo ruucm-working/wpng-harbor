@@ -22,7 +22,6 @@ class Vc_Roles {
 		'shortcodes',
 		'grid_builder',
 		'presets',
-		'dragndrop',
 	);
 
 	/**

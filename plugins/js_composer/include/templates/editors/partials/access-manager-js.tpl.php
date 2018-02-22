@@ -36,9 +36,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		window.vc_user_access = function () {
 			return {
 				editor: function ( editor ) {
-					return this.partAccess( editor );
-				},
-				partAccess: function ( editor ) {
 					return ! _.isUndefined( _localCapabilities[ editor ] ) && false !== _localCapabilities[ editor ][ 'state' ];
 				},
 				check: function ( part, rule, custom, not_check_state ) {
