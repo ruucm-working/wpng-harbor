@@ -1381,6 +1381,8 @@ body p {
   @media screen and (max-width: 736px) {
     body p {
       margin: 1rem 0 1rem 0 !important; } }
+body a {
+  font-family: Montserrat, NanumSquare, sans-serif; }
 body strong {
   font-weight: 700;
   font-size: 1.3em; }

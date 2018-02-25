@@ -82,6 +82,9 @@ body {
 			margin: 1rem 0 1rem 0 !important;
 		}
 	}
+	a {
+		font-family: _font(family);
+	}
 	strong {
 		font-weight: 700;
 		font-size: 1.3em;
