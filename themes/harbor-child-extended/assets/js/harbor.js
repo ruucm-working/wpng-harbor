@@ -1,4 +1,25 @@
 /**
+ *	Resize Home SVG at Mobile
+ */
+jQuery(function($){
+	// Home SVG
+	if ($('.home').length && window.matchMedia('screen and (max-width: 768px)').matches)
+		changeSvgViewBox('home');
+	$(window).resize(function(){
+		if ($('.home').length && window.matchMedia('screen and (max-width: 768px)').matches)
+		changeSvgViewBox('home');
+	});
+
+	function changeSvgViewBox(type) {
+		var svgItems = document.getElementsByTagName("svg"); //copy these exactly, don't change ("svg")[0];
+		console.log('svgItems', svgItems);
+		if (type == 'home') {
+			svgItems[2].setAttribute("viewBox", "500 -400 400 1000");
+		}
+	}
+});
+
+/**
  * 	Scroll Reveal
  */
 window.sr = ScrollReveal();
@@ -354,26 +375,3 @@ jQuery(function($){
 		return rec.left + window.scrollX;
 	}
 });
-
-
-/**
- *	Resize Home SVG at Mobile
- */
-jQuery(function($){
-	// Home SVG
-	if ($('.home').length && window.matchMedia('screen and (max-width: 768px)').matches)
-		changeSvgViewBox('home');
-	$(window).resize(function(){
-		if ($('.home').length && window.matchMedia('screen and (max-width: 768px)').matches)
-		changeSvgViewBox('home');
-	});
-
-	function changeSvgViewBox(type) {
-		var svgItems = document.getElementsByTagName("svg"); //copy these exactly, don't change ("svg")[0];
-		console.log('svgItems', svgItems);
-		if (type == 'home') {
-			svgItems[2].setAttribute("viewBox", "500 -400 400 1000");
-		}
-	}
-});
-
