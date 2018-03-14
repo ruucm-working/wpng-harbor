@@ -320,13 +320,11 @@ jQuery(function($){
 		main_timeline.add( square1, square2 );
 
 		// const mojsPlayer = new MojsPlayer({ add: main_timeline });
-
-		$(window).on('wheel', function(e) {
-			var delta = e.originalEvent.deltaY;
-
-			if (delta > 0 && !play_direction_lock) {
+		$(window).scroll(function (e) {
+			var delta = $(document).scrollTop();
+			if (delta > 50 && !play_direction_lock) {
 				play_ship_anim('forward');
-			} else if (delta < 0 && play_direction_lock) {
+			} else if (delta < 50 && play_direction_lock) {
 				play_ship_anim('backward');
 			}
 			return true;
@@ -356,3 +354,26 @@ jQuery(function($){
 		return rec.left + window.scrollX;
 	}
 });
+
+
+/**
+ *	Resize Home SVG at Mobile
+ */
+jQuery(function($){
+	// Home SVG
+	if ($('.home').length && window.matchMedia('screen and (max-width: 768px)').matches)
+		changeSvgViewBox('home');
+	$(window).resize(function(){
+		if ($('.home').length && window.matchMedia('screen and (max-width: 768px)').matches)
+		changeSvgViewBox('home');
+	});
+
+	function changeSvgViewBox(type) {
+		var svgItems = document.getElementsByTagName("svg"); //copy these exactly, don't change ("svg")[0];
+		console.log('svgItems', svgItems);
+		if (type == 'home') {
+			svgItems[2].setAttribute("viewBox", "500 -400 400 1000");
+		}
+	}
+});
+
