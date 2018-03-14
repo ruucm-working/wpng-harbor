@@ -12,7 +12,6 @@ jQuery(function($){
 
 	function changeSvgViewBox(type) {
 		var svgItems = document.getElementsByTagName("svg"); //copy these exactly, don't change ("svg")[0];
-		console.log('svgItems', svgItems);
 		if (type == 'home') {
 			svgItems[2].setAttribute("viewBox", "500 -400 400 1000");
 		}
