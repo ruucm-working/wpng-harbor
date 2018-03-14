@@ -15,15 +15,18 @@
         <div class="center">
             <div class="center-content">
                 <?php if ($this->settings['title_show'] == 'true') : ?>
-                    <h3 class="title animate<?php echo esc_attr($caption_title_class) ?>" style="<?php echo esc_attr(OM_Portfolio::get_project_title_styles($project)) ?>"><?php echo esc_html($preset_title) ?></h3>
+                    <h3 class="title animate<?php echo esc_attr($caption_title_class) ?>" style="<?php echo esc_attr(OM_Portfolio::get_project_title_styles($project)) ?>
+                    "><?php echo esc_html($preset_title) ?></h3>
                 <?php endif; ?>
 
                 <?php if ($this->settings['additional_info'] === 'categories') : ?>
-                    <p class="categories animate<?php echo esc_attr($caption_additional_class) ?>" style="<?php echo esc_attr(OM_Portfolio::get_project_additional_styles($project)) ?>"><?php echo esc_html($preset_categories) ?></p>
+                    <p class="categories animate<?php echo esc_attr($caption_additional_class) ?>" style="<?php echo esc_attr(OM_Portfolio::get_project_additional_styles($project)) ?>
+                        <?php echo esc_attr(OM_Portfolio::get_project_background_styles($project, $this->settings)) ?>"><?php echo esc_html($preset_categories) ?></p>
                 <?php endif; ?>
 
                 <?php if ($this->settings['additional_info'] === 'description') : ?>
-                    <p class="description animate<?php echo esc_attr($caption_additional_class) ?>" style="<?php echo esc_attr(OM_Portfolio::get_project_additional_styles($project)) ?>"><?php echo esc_html($preset_description) ?></p>
+                    <p class="description animate<?php echo esc_attr($caption_additional_class) ?>" style="<?php echo esc_attr(OM_Portfolio::get_project_additional_styles($project)) ?>
+                        <?php echo esc_attr(OM_Portfolio::get_project_background_styles($project, $this->settings)) ?>"><?php echo esc_html($preset_description) ?></p>
                 <?php endif; ?>
             </div>
         </div>
