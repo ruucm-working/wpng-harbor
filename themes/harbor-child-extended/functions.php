@@ -22,7 +22,7 @@ final class OM_Child_Theme
 		$this->version = $theme->Version;
 
 		add_action('wp_enqueue_scripts', array($this, 'enqueue_css'));
-		add_action('wp_enqueue_scripts', array($this, 'enqueue_js'));
+		add_action('wp_footer', array($this, 'enqueue_js'));
 
 		// Includes
 		require_once(__DIR__ . '/lib/extras.php');
