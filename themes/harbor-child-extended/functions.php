@@ -22,7 +22,7 @@ final class OM_Child_Theme
 		$this->version = $theme->Version;
 
 		add_action('wp_enqueue_scripts', array($this, 'enqueue_css'));
-		// add_action('wp_enqueue_scripts', array($this, 'enqueue_js'));
+		add_action('wp_enqueue_scripts', array($this, 'enqueue_js'));
 
 		// Includes
 		require_once(__DIR__ . '/lib/extras.php');
@@ -42,7 +42,12 @@ final class OM_Child_Theme
 	 */
 	public function enqueue_js()
 	{
-		wp_enqueue_script('child-custom-js', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'), $this->version, true);
+		// mo js animation
+		wp_enqueue_script( 'harbor-mo.min', get_stylesheet_directory_uri() . '/assets/js/mojs/mo.min.js', false );
+		// Scroll Reveal
+		wp_enqueue_script( 'harbor-scrollreveal-js', get_stylesheet_directory_uri() . '/assets/libs/scrollreveal/scrollreveal.min.js', false );
+		// Harbor Scripts
+		wp_enqueue_script('harbor-js', get_stylesheet_directory_uri() . '/assets/js/harbor.js', array('jquery'), false);
 	}
 }
 
@@ -59,23 +64,6 @@ function harbor_preload_scripts() {
 	wp_enqueue_script( 'svgLoader-js', get_stylesheet_directory_uri() . '/assets/js/svgLoader.js', false );
 }
 add_action( 'init', 'harbor_preload_scripts' );
-
-function harbor_scripts() {
-	// mo js animation
-	wp_enqueue_script( 'harbor-mo.min', get_stylesheet_directory_uri() . '/assets/js/mojs/mo.min.js', false );
-	wp_enqueue_script( 'harbor-mojs-player.min', get_stylesheet_directory_uri() . '/assets/js/mojs/mojs-player.min.js', false );
-	// wp_enqueue_script( 'harbor-mojs-curve-editor.min', get_stylesheet_directory_uri() . '/assets/js/mojs/mojs-curve-editor.min.js', false );
-	// AOS (Animation On Scroll)
-	// wp_enqueue_script( 'harbor-aos-js', get_stylesheet_directory_uri() . '/assets/libs/aos/aos.js', false );
-	// wp_enqueue_style('harbor-aos-css', get_stylesheet_directory_uri() . '/assets/libs/aos/aos.css');
-	// Scroll Reveal
-	wp_enqueue_script( 'harbor-scrollreveal-js', get_stylesheet_directory_uri() . '/assets/libs/scrollreveal/scrollreveal.min.js', false );
-	// Harbor Scripts
-	wp_enqueue_script('harbor-js', get_stylesheet_directory_uri() . '/assets/js/harbor.js', array('jquery'), false);
-
-}
-add_action( 'wp_footer', 'harbor_scripts' );
-
 
 /**
  *	Change default 'projects' url slug of custom post type
