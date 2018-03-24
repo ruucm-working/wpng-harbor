@@ -23,6 +23,13 @@
 	src: local('NanumSquare'), url('../fonts/NanumSquareBold.woff2') format('woff2'), url('../fonts/NanumSquareBold.woff') format('woff'), url('../fonts/NanumSquareBold.ttf') format('truetype'), url('../fonts/NanumSquareBold.eot?#iefix') format('embedded-opentype');
 }
 
+@font-face {
+	font-family: 'NanumSquare';
+	font-style: normal;
+	font-weight: 900;
+	src: local('NanumSquare'), url('../fonts/NanumSquareExtraBold.woff2') format('woff2'), url('../fonts/NanumSquareExtraBold.woff') format('woff'), url('../fonts/NanumSquareExtraBold.ttf') format('truetype'), url('../fonts/NanumSquareExtraBold.eot?#iefix') format('embedded-opentype');
+}
+
 html {
 	font-size: 18pt;
 	@include breakpoint(xlarge) {
