@@ -4,14 +4,16 @@ Plugin Name: oEmbed Gist
 Plugin URI: https://github.com/miya0001/oembed-gist
 Description: Embed source from gist.github.
 Author: Takayuki Miyauchi
-Version: 4.8.0
+Version: 4.9.0
 Author URI: http://firegoby.jp/
 */
 
 $oe_gist = new gist();
 $oe_gist->register();
 
-class gist {
+class gist
+{
+	const version = '4.9.0';
 
 	private $shotcode_tag = 'gist';
 	private $noscript;
@@ -24,8 +26,6 @@ class gist {
 
 	public function plugins_loaded()
 	{
-		add_action( 'wp_head', array( $this, 'wp_head' ) );
-
 		load_plugin_textdomain(
 			'oembed-gist',
 			false,
@@ -76,39 +76,6 @@ class gist {
 		return $providers;
 	}
 
-	public function wp_head()
-	{
-		?>
-		<style>
-		.gist table {
-			margin-bottom: 0 !important;
-			table-layout: auto !important;
-		}
-		.gist .line-numbers
-		{
-			width: 4em !important;
-		}
-		.gist .line,
-		.gist .line-number
-		{
-			font-size: 12px !important;
-			height: 18px !important;
-			line-height: 18px !important;
-		}
-		.gist .line
-		{
-			white-space: pre !important;
-			width: auto !important;
-			word-wrap: normal !important;
-		}
-		.gist .line span
-		{
-			word-wrap: normal !important;
-		}
-		</style>
-		<?php
-	}
-
 	public function handler( $m, $attr, $url, $rattr )
 	{
 		if ( !isset( $m[7] ) || !$m[7] ) {
@@ -146,6 +113,14 @@ class gist {
 			$file = preg_replace( '/[\-\.]([a-z]+)$/', '.\1', $p['file'] );
 			$url = $url . '?file=' . $file;
 		}
+
+		wp_enqueue_script(
+			'oembed-gist',
+			plugins_url( 'js/script.min.js', __FILE__ ),
+			array(),
+			self::version,
+			true
+        );
 
 		if( is_feed() ){
 			return $noscript;
